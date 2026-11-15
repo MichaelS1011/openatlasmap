@@ -29,4 +29,8 @@ describe("Free resource discovery", () => {
     expect(resources.find((r) => r.id === "openalex")?.pricing).toBe("Free tier");
     expect(filterResources(resources, { type: "All", category: "All categories", noKey: false, fullyFree: true }).some((r) => r.id === "openalex")).toBe(false);
   });
+  it.each(["eia", "fec", "fooddata-central"])("excludes %s from keyless discovery", (id) => {
+    expect(resources.find((r) => r.id === id)?.access).toBe("API key");
+    expect(filterResources(resources, { type: "All", category: "All categories", noKey: true, fullyFree: false }).some((r) => r.id === id)).toBe(false);
+  });
 });
