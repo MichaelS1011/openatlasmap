@@ -28,3 +28,7 @@ use the editor.
   own key and store it in Secrets.
 - **Secrets.** Lovable manages them. Do not put secret values in the repo.
 <!-- LOVABLE:END -->
+
+- Keep resource validation and filtering in a browser-safe shared module so curated and live results use the same rules.
+- Run AI-assisted web discovery only inside the search server function; the browser must never receive gateway credentials.
+- Keep collections session-only with explicit export until durable account storage is requested, avoiding implied persistence.

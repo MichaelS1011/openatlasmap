@@ -1,0 +1,19 @@
+import { describe, expect, it } from "vitest";
+import { filterResources, resources, resourceSchema } from "@/lib/resources";
+
+describe("Free resource discovery", () => {
+  it("excludes free-tier entries when fully free is selected", () => {
+    const first = resources[0];
+    if (!first) throw new Error("Expected a curated resource");
+    const limited = { ...first, id: "limited", pricing: "Free tier" as const };
+    expect(filterResources([limited], { type: "All", category: "All categories", noKey: false, fullyFree: true })).toEqual([]);
+  });
+  it("only returns keyless resources when no API key is selected", () => {
+    const result = filterResources(resources, { type: "All", category: "All categories", noKey: true, fullyFree: false });
+    expect(result.some((r) => r.id === "nasa")).toBe(false);
+    expect(result.some((r) => r.id === "open-meteo")).toBe(true);
+  });
+  it("rejects unsafe source links", () => {
+    expect(resourceSchema.safeParse({ ...resources[0], url: "javascript:alert(1)" }).success).toBe(false);
+  });
+});
