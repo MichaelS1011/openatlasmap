@@ -16,4 +16,17 @@ describe("Free resource discovery", () => {
   it("rejects unsafe source links", () => {
     expect(resourceSchema.safeParse({ ...resources[0], url: "javascript:alert(1)" }).success).toBe(false);
   });
+  it("keeps every curated source valid and uniquely identifiable", () => {
+    for (const resource of resources) expect(resourceSchema.safeParse(resource).success).toBe(true);
+    expect(new Set(resources.map((r) => r.id)).size).toBe(resources.length);
+    expect(new Set(resources.map((r) => r.url)).size).toBe(resources.length);
+  });
+  it("keeps openFDA behind the key-required filter", () => {
+    expect(resources.find((r) => r.id === "openfda")?.access).toBe("API key");
+    expect(filterResources(resources, { type: "All", category: "All categories", noKey: true, fullyFree: false }).some((r) => r.id === "openfda")).toBe(false);
+  });
+  it("does not present the OpenAlex free tier as fully free", () => {
+    expect(resources.find((r) => r.id === "openalex")?.pricing).toBe("Free tier");
+    expect(filterResources(resources, { type: "All", category: "All categories", noKey: false, fullyFree: true }).some((r) => r.id === "openalex")).toBe(false);
+  });
 });
