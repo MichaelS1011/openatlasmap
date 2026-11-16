@@ -39,4 +39,10 @@ describe("Free resource discovery", () => {
   it("lists the new 3D, industry, and research categories", () => {
     for (const c of ["3D & Graphics", "Industry & Materials", "Research"]) expect(resources.some((r) => r.category === c)).toBe(true);
   });
+  it.each(["kaggle-datasets", "libraries-io"])("keeps %s behind the key-required filter", (id) => {
+    expect(resources.find((r) => r.id === id)?.access).toBe("API key");
+  });
+  it("does not present Hugging Face Hub as fully free", () => {
+    expect(resources.find((r) => r.id === "hugging-face-hub")?.pricing).toBe("Free tier");
+  });
 });
