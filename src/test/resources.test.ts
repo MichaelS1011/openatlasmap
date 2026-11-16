@@ -33,4 +33,10 @@ describe("Free resource discovery", () => {
     expect(resources.find((r) => r.id === id)?.access).toBe("API key");
     expect(filterResources(resources, { type: "All", category: "All categories", noKey: true, fullyFree: false }).some((r) => r.id === id)).toBe(false);
   });
+  it.each(["smithsonian-3d", "materials-project", "fred"])("keeps %s behind the key-required filter", (id) => {
+    expect(resources.find((r) => r.id === id)?.access).toBe("API key");
+  });
+  it("lists the new 3D, industry, and research categories", () => {
+    for (const c of ["3D & Graphics", "Industry & Materials", "Research"]) expect(resources.some((r) => r.category === c)).toBe(true);
+  });
 });
