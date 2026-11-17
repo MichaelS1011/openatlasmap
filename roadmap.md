@@ -8,3 +8,6 @@
 - [x] Verify new source links, conditions, and category filters.
 - [x] Research and add free 3D, industrial, materials, and research sources with original links and usage conditions.
 - [x] Verify the new categories, access filters, and source details.
+- [ ] Research and add at least 200 additional distinct free sources across industries, with original links and evidence.
+- [ ] Verify categorization, source validity, access filters, and desktop/mobile browsing.
+- [ ] Improve SEO and AEO with crawlable source information and accurate structured metadata.

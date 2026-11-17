@@ -1,4 +1,4 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
 import { useServerFn } from "@tanstack/react-start";
 import { useRef, useState } from "react";
 import { ArrowDownToLine, ArrowRight, ArrowUpRight, Bookmark, Check, CheckCircle2, CloudSun, Code2, Database, Globe2, Grid2X2, Leaf, Library, List, LoaderCircle, Orbit, Search, ShieldCheck, SlidersHorizontal, Sparkles, Utensils, X } from "lucide-react";
@@ -6,9 +6,12 @@ import { Button } from "@/components/ui/button";
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import { discoverResources } from "@/lib/search.functions";
 import { filterResources, resources, type Resource } from "@/lib/resources";
+import { catalogStructuredData, siteUrl } from "@/lib/seo";
+import { categoryGroups } from "@/lib/resource-categories";
 import glassImage from "@/assets/discovery-glass.jpg";
 
 export const Route = createFileRoute("/")({
+  staticData: { sitemap: true },
   head: () => ({ meta: [
     { title: "OpenAtlas — Discover Free APIs & Open Data" },
     { name: "description", content: "Search the web for free APIs and open datasets. Explore original sources, formats, access requirements, and free-use limits with OpenAtlas." },
@@ -16,7 +19,9 @@ export const Route = createFileRoute("/")({
     { property: "og:description", content: "Find the right free API or open dataset for your next idea, with live search and original source links." },
     { property: "og:type", content: "website" },
     { name: "twitter:card", content: "summary_large_image" },
-  ] }),
+    { property: "og:url", content: `${siteUrl}/` },
+  ], links: [{ rel: "canonical", href: `${siteUrl}/` }],
+  scripts: [{ type: "application/ld+json", children: JSON.stringify(catalogStructuredData(resources)) }] }),
   component: Index,
 });
 
@@ -34,7 +39,7 @@ function ResourceCard({ resource, saved, onSave, onDetails }: { resource: Resour
         <Button variant="ghost" size="icon" className="h-7 w-7 text-muted-foreground" onClick={onSave} aria-label={saved ? `Remove ${resource.name} from collection` : `Save ${resource.name}`} title={saved ? "Remove from collection" : "Save to collection"} aria-pressed={saved}><Bookmark size={15} fill={saved ? "currentColor" : "none"} /></Button>
       </div>
     </div>
-    <h3>{resource.name}</h3><p>{resource.description}</p>
+    <h3>{resources.some((item) => item.id === resource.id && item.url === resource.url) ? <Link to="/resources/$id" params={{ id: resource.id }}>{resource.name}</Link> : resource.name}</h3><p>{resource.description}</p>
     <div className="card-tags"><span className="free"><CheckCircle2 size={11} />{resource.pricing}</span><span>·</span><span>{resource.access}</span><span className="tag">{resource.format}</span></div>
     <div className="card-footer"><span>{resource.category}</span><Button variant="link" className="source-link" onClick={onDetails}>View source <ArrowUpRight size={13} /></Button></div>
   </article>;
@@ -112,7 +117,7 @@ function Index() {
         <aside aria-label="Resource filters"><div className="filter-header"><h2 className="flex items-center gap-2"><SlidersHorizontal size={14} />Filters</h2><Button variant="link" className="h-auto p-0 text-[11px] text-muted-foreground" onClick={resetFilters}>Reset</Button></div>
           <div className="filters">
             <div className="filter-group resource-type"><h3>Resource type</h3>{[{ value: "All", label: "All resources" }, { value: "API", label: "APIs" }, { value: "Dataset", label: "Datasets" }].map((option) => <label className="filter-row" key={option.value}><input type="radio" name="type" checked={type === option.value} onChange={() => setType(option.value)} />{option.label}<span className="count">{base.filter((r) => option.value === "All" || r.type === option.value).length}</span></label>)}</div>
-            <div className="filter-group category-group"><h3>Category</h3><select className="category-select" aria-label="Category" value={category} onChange={(e) => setCategory(e.target.value)}><option>All categories</option>{categories.map((c) => <option key={c}>{c}</option>)}</select></div>
+            <div className="filter-group category-group"><h3>Category</h3><select className="category-select" aria-label="Category" value={category} onChange={(e) => setCategory(e.target.value)}><option>All categories</option>{categoryGroups.map((group) => { const available = group.categories.filter((c) => categories.includes(c)); return available.length ? <optgroup label={group.label} key={group.label}>{available.map((c) => <option key={c}>{c}</option>)}</optgroup> : null; })}{categories.filter((c) => !categoryGroups.some((group) => group.categories.some((known) => known === c))).map((c) => <option key={c}>{c}</option>)}</select></div>
             <div className="filter-group access-group"><h3>Access & pricing</h3><label className="filter-row"><input type="checkbox" checked={noKey} onChange={(e) => setNoKey(e.target.checked)} />No API key required</label><label className="filter-row"><input type="checkbox" checked={fullyFree} onChange={(e) => setFullyFree(e.target.checked)} />Free, not just a free tier</label></div>
           </div>
           <div className="sidebar-bottom"><Globe2 size={20} className="mb-3 text-primary" /><strong className="text-foreground font-medium">Good ideas start with open data.</strong><p className="mt-2">Explore a little. Build something great.</p></div>

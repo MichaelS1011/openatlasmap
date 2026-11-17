@@ -32,3 +32,5 @@ use the editor.
 - Keep resource validation and filtering in a browser-safe shared module so curated and live results use the same rules.
 - Run AI-assisted web discovery only inside the search server function; the browser must never receive gateway credentials.
 - Keep collections session-only with explicit export until durable account storage is requested, avoiding implied persistence.
+- Publish curated source details as SSR-readable pages with canonical URLs and source-derived structured data so search engines can index access conditions without opening a dialog.
+- Store expansion batches as browser-safe JSON with provider evidence; merge them through the shared resource module so discovery, details, and sitemap use one inventory.

@@ -8,6 +8,9 @@ export const resourceSchema = z.object({
   access: z.enum(["No key", "API key", "Unknown"]),
   pricing: z.enum(["Free", "Free tier"]), format: z.string(),
   limitation: plainText,
+  evidenceUrl: z.string().url().refine((url) => url.startsWith("https://")).optional(),
+  evidenceNote: plainText.optional(),
+  verifiedAt: z.string().regex(/^\d{4}-\d{2}-\d{2}$/).optional(),
 });
 export type Resource = z.infer<typeof resourceSchema>;
 export const searchResultsSchema = z.object({ resources: z.array(resourceSchema).max(20) });

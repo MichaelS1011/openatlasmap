@@ -1,5 +1,6 @@
 import { describe, expect, it } from "vitest";
 import { filterResources, resources, resourceSchema } from "@/lib/resources";
+import { curatedCategories } from "@/lib/resource-categories";
 
 describe("Free resource discovery", () => {
   it("excludes free-tier entries when fully free is selected", () => {
@@ -44,5 +45,20 @@ describe("Free resource discovery", () => {
   });
   it("does not present Hugging Face Hub as fully free", () => {
     expect(resources.find((r) => r.id === "hugging-face-hub")?.pricing).toBe("Free tier");
+  });
+  it("adds at least 200 distinct researched sources beyond the existing 116", () => {
+    const added = resources.filter((r) => r.verifiedAt === "2026-11-17");
+    expect(added.length).toBeGreaterThanOrEqual(200);
+    expect(resources.length).toBeGreaterThanOrEqual(316);
+    expect(new Set(added.map((r) => r.url)).size).toBe(added.length);
+    for (const r of added) {
+      expect(r.evidenceUrl?.startsWith("https://")).toBe(true);
+      expect((r.evidenceNote ?? "").length).toBeGreaterThan(20);
+      expect(r.limitation.length).toBeGreaterThan(20);
+    }
+  });
+  it("assigns every curated entry to a defined subject category", () => {
+    expect(new Set(curatedCategories).size).toBe(curatedCategories.length);
+    for (const r of resources) expect(curatedCategories.includes(r.category)).toBe(true);
   });
 });
