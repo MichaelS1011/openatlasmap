@@ -30,3 +30,6 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Local environment (Supabase/Lovable variables live in Lovable Cloud)
+.env
