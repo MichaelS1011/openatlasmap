@@ -1,10 +1,8 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { useServerFn } from "@tanstack/react-start";
 import { useRef, useState } from "react";
 import { ArrowDownToLine, ArrowRight, ArrowUpRight, Bookmark, Check, CheckCircle2, CloudSun, Code2, Database, Globe2, Grid2X2, Leaf, Library, List, LoaderCircle, Orbit, Search, ShieldCheck, SlidersHorizontal, Sparkles, Utensils, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } from "@/components/ui/dialog";
-import { discoverResources } from "@/lib/search.functions";
 import { filterResources, resources, type Resource } from "@/lib/resources";
 import { catalogStructuredData, siteUrl } from "@/lib/seo";
 import { categoryGroups } from "@/lib/resource-categories";
@@ -63,7 +61,6 @@ function Index() {
   const [about, setAbout] = useState(false);
   const [searchedAt, setSearchedAt] = useState("");
   const inputRef = useRef<HTMLInputElement>(null);
-  const runSearch = useServerFn(discoverResources);
   const base = collection ? saved : items;
   const filtered = filterResources(base, { type, category, noKey, fullyFree });
   if (sort === "name") filtered.sort((a, b) => a.name.localeCompare(b.name));
@@ -73,10 +70,14 @@ function Index() {
   function showExplore() { setCollection(false); setItems(resources); setSearchTerm(""); setQuery(""); setError(""); setSearchedAt(""); resetFilters(); }
   async function search(term: string) {
     if (pending || term.trim().length < 2) return;
-    setQuery(term); setPending(true); setError(""); setCollection(false); resetFilters();
-    try { const result = await runSearch({ data: { query: term } }); setItems(result.resources); setSearchTerm(term); setSearchedAt(result.searchedAt); }
-    catch (e) { setError(e instanceof Error ? e.message : "Live search couldn't be completed. Please try again."); }
-    finally { setPending(false); }
+    setQuery(term); setError(""); setCollection(false); resetFilters();
+    // Client-side catalog search: match every word against the curated resources.
+    const words = term.toLowerCase().split(/\s+/).filter(Boolean);
+    const hits = resources.filter((r) => {
+      const hay = `${r.name} ${r.description} ${r.category} ${r.type} ${r.limitation}`.toLowerCase();
+      return words.every((w) => hay.includes(w));
+    });
+    setItems(hits); setSearchTerm(term); setSearchedAt(new Date().toISOString());
   }
   function toggleSave(resource: Resource) { setSaved((prev) => prev.some((r) => r.url === resource.url) ? prev.filter((r) => r.url !== resource.url) : [...prev, resource]); }
   function exportCollection() {
