@@ -6,13 +6,13 @@
 [![Deploy](https://img.shields.io/github/actions/workflow/status/MichaelS1011/openatlasmap/deploy-pages.yml?style=flat-square&label=deploy)](https://github.com/MichaelS1011/openatlasmap/actions/workflows/deploy-pages.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow?style=flat-square)](LICENSE)
 
-OpenAtlas is a curated catalog of **116 free APIs and open datasets** — weather, finance, space, transport, AI, 3D assets, archives, and more. Every entry lists access conditions (key requirements, pricing, formats, limitations) so you know before you build whether a source fits your project.
+OpenAtlas is a curated catalog of **free APIs and open datasets** — weather, finance, space, transport, AI, 3D assets, archives, and more. Every entry lists access conditions (key requirements, pricing, formats, limitations) so you know before you build whether a source fits your project.
 
 🔭 **Live:** [michaels1011.github.io/openatlasmap](https://michaels1011.github.io/openatlasmap/)
 
 ## Features
 
-- **116 curated sources** across 20+ categories, each with verified access details
+- **Curated sources** across 20+ categories, each with verified access details — the catalog grows continuously
 - **Instant client-side search** — matches name, description, category, and terms, no server needed
 - **Filters** by type (API / dataset), category, no-key access, and fully free pricing
 - **Detail pages** for every resource with canonical URLs and structured data (schema.org `Dataset`)

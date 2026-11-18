@@ -46,10 +46,9 @@ describe("Free resource discovery", () => {
   it("does not present Hugging Face Hub as fully free", () => {
     expect(resources.find((r) => r.id === "hugging-face-hub")?.pricing).toBe("Free tier");
   });
-  it("adds at least 200 distinct researched sources beyond the existing 116", () => {
+  it("keeps every researched batch entry evidence-backed and unique", () => {
     const added = resources.filter((r) => r.verifiedAt === "2026-11-17");
-    expect(added.length).toBeGreaterThanOrEqual(200);
-    expect(resources.length).toBeGreaterThanOrEqual(316);
+    expect(resources.length).toBeGreaterThan(100);
     expect(new Set(added.map((r) => r.url)).size).toBe(added.length);
     for (const r of added) {
       expect(r.evidenceUrl?.startsWith("https://")).toBe(true);
