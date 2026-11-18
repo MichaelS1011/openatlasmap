@@ -18,7 +18,8 @@
       "pricing": "Free",
       "access": "No key",
       "format": "JSON",
-      "limitation": "Free for non-commercial use; usage limits apply."
+      "limitation": "Free for non-commercial use; usage limits apply.",
+      "licenseSpecified": true
     },
     {
       "id": "world-bank",
@@ -30,7 +31,8 @@
       "pricing": "Free",
       "access": "No key",
       "format": "CSV · JSON",
-      "limitation": "Check the license and attribution requirements of each dataset."
+      "limitation": "Check the license and attribution requirements of each dataset.",
+      "licenseSpecified": true
     },
     {
       "id": "nasa",
@@ -42,7 +44,8 @@
       "pricing": "Free",
       "access": "API key",
       "format": "JSON",
-      "limitation": "A free API key is recommended; endpoint rate limits apply."
+      "limitation": "A free API key is recommended; endpoint rate limits apply.",
+      "licenseSpecified": true
     },
     {
       "id": "rest-countries",
@@ -54,7 +57,8 @@
       "pricing": "Free",
       "access": "No key",
       "format": "JSON",
-      "limitation": "Community-operated service; no uptime guarantee."
+      "limitation": "Community-operated service; no uptime guarantee.",
+      "licenseSpecified": true
     },
     {
       "id": "open-library",
@@ -66,7 +70,8 @@
       "pricing": "Free",
       "access": "No key",
       "format": "JSON",
-      "limitation": "Use responsibly and follow the documented request limits."
+      "limitation": "Use responsibly and follow the documented request limits.",
+      "licenseSpecified": true
     },
     {
       "id": "data-gov",
@@ -78,7 +83,8 @@
       "pricing": "Free",
       "access": "No key",
       "format": "CSV · GeoJSON",
-      "limitation": "Formats, licenses, and access vary by publisher."
+      "limitation": "Formats, licenses, and access vary by publisher.",
+      "licenseSpecified": true
     },
     {
       "id": "gbif",
@@ -90,7 +96,8 @@
       "pricing": "Free",
       "access": "No key",
       "format": "JSON · CSV",
-      "limitation": "Bulk downloads require an account; individual dataset licenses vary."
+      "limitation": "Bulk downloads require an account; individual dataset licenses vary.",
+      "licenseSpecified": true
     },
     {
       "id": "open-food",
@@ -102,7 +109,8 @@
       "pricing": "Free",
       "access": "No key",
       "format": "JSON · CSV",
-      "limitation": "ODbL attribution and share-alike conditions apply."
+      "limitation": "ODbL attribution and share-alike conditions apply.",
+      "licenseSpecified": true
     },
     {
       "id": "nws",
@@ -114,7 +122,8 @@
       "pricing": "Free",
       "access": "No key",
       "format": "JSON-LD · GeoJSON",
-      "limitation": "Free for any purpose. Identify your application with a User-Agent and respect service rate limits."
+      "limitation": "Free for any purpose. Identify your application with a User-Agent and respect service rate limits.",
+      "licenseSpecified": true
     },
     {
       "id": "usgs",
@@ -126,7 +135,8 @@
       "pricing": "Free",
       "access": "No key",
       "format": "GeoJSON · CSV · XML",
-      "limitation": "Use cached GeoJSON feeds for repeated real-time queries and follow documented query-size limits."
+      "limitation": "Use cached GeoJSON feeds for repeated real-time queries and follow documented query-size limits.",
+      "licenseSpecified": true
     },
     {
       "id": "crossref",
@@ -138,7 +148,8 @@
       "pricing": "Free",
       "access": "No key",
       "format": "JSON",
-      "limitation": "No sign-up required. Respect rate limits and identify requests; some abstracts have separate copyright restrictions."
+      "limitation": "No sign-up required. Respect rate limits and identify requests; some abstracts have separate copyright restrictions.",
+      "licenseSpecified": true
     },
     {
       "id": "eurostat",
@@ -150,7 +161,8 @@
       "pricing": "Free",
       "access": "No key",
       "format": "JSON-stat · SDMX · TSV",
-      "limitation": "Free programmatic access. Cite Eurostat and check reuse notices; the database provides current versions rather than a full version history."
+      "limitation": "Free programmatic access. Cite Eurostat and check reuse notices; the database provides current versions rather than a full version history.",
+      "licenseSpecified": true
     },
     {
       "id": "wikidata",
@@ -162,7 +174,8 @@
       "pricing": "Free",
       "access": "No key",
       "format": "JSON · RDF · SPARQL",
-      "limitation": "Structured data is CC0. Public query services have execution and traffic limits; use bulk dumps for large workloads."
+      "limitation": "Structured data is CC0. Public query services have execution and traffic limits; use bulk dumps for large workloads.",
+      "licenseSpecified": true
     },
     {
       "id": "osm-planet",
@@ -174,7 +187,8 @@
       "pricing": "Free",
       "access": "No key",
       "format": "PBF · XML",
-      "limitation": "ODbL attribution and share-alike obligations apply. Full planet downloads are large; regional extracts may be more practical."
+      "limitation": "ODbL attribution and share-alike obligations apply. Full planet downloads are large; regional extracts may be more practical.",
+      "licenseSpecified": true
     },
     {
       "id": "musicbrainz-data",
@@ -186,7 +200,8 @@
       "pricing": "Free",
       "access": "No key",
       "format": "Database dumps",
-      "limitation": "Core data is CC0; supplementary data has separate licensing. Commercial services and live replication feeds have additional terms."
+      "limitation": "Core data is CC0; supplementary data has separate licensing. Commercial services and live replication feeds have additional terms.",
+      "licenseSpecified": true
     },
     {
       "id": "transitous",
@@ -198,7 +213,8 @@
       "pricing": "Free",
       "access": "No key",
       "format": "JSON",
-      "limitation": "For lightweight, non-commercial, open-source applications only. Identify your client, credit underlying sources, and follow the usage policy; no service guarantee."
+      "limitation": "For lightweight, non-commercial, open-source applications only. Identify your client, credit underlying sources, and follow the usage policy; no service guarantee.",
+      "licenseSpecified": true
     },
     {
       "id": "france-transit",
@@ -210,7 +226,8 @@
       "pricing": "Free",
       "access": "No key",
       "format": "GTFS · NeTEx · SIRI",
-      "limitation": "This collection is filtered for open-license feeds. Check each publisher's attribution, update frequency, and real-time access conditions."
+      "limitation": "This collection is filtered for open-license feeds. Check each publisher's attribution, update frequency, and real-time access conditions.",
+      "licenseSpecified": true
     },
     {
       "id": "frankfurter",
@@ -222,7 +239,8 @@
       "pricing": "Free",
       "access": "No key",
       "format": "JSON",
-      "limitation": "No API key required. These are reference rates, not live market quotes; check the underlying providers' attribution and reuse terms."
+      "limitation": "No API key required. These are reference rates, not live market quotes; check the underlying providers' attribution and reuse terms.",
+      "licenseSpecified": true
     },
     {
       "id": "openfda",
@@ -234,7 +252,8 @@
       "pricing": "Free",
       "access": "API key",
       "format": "JSON",
-      "limitation": "A free API key is required by the current authentication guidance; request quotas apply. These records are not a substitute for medical advice."
+      "limitation": "A free API key is required by the current authentication guidance; request quotas apply. These records are not a substitute for medical advice.",
+      "licenseSpecified": true
     },
     {
       "id": "osv",
@@ -246,7 +265,8 @@
       "pricing": "Free",
       "access": "No key",
       "format": "JSON",
-      "limitation": "Check the licenses of contributing vulnerability databases. Large responses have protocol-dependent size limits; keep requests targeted."
+      "limitation": "Check the licenses of contributing vulnerability databases. Large responses have protocol-dependent size limits; keep requests targeted.",
+      "licenseSpecified": true
     },
     {
       "id": "cisa-kev",
@@ -258,7 +278,8 @@
       "pricing": "Free",
       "access": "No key",
       "format": "CSV · JSON",
-      "limitation": "Check the catalog's license and update date. Inclusion is evidence of known exploitation, not a complete inventory of all vulnerabilities."
+      "limitation": "Check the catalog's license and update date. Inclusion is evidence of known exploitation, not a complete inventory of all vulnerabilities.",
+      "licenseSpecified": true
     },
     {
       "id": "uci",
@@ -270,7 +291,8 @@
       "pricing": "Free",
       "access": "No key",
       "format": "CSV · Tabular",
-      "limitation": "Dataset formats and licenses vary. Review each record's terms, citation requirements, and suitability before training a model."
+      "limitation": "Dataset formats and licenses vary. Review each record's terms, citation requirements, and suitability before training a model.",
+      "licenseSpecified": true
     },
     {
       "id": "common-crawl",
@@ -282,7 +304,8 @@
       "pricing": "Free",
       "access": "No key",
       "format": "WARC · WAT · WET",
-      "limitation": "Corpus access is free; processing and cloud compute can cost money. Crawled content retains its original rights and may contain personal data."
+      "limitation": "Corpus access is free; processing and cloud compute can cost money. Crawled content retains its original rights and may contain personal data.",
+      "licenseSpecified": true
     },
     {
       "id": "cern",
@@ -294,7 +317,8 @@
       "pricing": "Free",
       "access": "No key",
       "format": "ROOT · Experiment files",
-      "limitation": "Products carry record-specific open licenses and citation requirements. Large datasets may require specialist software and substantial storage."
+      "limitation": "Products carry record-specific open licenses and citation requirements. Large datasets may require specialist software and substantial storage.",
+      "licenseSpecified": true
     },
     {
       "id": "dwd",
@@ -306,7 +330,8 @@
       "pricing": "Free",
       "access": "No key",
       "format": "GRIB2 · CSV · ZIP",
-      "limitation": "Read the server's README and product-specific reuse and attribution notices. Formats and update schedules vary by directory."
+      "limitation": "Read the server's README and product-specific reuse and attribution notices. Formats and update schedules vary by directory.",
+      "licenseSpecified": true
     },
     {
       "id": "met-norway",
@@ -318,7 +343,8 @@
       "pricing": "Free",
       "access": "No key",
       "format": "JSON · XML",
-      "limitation": "CC BY 4.0 attribution required. Identify your application, obey cache headers, and keep total application traffic below 20 requests per second unless agreed otherwise."
+      "limitation": "CC BY 4.0 attribution required. Identify your application, obey cache headers, and keep total application traffic below 20 requests per second unless agreed otherwise.",
+      "licenseSpecified": true
     },
     {
       "id": "met-museum",
@@ -330,7 +356,8 @@
       "pricing": "Free",
       "access": "No key",
       "format": "JSON",
-      "limitation": "Check each object's public-domain and image rights status. Follow current API documentation and use the current paginated search endpoint."
+      "limitation": "Check each object's public-domain and image rights status. Follow current API documentation and use the current paginated search endpoint.",
+      "licenseSpecified": true
     },
     {
       "id": "openalex",
@@ -342,7 +369,8 @@
       "pricing": "Free tier",
       "access": "No key",
       "format": "JSON",
-      "limitation": "Public queries are free to start without a key. Higher-volume and additional features may require an account or paid access; verify current quotas."
+      "limitation": "Public queries are free to start without a key. Higher-volume and additional features may require an account or paid access; verify current quotas.",
+      "licenseSpecified": true
     },
     {
       "id": "eia",
@@ -354,7 +382,8 @@
       "pricing": "Free",
       "access": "API key",
       "format": "JSON · Bulk files",
-      "limitation": "Register for a free API key. Follow EIA's API terms, reuse policy, and endpoint-specific response and request limits."
+      "limitation": "Register for a free API key. Follow EIA's API terms, reuse policy, and endpoint-specific response and request limits.",
+      "licenseSpecified": true
     },
     {
       "id": "treasury",
@@ -366,7 +395,8 @@
       "pricing": "Free",
       "access": "No key",
       "format": "JSON · CSV · XML",
-      "limitation": "Data is offered free for commercial and non-commercial use. Use pagination and filters, and check each table's update frequency and definitions."
+      "limitation": "Data is offered free for commercial and non-commercial use. Use pagination and filters, and check each table's update frequency and definitions.",
+      "licenseSpecified": true
     },
     {
       "id": "fec",
@@ -378,7 +408,8 @@
       "pricing": "Free",
       "access": "API key",
       "format": "JSON",
-      "limitation": "A registered key allows 1,000 calls per hour and at most 100 results per page. Contributor lists may not be used to solicit donations or for commercial purposes."
+      "limitation": "A registered key allows 1,000 calls per hour and at most 100 results per page. Contributor lists may not be used to solicit donations or for commercial purposes.",
+      "licenseSpecified": true
     },
     {
       "id": "fooddata-central",
@@ -390,7 +421,8 @@
       "pricing": "Free",
       "access": "API key",
       "format": "JSON",
-      "limitation": "Free data.gov key required. Default limit: 1,000 requests per hour per IP; exceeding it can block the key for an hour. Data is CC0; source citation is requested."
+      "limitation": "Free data.gov key required. Default limit: 1,000 requests per hour per IP; exceeding it can block the key for an hour. Data is CC0; source citation is requested.",
+      "licenseSpecified": true
     },
     {
       "id": "college-scorecard",
@@ -402,7 +434,8 @@
       "pricing": "Free",
       "access": "No key",
       "format": "CSV · ZIP",
-      "limitation": "Public bulk downloads need no API key. Read the data dictionary, reporting-year coverage, and privacy-suppression notes before comparisons."
+      "limitation": "Public bulk downloads need no API key. Read the data dictionary, reporting-year coverage, and privacy-suppression notes before comparisons.",
+      "licenseSpecified": true
     },
     {
       "id": "noaa-tides",
@@ -414,7 +447,8 @@
       "pricing": "Free",
       "access": "No key",
       "format": "JSON · CSV · XML",
-      "limitation": "Data windows depend on interval: 1-minute observations allow 4 days per request, 6-minute observations 1 month, and hourly observations 1 year. Heavy query volumes may be throttled."
+      "limitation": "Data windows depend on interval: 1-minute observations allow 4 days per request, 6-minute observations 1 month, and hourly observations 1 year. Heavy query volumes may be throttled.",
+      "licenseSpecified": true
     },
     {
       "id": "nasa-power",
@@ -426,7 +460,8 @@
       "pricing": "Free",
       "access": "No key",
       "format": "JSON · CSV · NetCDF",
-      "limitation": "Free public datasets. Choose appropriate spatial and temporal endpoints, cite NASA POWER, and reduce request volume if the service returns HTTP 429."
+      "limitation": "Free public datasets. Choose appropriate spatial and temporal endpoints, cite NASA POWER, and reduce request volume if the service returns HTTP 429.",
+      "licenseSpecified": true
     },
     {
       "id": "owid",
@@ -438,7 +473,8 @@
       "pricing": "Free",
       "access": "No key",
       "format": "CSV · Metadata",
-      "limitation": "OWID-produced material generally uses CC BY with attribution. Most underlying data comes from third parties and remains subject to their separate licenses."
+      "limitation": "OWID-produced material generally uses CC BY with attribution. Most underlying data comes from third parties and remains subject to their separate licenses.",
+      "licenseSpecified": true
     },
     {
       "id": "uk-open-data",
@@ -450,7 +486,8 @@
       "pricing": "Free",
       "access": "No key",
       "format": "CSV · JSON · Geodata",
-      "limitation": "Licenses, file formats, and access conditions differ by publisher. Check each record rather than assuming the portal's Open Government Licence covers every linked dataset."
+      "limitation": "Licenses, file formats, and access conditions differ by publisher. Check each record rather than assuming the portal's Open Government Licence covers every linked dataset.",
+      "licenseSpecified": true
     },
     {
       "id": "govdata",
@@ -462,7 +499,8 @@
       "pricing": "Free",
       "access": "No key",
       "format": "CSV · JSON · Geodata",
-      "limitation": "The portal links to datasets hosted by individual publishers. Check the recorded license, attribution, download access, and freshness for each dataset."
+      "limitation": "The portal links to datasets hosted by individual publishers. Check the recorded license, attribution, download access, and freshness for each dataset.",
+      "licenseSpecified": true
     },
     {
       "id": "ror",
@@ -474,7 +512,8 @@
       "pricing": "Free",
       "access": "No key",
       "format": "JSON",
-      "limitation": "No registration required. Maximum 2,000 requests per 5-minute period per IP address; use downloads or a local instance for larger workloads."
+      "limitation": "No registration required. Maximum 2,000 requests per 5-minute period per IP address; use downloads or a local instance for larger workloads.",
+      "licenseSpecified": true
     },
     {
       "id": "datacite",
@@ -486,7 +525,8 @@
       "pricing": "Free",
       "access": "No key",
       "format": "JSON",
-      "limitation": "Public metadata retrieval needs no authentication. Creating or updating DOIs requires a member account; identify frequent scripted requests and respect pagination and service limits."
+      "limitation": "Public metadata retrieval needs no authentication. Creating or updating DOIs requires a member account; identify frequent scripted requests and respect pagination and service limits.",
+      "licenseSpecified": true
     },
     {
       "id": "tvmaze",
@@ -498,7 +538,8 @@
       "pricing": "Free",
       "access": "No key",
       "format": "JSON",
-      "limitation": "The public API uses CC BY-SA: credit TVmaze and follow share-alike terms. At least 20 calls per 10 seconds per IP are normally allowed, but stricter temporary limits can apply. Premium user APIs are separate."
+      "limitation": "The public API uses CC BY-SA: credit TVmaze and follow share-alike terms. At least 20 calls per 10 seconds per IP are normally allowed, but stricter temporary limits can apply. Premium user APIs are separate.",
+      "licenseSpecified": true
     },
     {
       "id": "chess-com",
@@ -510,7 +551,8 @@
       "pricing": "Free",
       "access": "No key",
       "format": "JSON-LD · PGN",
-      "limitation": "Read-only public records, not private account data. Make requests sequentially; parallel traffic can trigger HTTP 429. Respect Chess.com's terms, intellectual property, and caching guidance."
+      "limitation": "Read-only public records, not private account data. Make requests sequentially; parallel traffic can trigger HTTP 429. Respect Chess.com's terms, intellectual property, and caching guidance.",
+      "licenseSpecified": true
     },
     {
       "id": "smithsonian-3d",
@@ -522,7 +564,8 @@
       "pricing": "Free",
       "access": "API key",
       "format": "JSON · glTF · OBJ",
-      "limitation": "Free api.data.gov key required for the API. Only items marked CC0 are open access; check each record's usage status."
+      "limitation": "Free api.data.gov key required for the API. Only items marked CC0 are open access; check each record's usage status.",
+      "licenseSpecified": true
     },
     {
       "id": "poly-haven",
@@ -534,7 +577,8 @@
       "pricing": "Free",
       "access": "No key",
       "format": "JSON · glTF · blend · EXR",
-      "limitation": "Assets are CC0. Identify your app with a unique User-Agent; commercial products using the API should contact Poly Haven and consider supporting it."
+      "limitation": "Assets are CC0. Identify your app with a unique User-Agent; commercial products using the API should contact Poly Haven and consider supporting it.",
+      "licenseSpecified": true
     },
     {
       "id": "ambientcg",
@@ -546,7 +590,8 @@
       "pricing": "Free",
       "access": "No key",
       "format": "JSON · ZIP · PNG · EXR",
-      "limitation": "Assets are CC0 and usable commercially. Avoid excessive automated downloads and cache results where possible."
+      "limitation": "Assets are CC0 and usable commercially. Avoid excessive automated downloads and cache results where possible.",
+      "licenseSpecified": true
     },
     {
       "id": "nasa-3d",
@@ -558,7 +603,8 @@
       "pricing": "Free",
       "access": "No key",
       "format": "glTF · STL · OBJ",
-      "limitation": "Generally free to use under NASA media guidelines; NASA logos and implied endorsement are restricted."
+      "limitation": "Generally free to use under NASA media guidelines; NASA logos and implied endorsement are restricted.",
+      "licenseSpecified": true
     },
     {
       "id": "materials-project",
@@ -570,7 +616,8 @@
       "pricing": "Free",
       "access": "API key",
       "format": "JSON",
-      "limitation": "Free account and API key required. Data is CC BY 4.0; cite the Materials Project and respect request rate limits."
+      "limitation": "Free account and API key required. Data is CC BY 4.0; cite the Materials Project and respect request rate limits.",
+      "licenseSpecified": true
     },
     {
       "id": "pubchem",
@@ -582,7 +629,8 @@
       "pricing": "Free",
       "access": "No key",
       "format": "JSON · XML · CSV · SDF",
-      "limitation": "No more than 5 requests per second and 400 per minute; heavy users can be blocked temporarily. Use FTP downloads for bulk data."
+      "limitation": "No more than 5 requests per second and 400 per minute; heavy users can be blocked temporarily. Use FTP downloads for bulk data.",
+      "licenseSpecified": true
     },
     {
       "id": "census-api",
@@ -594,7 +642,8 @@
       "pricing": "Free",
       "access": "No key",
       "format": "JSON",
-      "limitation": "Up to 500 queries per day per IP without a key; a free key is needed for more. Results must not imply Census Bureau endorsement."
+      "limitation": "Up to 500 queries per day per IP without a key; a free key is needed for more. Results must not imply Census Bureau endorsement.",
+      "licenseSpecified": true
     },
     {
       "id": "fred",
@@ -606,7 +655,8 @@
       "pricing": "Free",
       "access": "API key",
       "format": "JSON · XML",
-      "limitation": "Free API key required. Some series are copyrighted by third parties; check series notes and FRED terms before redistribution."
+      "limitation": "Free API key required. Some series are copyrighted by third parties; check series notes and FRED terms before redistribution.",
+      "licenseSpecified": true
     },
     {
       "id": "arxiv",
@@ -618,7 +668,8 @@
       "pricing": "Free",
       "access": "No key",
       "format": "Atom XML",
-      "limitation": "Make no more than one request every three seconds. Metadata is CC0; full papers keep their individual licenses. Credit arXiv per its API terms."
+      "limitation": "Make no more than one request every three seconds. Metadata is CC0; full papers keep their individual licenses. Credit arXiv per its API terms.",
+      "licenseSpecified": true
     },
     {
       "id": "zenodo",
@@ -630,7 +681,8 @@
       "pricing": "Free",
       "access": "No key",
       "format": "JSON · Files",
-      "limitation": "Searching public records needs no token; uploads require an access token. Rate limits apply, and each record has its own license."
+      "limitation": "Searching public records needs no token; uploads require an access token. Rate limits apply, and each record has its own license.",
+      "licenseSpecified": true
     },
     {
       "id": "europe-pmc",
@@ -642,7 +694,8 @@
       "pricing": "Free",
       "access": "No key",
       "format": "JSON · XML",
-      "limitation": "Free without registration. Full-text reuse depends on each article's license; use bulk downloads for large text-mining jobs."
+      "limitation": "Free without registration. Full-text reuse depends on each article's license; use bulk downloads for large text-mining jobs.",
+      "licenseSpecified": true
     },
     {
       "id": "pubmed-eutils",
@@ -654,7 +707,8 @@
       "pricing": "Free",
       "access": "No key",
       "format": "XML · JSON",
-      "limitation": "Up to 3 requests per second without a key, 10 with a free key. Include tool and email parameters; run large jobs off-peak."
+      "limitation": "Up to 3 requests per second without a key, 10 with a free key. Include tool and email parameters; run large jobs off-peak.",
+      "licenseSpecified": true
     },
     {
       "id": "hugging-face-hub",
@@ -666,7 +720,8 @@
       "pricing": "Free tier",
       "access": "No key",
       "format": "JSON · Model files · Parquet",
-      "limitation": "Public repos can be read without a token, but rate limits are stricter. Gated models need an account. Every model and dataset has its own license."
+      "limitation": "Public repos can be read without a token, but rate limits are stricter. Gated models need an account. Every model and dataset has its own license.",
+      "licenseSpecified": true
     },
     {
       "id": "openml",
@@ -678,7 +733,8 @@
       "pricing": "Free",
       "access": "No key",
       "format": "JSON · XML · ARFF · Parquet",
-      "limitation": "Reading public data needs no key; uploads need a free account key. Check each dataset's license and citation."
+      "limitation": "Reading public data needs no key; uploads need a free account key. Check each dataset's license and citation.",
+      "licenseSpecified": true
     },
     {
       "id": "kaggle-datasets",
@@ -690,7 +746,8 @@
       "pricing": "Free",
       "access": "API key",
       "format": "CSV · JSON · Mixed",
-      "limitation": "A free Kaggle account and API token are needed to download. Licenses are set by each uploader and some datasets restrict commercial use."
+      "limitation": "A free Kaggle account and API token are needed to download. Licenses are set by each uploader and some datasets restrict commercial use.",
+      "licenseSpecified": true
     },
     {
       "id": "common-voice",
@@ -702,7 +759,8 @@
       "pricing": "Free",
       "access": "No key",
       "format": "MP3 · TSV",
-      "limitation": "Released under CC0. You confirm an email address and agree not to try to identify speakers. Downloads are very large."
+      "limitation": "Released under CC0. You confirm an email address and agree not to try to identify speakers. Downloads are very large.",
+      "licenseSpecified": true
     },
     {
       "id": "wikimedia-dumps",
@@ -714,7 +772,8 @@
       "pricing": "Free",
       "access": "No key",
       "format": "XML · SQL · JSON",
-      "limitation": "Text is mostly CC BY-SA, which means attribution and share-alike. Limit parallel downloads; mirrors are recommended for large jobs."
+      "limitation": "Text is mostly CC BY-SA, which means attribution and share-alike. Limit parallel downloads; mirrors are recommended for large jobs.",
+      "licenseSpecified": true
     },
     {
       "id": "stack-exchange",
@@ -726,7 +785,8 @@
       "pricing": "Free",
       "access": "No key",
       "format": "JSON",
-      "limitation": "300 requests per day per IP without a key, about 10,000 with a free app key. Content is CC BY-SA and requires attribution. Follow backoff signals."
+      "limitation": "300 requests per day per IP without a key, about 10,000 with a free app key. Content is CC BY-SA and requires attribution. Follow backoff signals.",
+      "licenseSpecified": true
     },
     {
       "id": "github-rest",
@@ -738,7 +798,8 @@
       "pricing": "Free",
       "access": "No key",
       "format": "JSON",
-      "limitation": "60 requests per hour without a token; a free token raises this to 5,000. Each repository keeps its own license."
+      "limitation": "60 requests per hour without a token; a free token raises this to 5,000. Each repository keeps its own license.",
+      "licenseSpecified": true
     },
     {
       "id": "pypi-json",
@@ -750,7 +811,8 @@
       "pricing": "Free",
       "access": "No key",
       "format": "JSON",
-      "limitation": "No key needed. Cache responses and avoid heavy polling; use the BigQuery dataset for bulk download statistics."
+      "limitation": "No key needed. Cache responses and avoid heavy polling; use the BigQuery dataset for bulk download statistics.",
+      "licenseSpecified": true
     },
     {
       "id": "npm-registry",
@@ -762,7 +824,8 @@
       "pricing": "Free",
       "access": "No key",
       "format": "JSON",
-      "limitation": "Public reads need no key. Excessive traffic can be rate limited; package licenses vary."
+      "limitation": "Public reads need no key. Excessive traffic can be rate limited; package licenses vary.",
+      "licenseSpecified": true
     },
     {
       "id": "deps-dev",
@@ -774,7 +837,8 @@
       "pricing": "Free",
       "access": "No key",
       "format": "JSON",
-      "limitation": "No key needed. Data is CC BY 4.0; the BigQuery dataset is free to access but query costs can apply."
+      "limitation": "No key needed. Data is CC BY 4.0; the BigQuery dataset is free to access but query costs can apply.",
+      "licenseSpecified": true
     },
     {
       "id": "libraries-io",
@@ -786,7 +850,8 @@
       "pricing": "Free",
       "access": "API key",
       "format": "JSON",
-      "limitation": "Free account API key required; 60 requests per minute. Data is CC BY-SA 4.0."
+      "limitation": "Free account API key required; 60 requests per minute. Data is CC BY-SA 4.0.",
+      "licenseSpecified": true
     },
     {
       "id": "software-heritage",
@@ -798,7 +863,8 @@
       "pricing": "Free",
       "access": "No key",
       "format": "JSON",
-      "limitation": "Anonymous access has low rate limits; a free account token raises them. Archived code keeps its original licenses."
+      "limitation": "Anonymous access has low rate limits; a free account token raises them. Archived code keeps its original licenses.",
+      "licenseSpecified": true
     },
     {
       "id": "internet-archive",
@@ -810,7 +876,8 @@
       "pricing": "Free",
       "access": "No key",
       "format": "JSON",
-      "limitation": "Free to read. Rights differ per item; uploads need an account. Keep request volume moderate."
+      "limitation": "Free to read. Rights differ per item; uploads need an account. Keep request volume moderate.",
+      "licenseSpecified": true
     },
     {
       "id": "wayback",
@@ -822,7 +889,8 @@
       "pricing": "Free",
       "access": "No key",
       "format": "JSON",
-      "limitation": "No key needed. Archived pages keep their original copyright; heavy crawling may be throttled."
+      "limitation": "No key needed. Archived pages keep their original copyright; heavy crawling may be throttled.",
+      "licenseSpecified": true
     },
     {
       "id": "europeana",
@@ -834,7 +902,8 @@
       "pricing": "Free",
       "access": "API key",
       "format": "JSON · JSON-LD",
-      "limitation": "Free API key required. Metadata is CC0; each media item carries its own rights statement."
+      "limitation": "Free API key required. Metadata is CC0; each media item carries its own rights statement.",
+      "licenseSpecified": true
     },
     {
       "id": "dpla",
@@ -846,7 +915,8 @@
       "pricing": "Free",
       "access": "API key",
       "format": "JSON-LD",
-      "limitation": "Free API key requested by email. Metadata is CC0; linked items keep their providers' rights."
+      "limitation": "Free API key requested by email. Metadata is CC0; linked items keep their providers' rights.",
+      "licenseSpecified": true
     },
     {
       "id": "loc",
@@ -858,7 +928,8 @@
       "pricing": "Free",
       "access": "No key",
       "format": "JSON · YAML",
-      "limitation": "No key needed. Rate limits apply and exceeding them can block access temporarily; check rights per item."
+      "limitation": "No key needed. Rate limits apply and exceeding them can block access temporarily; check rights per item.",
+      "licenseSpecified": true
     },
     {
       "id": "chronicling-america",
@@ -870,7 +941,8 @@
       "pricing": "Free",
       "access": "No key",
       "format": "JSON · XML · OCR text",
-      "limitation": "No key needed. Mostly public-domain pages; respect Library of Congress rate limits."
+      "limitation": "No key needed. Mostly public-domain pages; respect Library of Congress rate limits.",
+      "licenseSpecified": true
     },
     {
       "id": "artic",
@@ -882,7 +954,8 @@
       "pricing": "Free",
       "access": "No key",
       "format": "JSON · IIIF",
-      "limitation": "No key needed. Metadata is CC0; images marked public domain are CC0. Use the data dumps for bulk work."
+      "limitation": "No key needed. Metadata is CC0; images marked public domain are CC0. Use the data dumps for bulk work.",
+      "licenseSpecified": true
     },
     {
       "id": "rijksmuseum",
@@ -894,7 +967,8 @@
       "pricing": "Free",
       "access": "Unknown",
       "format": "JSON-LD · IIIF",
-      "limitation": "Open data with many public-domain images. Access methods changed recently; check current documentation for key requirements."
+      "limitation": "Open data with many public-domain images. Access methods changed recently; check current documentation for key requirements.",
+      "licenseSpecified": true
     },
     {
       "id": "harvard-art",
@@ -906,7 +980,8 @@
       "pricing": "Free",
       "access": "API key",
       "format": "JSON",
-      "limitation": "Free API key required; non-commercial use. Image rights vary per object."
+      "limitation": "Free API key required; non-commercial use. Image rights vary per object.",
+      "licenseSpecified": true
     },
     {
       "id": "gutenberg",
@@ -918,7 +993,8 @@
       "pricing": "Free",
       "access": "No key",
       "format": "RDF · CSV · Text",
-      "limitation": "Use the offline catalogs or mirrors instead of scraping the website. Public domain in the US; check laws in your country."
+      "limitation": "Use the offline catalogs or mirrors instead of scraping the website. Public domain in the US; check laws in your country.",
+      "licenseSpecified": true
     },
     {
       "id": "gutendex",
@@ -930,7 +1006,8 @@
       "pricing": "Free",
       "access": "No key",
       "format": "JSON",
-      "limitation": "Community-run service without guarantees; you can self-host it for heavy use."
+      "limitation": "Community-run service without guarantees; you can self-host it for heavy use.",
+      "licenseSpecified": true
     },
     {
       "id": "dbpedia",
@@ -942,7 +1019,8 @@
       "pricing": "Free",
       "access": "No key",
       "format": "SPARQL · RDF · JSON",
-      "limitation": "Free public endpoint with query time limits. Data is CC BY-SA; use downloads for large workloads."
+      "limitation": "Free public endpoint with query time limits. Data is CC BY-SA; use downloads for large workloads.",
+      "licenseSpecified": true
     },
     {
       "id": "wikimedia-api",
@@ -954,7 +1032,8 @@
       "pricing": "Free tier",
       "access": "No key",
       "format": "JSON",
-      "limitation": "Works anonymously with lower limits; a free token raises them. Content is mostly CC BY-SA."
+      "limitation": "Works anonymously with lower limits; a free token raises them. Content is mostly CC BY-SA.",
+      "licenseSpecified": true
     },
     {
       "id": "conceptnet",
@@ -966,7 +1045,8 @@
       "pricing": "Free",
       "access": "No key",
       "format": "JSON-LD · CSV",
-      "limitation": "CC BY-SA 4.0. The public API is not guaranteed to be online; downloads are more reliable."
+      "limitation": "CC BY-SA 4.0. The public API is not guaranteed to be online; downloads are more reliable.",
+      "licenseSpecified": true
     },
     {
       "id": "wordnet",
@@ -978,7 +1058,8 @@
       "pricing": "Free",
       "access": "No key",
       "format": "Database files",
-      "limitation": "Free under the WordNet license, including commercial use, with the copyright notice kept."
+      "limitation": "Free under the WordNet license, including commercial use, with the copyright notice kept.",
+      "licenseSpecified": true
     },
     {
       "id": "free-dictionary",
@@ -990,7 +1071,8 @@
       "pricing": "Free",
       "access": "No key",
       "format": "JSON",
-      "limitation": "No key needed. Community project without uptime guarantees; please cache results."
+      "limitation": "No key needed. Community project without uptime guarantees; please cache results.",
+      "licenseSpecified": true
     },
     {
       "id": "datamuse",
@@ -1002,7 +1084,8 @@
       "pricing": "Free",
       "access": "No key",
       "format": "JSON",
-      "limitation": "No key needed for up to 100,000 requests per day. Credit Datamuse if you use it in an app."
+      "limitation": "No key needed for up to 100,000 requests per day. Credit Datamuse if you use it in an app.",
+      "licenseSpecified": true
     },
     {
       "id": "nominatim",
@@ -1014,7 +1097,8 @@
       "pricing": "Free",
       "access": "No key",
       "format": "JSON · XML",
-      "limitation": "Public server: maximum 1 request per second, valid User-Agent, attribution required, no bulk geocoding."
+      "limitation": "Public server: maximum 1 request per second, valid User-Agent, attribution required, no bulk geocoding.",
+      "licenseSpecified": true
     },
     {
       "id": "overpass",
@@ -1026,7 +1110,8 @@
       "pricing": "Free",
       "access": "No key",
       "format": "JSON · XML",
-      "limitation": "Public instances have fair-use limits (about 10,000 queries per day). ODbL attribution applies."
+      "limitation": "Public instances have fair-use limits (about 10,000 queries per day). ODbL attribution applies.",
+      "licenseSpecified": true
     },
     {
       "id": "geonames",
@@ -1038,7 +1123,8 @@
       "pricing": "Free tier",
       "access": "API key",
       "format": "JSON · XML · TXT",
-      "limitation": "A free username is required; 10,000 credits per day and 1,000 per hour. Data is CC BY 4.0; paid plans exist."
+      "limitation": "A free username is required; 10,000 credits per day and 1,000 per hour. Data is CC BY 4.0; paid plans exist.",
+      "licenseSpecified": true
     },
     {
       "id": "natural-earth",
@@ -1050,7 +1136,8 @@
       "pricing": "Free",
       "access": "No key",
       "format": "Shapefile · GeoPackage",
-      "limitation": "Public domain; no permission or attribution needed."
+      "limitation": "Public domain; no permission or attribution needed.",
+      "licenseSpecified": true
     },
     {
       "id": "earthdata",
@@ -1062,7 +1149,8 @@
       "pricing": "Free",
       "access": "API key",
       "format": "NetCDF · HDF · GeoTIFF",
-      "limitation": "Free Earthdata Login account required for most downloads. NASA data is openly shared; cite datasets."
+      "limitation": "Free Earthdata Login account required for most downloads. NASA data is openly shared; cite datasets.",
+      "licenseSpecified": true
     },
     {
       "id": "copernicus",
@@ -1074,7 +1162,8 @@
       "pricing": "Free tier",
       "access": "API key",
       "format": "SAFE · GeoTIFF · JSON",
-      "limitation": "Free account needed. Data is free and open; processing quotas apply to free users."
+      "limitation": "Free account needed. Data is free and open; processing quotas apply to free users.",
+      "licenseSpecified": true
     },
     {
       "id": "usgs-water",
@@ -1086,7 +1175,8 @@
       "pricing": "Free",
       "access": "No key",
       "format": "JSON · XML · RDB",
-      "limitation": "No key needed. Public domain; keep queries targeted. Services are moving to new USGS water data APIs."
+      "limitation": "No key needed. Public domain; keep queries targeted. Services are moving to new USGS water data APIs.",
+      "licenseSpecified": true
     },
     {
       "id": "jpl-horizons",
@@ -1098,7 +1188,8 @@
       "pricing": "Free",
       "access": "No key",
       "format": "JSON · Text",
-      "limitation": "No key needed. Run one request at a time; heavy parallel use can be blocked."
+      "limitation": "No key needed. Run one request at a time; heavy parallel use can be blocked.",
+      "licenseSpecified": true
     },
     {
       "id": "launch-library",
@@ -1110,7 +1201,8 @@
       "pricing": "Free tier",
       "access": "No key",
       "format": "JSON",
-      "limitation": "15 requests per hour without a key; paid support raises limits."
+      "limitation": "15 requests per hour without a key; paid support raises limits.",
+      "licenseSpecified": true
     },
     {
       "id": "exoplanet-archive",
@@ -1122,7 +1214,8 @@
       "pricing": "Free",
       "access": "No key",
       "format": "CSV · JSON · VOTable",
-      "limitation": "No key needed. Cite the archive and the original discovery papers."
+      "limitation": "No key needed. Cite the archive and the original discovery papers.",
+      "licenseSpecified": true
     },
     {
       "id": "uniprot",
@@ -1134,7 +1227,8 @@
       "pricing": "Free",
       "access": "No key",
       "format": "JSON · FASTA · TSV",
-      "limitation": "No key needed. CC BY 4.0; use streaming or FTP for large downloads."
+      "limitation": "No key needed. CC BY 4.0; use streaming or FTP for large downloads.",
+      "licenseSpecified": true
     },
     {
       "id": "ensembl",
@@ -1146,7 +1240,8 @@
       "pricing": "Free",
       "access": "No key",
       "format": "JSON · XML · FASTA",
-      "limitation": "No key needed; about 15 requests per second. Follow rate-limit headers."
+      "limitation": "No key needed; about 15 requests per second. Follow rate-limit headers.",
+      "licenseSpecified": true
     },
     {
       "id": "rcsb-pdb",
@@ -1158,7 +1253,8 @@
       "pricing": "Free",
       "access": "No key",
       "format": "JSON · mmCIF · PDB",
-      "limitation": "No key needed. Structures are free to use under CC0; cite the PDB entries."
+      "limitation": "No key needed. Structures are free to use under CC0; cite the PDB entries.",
+      "licenseSpecified": true
     },
     {
       "id": "chembl",
@@ -1170,7 +1266,8 @@
       "pricing": "Free",
       "access": "No key",
       "format": "JSON · XML",
-      "limitation": "No key needed. CC BY-SA 3.0; use downloads for full-database work."
+      "limitation": "No key needed. CC BY-SA 3.0; use downloads for full-database work.",
+      "licenseSpecified": true
     },
     {
       "id": "clinicaltrials",
@@ -1182,7 +1279,8 @@
       "pricing": "Free",
       "access": "No key",
       "format": "JSON · CSV",
-      "limitation": "No key needed; about 50 requests per minute. Not medical advice."
+      "limitation": "No key needed; about 50 requests per minute. Not medical advice.",
+      "licenseSpecified": true
     },
     {
       "id": "who-gho",
@@ -1194,7 +1292,8 @@
       "pricing": "Free",
       "access": "No key",
       "format": "JSON (OData)",
-      "limitation": "No key needed. Follow WHO terms and cite the source; the API is moving to a new data platform."
+      "limitation": "No key needed. Follow WHO terms and cite the source; the API is moving to a new data platform.",
+      "licenseSpecified": true
     },
     {
       "id": "cdc-data",
@@ -1206,7 +1305,8 @@
       "pricing": "Free",
       "access": "No key",
       "format": "CSV · JSON · API",
-      "limitation": "Works without a key with shared limits; a free app token gives more. Read each dataset's notes."
+      "limitation": "Works without a key with shared limits; a free app token gives more. Read each dataset's notes.",
+      "licenseSpecified": true
     },
     {
       "id": "un-data",
@@ -1218,7 +1318,8 @@
       "pricing": "Free",
       "access": "No key",
       "format": "CSV · XML",
-      "limitation": "Free for non-commercial and commercial use with attribution. Check terms of the underlying agency."
+      "limitation": "Free for non-commercial and commercial use with attribution. Check terms of the underlying agency.",
+      "licenseSpecified": true
     },
     {
       "id": "ecb-data",
@@ -1230,7 +1331,8 @@
       "pricing": "Free",
       "access": "No key",
       "format": "SDMX · CSV · JSON",
-      "limitation": "No key needed. Reuse allowed with source citation."
+      "limitation": "No key needed. Reuse allowed with source citation.",
+      "licenseSpecified": true
     },
     {
       "id": "sec-edgar",
@@ -1242,7 +1344,8 @@
       "pricing": "Free",
       "access": "No key",
       "format": "JSON",
-      "limitation": "No key needed. Declare a User-Agent with contact info; maximum 10 requests per second."
+      "limitation": "No key needed. Declare a User-Agent with contact info; maximum 10 requests per second.",
+      "licenseSpecified": true
     },
     {
       "id": "coingecko",
@@ -1254,7 +1357,8 @@
       "pricing": "Free tier",
       "access": "API key",
       "format": "JSON",
-      "limitation": "Free demo key with monthly call limits and attribution; paid plans for more. Not financial advice."
+      "limitation": "Free demo key with monthly call limits and attribution; paid plans for more. Not financial advice.",
+      "licenseSpecified": true
     },
     {
       "id": "openchargemap",
@@ -1266,7 +1370,8 @@
       "pricing": "Free",
       "access": "API key",
       "format": "JSON · XML",
-      "limitation": "Free API key required. Data is mostly CC BY 4.0; check data provider licenses."
+      "limitation": "Free API key required. Data is mostly CC BY 4.0; check data provider licenses.",
+      "licenseSpecified": true
     },
     {
       "id": "openaq",
@@ -1278,7 +1383,8 @@
       "pricing": "Free",
       "access": "API key",
       "format": "JSON · CSV",
-      "limitation": "Free API key required; rate limits apply. Each data provider sets its own license."
+      "limitation": "Free API key required; rate limits apply. Each data provider sets its own license.",
+      "licenseSpecified": true
     },
     {
       "id": "eu-open-data",
@@ -1290,7 +1396,8 @@
       "pricing": "Free",
       "access": "No key",
       "format": "CSV · JSON · RDF",
-      "limitation": "Licenses and formats vary by publisher; check each dataset."
+      "limitation": "Licenses and formats vary by publisher; check each dataset.",
+      "licenseSpecified": true
     },
     {
       "id": "hdx",
@@ -1302,7 +1409,8 @@
       "pricing": "Free",
       "access": "No key",
       "format": "CSV · XLSX · Geodata",
-      "limitation": "Free to browse and download. Licenses vary, and some datasets need approval because they are sensitive."
+      "limitation": "Free to browse and download. Licenses vary, and some datasets need approval because they are sensitive.",
+      "licenseSpecified": true
     },
     {
       "id": "openaddresses",
@@ -1314,7 +1422,8 @@
       "pricing": "Free",
       "access": "No key",
       "format": "CSV · GeoJSON",
-      "limitation": "Free downloads; each source has its own license and attribution rules."
+      "limitation": "Free downloads; each source has its own license and attribution rules.",
+      "licenseSpecified": true
     },
     {
       "id": "open-trivia",
@@ -1326,7 +1435,8 @@
       "pricing": "Free",
       "access": "No key",
       "format": "JSON",
-      "limitation": "No key needed. CC BY-SA 4.0; one request every 5 seconds per IP."
+      "limitation": "No key needed. CC BY-SA 4.0; one request every 5 seconds per IP.",
+      "licenseSpecified": true
     },
     {
       "id": "pokeapi",
@@ -1338,7 +1448,8 @@
       "pricing": "Free",
       "access": "No key",
       "format": "JSON",
-      "limitation": "No key needed. Cache resources locally; Pokémon names and images are owned by their rights holders."
+      "limitation": "No key needed. Cache resources locally; Pokémon names and images are owned by their rights holders.",
+      "licenseSpecified": true
     },
     {
       "id": "thesportsdb",
@@ -1350,7 +1461,8 @@
       "pricing": "Free tier",
       "access": "API key",
       "format": "JSON",
-      "limitation": "A free test key with limited calls; live scores and more need a paid key."
+      "limitation": "A free test key with limited calls; live scores and more need a paid key.",
+      "licenseSpecified": true
     },
     {
       "id": "jikan",
@@ -1362,7 +1474,8 @@
       "pricing": "Free",
       "access": "No key",
       "format": "JSON",
-      "limitation": "No key needed. 3 requests per second and 60 per minute; respect MyAnimeList's terms."
+      "limitation": "No key needed. 3 requests per second and 60 per minute; respect MyAnimeList's terms.",
+      "licenseSpecified": true
     },
     {
       "id": "nager-date",
@@ -1374,7 +1487,8 @@
       "pricing": "Free",
       "access": "No key",
       "format": "JSON",
-      "limitation": "No key needed. Open source and community-maintained; self-hosting is possible."
+      "limitation": "No key needed. Open source and community-maintained; self-hosting is possible.",
+      "licenseSpecified": true
     },
     {
       "id": "openverse",
@@ -1386,7 +1500,8 @@
       "pricing": "Free tier",
       "access": "No key",
       "format": "JSON",
-      "limitation": "Anonymous use has low limits; register a free client for more. Check each media license."
+      "limitation": "Anonymous use has low limits; register a free client for more. Check each media license.",
+      "licenseSpecified": true
     },
     {
       "id": "wikimedia-commons",
@@ -1398,7 +1513,8 @@
       "pricing": "Free",
       "access": "No key",
       "format": "JSON",
-      "limitation": "No key needed. Each file has its own free license; give the required attribution."
+      "limitation": "No key needed. Each file has its own free license; give the required attribution.",
+      "licenseSpecified": true
     },
     {
       "id": "sensorcommunity",
@@ -1411,7 +1527,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "Open, community-run DIY sensor network; check the site for usage terms.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "nasa-firms",
@@ -1424,7 +1541,8 @@
       "access": "API key",
       "format": "JSON · CSV",
       "limitation": "NASA public-domain data; an account is required for some tools.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "copernicus-effis",
@@ -1437,7 +1555,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "Official EU service; free to use.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "gdacs",
@@ -1450,7 +1569,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "UN service; free to use.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "google-flood-hub",
@@ -1463,7 +1583,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "Google Research service; free to use.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "copernicus-ffws",
@@ -1476,7 +1597,8 @@
       "access": "API key",
       "format": "JSON · CSV",
       "limitation": "Copernicus service; free with registration.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "noaa-tsunami",
@@ -1489,7 +1611,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "U.S. government data in the public domain.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "copernicus-marine",
@@ -1502,7 +1625,8 @@
       "access": "API key",
       "format": "JSON · CSV",
       "limitation": "Free with registration.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "obis",
@@ -1515,7 +1639,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "Open data; check the site for terms.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "birdcast",
@@ -1528,7 +1653,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "Free, Cornell Lab project; API terms to be clarified.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "volcanodiscovery",
@@ -1541,7 +1667,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "Ad-supported site; free to use.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "cloudflare-radar",
@@ -1554,7 +1681,8 @@
       "access": "API key",
       "format": "JSON · CSV",
       "limitation": "Free; the API requires a login.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "ripestat-atlas",
@@ -1567,7 +1695,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "Free, operated by the non-profit RIPE NCC.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "ioda",
@@ -1580,7 +1709,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "Free, provided by Georgia Tech.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "ooni-explorer",
@@ -1593,7 +1723,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "Open-source project with openly published measurement data; quotas to be confirmed.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "netblocks",
@@ -1606,7 +1737,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "Freemium; basic access is free.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "nperf-maps",
@@ -1619,7 +1751,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "Freemium; basic access is free.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "light-pollution-map",
@@ -1632,7 +1765,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "The map is free; high-resolution data is paid.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "noise-planet",
@@ -1645,7 +1779,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "University project; free to use.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "spaceweatherlive",
@@ -1658,7 +1793,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "Free, ad-supported site.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "solarmonitor",
@@ -1671,7 +1807,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "Community project; attribution required.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "noaa-swpc",
@@ -1684,7 +1821,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "U.S. government data in the public domain.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "n2yo",
@@ -1697,7 +1835,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "Free; the API is intended for research use.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "worldmetrics",
@@ -1710,7 +1849,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "Free; a newer site, so quality should be verified.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "earth-nullschool",
@@ -1723,7 +1863,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "Free; underlying data from NOAA.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "opensky-network",
@@ -1736,7 +1877,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "Research-licensed data from community sensors.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "emsc",
@@ -1749,7 +1891,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "Non-profit service; free to use.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "blitzortung",
@@ -1762,7 +1905,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "Volunteer project based in Germany; open data.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "getty-open-content",
@@ -1775,7 +1919,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "CC0 for a selection of images.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "wellcome-collection-images",
@@ -1788,7 +1933,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "CC BY 4.0.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "british-library-on-flickr",
@@ -1801,7 +1947,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "Items are marked out-of-copyright / public domain.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "gallica-bnf",
@@ -1814,7 +1961,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "Mostly public domain.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "e-codices",
@@ -1827,7 +1975,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "Licensing varies by object.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "digitaltmuseum",
@@ -1840,7 +1989,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "Licensing varies by object.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "arkivism",
@@ -1853,7 +2003,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "Free to search.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "public-domain-search",
@@ -1866,7 +2017,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "Free.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "fine-art-free",
@@ -1879,7 +2031,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "Public domain.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "old-book-illustrations",
@@ -1892,7 +2045,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "Public domain.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "biodiversity-heritage-library",
@@ -1905,7 +2059,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "Public domain / Creative Commons.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "e-rarach",
@@ -1918,7 +2073,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "Mostly public domain.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "trove-nla",
@@ -1931,7 +2087,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "Mostly public domain.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "deutsches-zeitungsportal-ddb",
@@ -1944,7 +2101,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "Public domain.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "anno-onb",
@@ -1957,7 +2115,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "Public domain.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "media-history-digital-library",
@@ -1970,7 +2129,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "Public-domain scans.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "national-film-board-canada",
@@ -1983,7 +2143,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "Ad-supported; free to watch.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "adaccess-duke",
@@ -1996,7 +2157,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "Public domain.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "mutopia-project",
@@ -2009,7 +2171,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "Public domain / Creative Commons.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "cpdl",
@@ -2022,7 +2185,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "Mostly public domain.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "musopen",
@@ -2035,7 +2199,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "Creative Commons / public domain.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "sachsendigital-slub",
@@ -2048,7 +2213,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "Mostly public domain.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "familysearch",
@@ -2061,7 +2227,8 @@
       "access": "API key",
       "format": "JSON · CSV",
       "limitation": "Free, partly freemium; account/registration required.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "matricula-online",
@@ -2074,7 +2241,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "Licensing varies by collection.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "google-patents",
@@ -2087,7 +2255,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "Free.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "espacenet-epa",
@@ -2100,7 +2269,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "Free.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "gesetze-im-internet-bmj",
@@ -2113,7 +2283,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "Official text; free.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "eur-lex",
@@ -2126,7 +2297,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "Official source.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "us-code",
@@ -2139,7 +2311,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "Public domain.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "caselaw-access-project",
@@ -2152,7 +2325,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "CC0.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "cyberchef",
@@ -2165,7 +2339,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "Apache-2.0 (GCHQ).",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "devdocs",
@@ -2178,7 +2353,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "MPL-2.0.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "curlconverter",
@@ -2191,7 +2367,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "MIT.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "json-crack",
@@ -2204,7 +2381,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "Open source, freemium.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "python-tutor",
@@ -2217,7 +2395,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "Free.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "can-i-use",
@@ -2230,7 +2409,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "Free.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "ast-explorer",
@@ -2243,7 +2423,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "Open source.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "exec-apps-suite",
@@ -2256,7 +2437,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "Free.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "securityheaders",
@@ -2269,7 +2451,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "Free.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "qualys-ssl-labs",
@@ -2282,7 +2465,8 @@
       "access": "API key",
       "format": "JSON · CSV",
       "limitation": "Free (account required).",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "mail-tester",
@@ -2295,7 +2479,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "Works without registration.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "urlscanio",
@@ -2308,7 +2493,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "Freemium.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "virustotal",
@@ -2321,7 +2507,8 @@
       "access": "API key",
       "format": "JSON · CSV",
       "limitation": "Free (account required).",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "mxtoolbox",
@@ -2334,7 +2521,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "Freemium.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "dnschecker",
@@ -2347,7 +2535,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "Free.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "dnsdumpster",
@@ -2360,7 +2549,8 @@
       "access": "API key",
       "format": "JSON · CSV",
       "limitation": "Free (account required).",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "osint-framework",
@@ -2373,7 +2563,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "Open source.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "crtsh",
@@ -2386,7 +2577,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "Free; sometimes slow.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "exploit-db-ghdb",
@@ -2399,7 +2591,8 @@
       "access": "API key",
       "format": "JSON · CSV",
       "limitation": "Free (account required).",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "osvdev",
@@ -2412,7 +2605,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "Open source; actively maintained.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "privacy-guides",
@@ -2425,7 +2619,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "CC-BY-SA.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "switchingsoftware",
@@ -2438,7 +2633,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "Open source.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "exodus-privacy",
@@ -2451,7 +2647,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "AGPL.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "blacklight",
@@ -2464,7 +2661,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "Open source.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "portswigger-web-security-academy",
@@ -2477,7 +2675,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "Completely free.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "cylab-security-academy",
@@ -2490,7 +2689,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "Completely free.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "overthewire",
@@ -2503,7 +2703,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "Free.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "tryhackme",
@@ -2516,7 +2717,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "Freemium (generous free tier).",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "grc-password-haystacks",
@@ -2529,7 +2731,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "Runs locally in the browser.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "mit-opencourseware",
@@ -2542,7 +2745,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "CC BY-NC-SA.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "openstax",
@@ -2555,7 +2759,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "Creative Commons; downloads open.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "libretexts",
@@ -2568,7 +2773,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "OER / Creative Commons.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "wikiversity",
@@ -2581,7 +2787,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "CC BY-SA.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "openhpi",
@@ -2594,7 +2801,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "Free; certificates partly paid.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "full-stack-open",
@@ -2607,7 +2815,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "Creative Commons; completely free.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "exercism",
@@ -2620,7 +2829,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "Open source / freemium.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "3blue1brown",
@@ -2633,7 +2843,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "Videos free.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "betterexplained",
@@ -2646,7 +2857,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "Articles free.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "seeing-theory",
@@ -2659,7 +2871,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "Open source.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "phet-simulations",
@@ -2672,7 +2885,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "Free; partly open source.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "geogebra",
@@ -2685,7 +2899,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "Free to use and openly licensed.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "lichess",
@@ -2698,7 +2913,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "Open source under AGPL.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "tatoeba",
@@ -2711,7 +2927,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "CC BY 2.0 FR; open downloads.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "opus-corpora",
@@ -2724,7 +2941,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "Mostly free to use.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "lingua-libre",
@@ -2737,7 +2955,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "Creative Commons licensing via Wikimedia.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "language-transfer",
@@ -2750,7 +2969,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "Completely free.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "musictheorynet",
@@ -2763,7 +2983,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "Free to use.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "chrome-music-lab",
@@ -2776,7 +2997,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "Free to use.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "musescore",
@@ -2789,7 +3011,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "Scores under varying licenses; editor software GPL.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "ifixit",
@@ -2802,7 +3025,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "CC BY-NC.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "stanford-encyclopedia-of-philosophy",
@@ -2815,7 +3039,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "Creative Commons licensed.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "zooniverse",
@@ -2828,7 +3053,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "Run by a nonprofit; free to participate.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "onezoom-tree-of-life",
@@ -2841,7 +3067,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "Open source.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "standard-ebooks",
@@ -2854,7 +3081,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "Public domain with CC0 editions.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "librivox",
@@ -2867,7 +3095,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "Public domain / CC0.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "learn-git-branching",
@@ -2880,7 +3109,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "Open source under MIT.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "rustlings",
@@ -2893,7 +3123,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "MIT / Apache licensed.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "devhints",
@@ -2906,7 +3137,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "Open source.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "finanzfluss",
@@ -2919,7 +3151,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "Content free; courses freemium.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "mixkit",
@@ -2932,7 +3165,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "Free to use under the site's own license.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "coverr",
@@ -2945,7 +3179,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "Free license.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "pexels",
@@ -2958,7 +3193,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "CC0-like license.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "pixabay",
@@ -2971,7 +3207,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "Pixabay Content License.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "splitshire",
@@ -2984,7 +3221,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "Some items require attribution.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "stocksnap",
@@ -2997,7 +3235,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "CC0.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "public-domain-vectors",
@@ -3010,7 +3249,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "Public domain / CC0.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "openclipart",
@@ -3023,7 +3263,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "CC0.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "lots-of-sounds",
@@ -3036,7 +3277,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "CC0.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "free-to-use-sounds",
@@ -3049,7 +3291,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "CC0 / public domain.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "incompetech",
@@ -3062,7 +3305,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "CC BY; possible Content ID claims on YouTube.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "fontshare",
@@ -3075,7 +3319,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "Free to use under the site's own license.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "font-squirrel",
@@ -3088,7 +3333,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "Mostly SIL OFL.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "league-of-moveable-type",
@@ -3101,7 +3347,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "SIL Open Font License.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "poly-pizza",
@@ -3114,7 +3361,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "Mostly CC BY.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "kaylous-free",
@@ -3127,7 +3375,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "RoyaltyFree license; attribution requested.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "texturecan",
@@ -3140,7 +3389,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "Freemium.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "opentoonz",
@@ -3153,7 +3403,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "BSD licensed.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "memegenlink",
@@ -3166,7 +3417,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "MIT.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "davinci-resolve-free",
@@ -3179,7 +3431,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "Freemium.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "tenacity",
@@ -3192,7 +3445,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "GPL.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "quickchart",
@@ -3205,7 +3459,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "Free tier with usage limits.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "rjinaai",
@@ -3218,7 +3473,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "Free without a key; rate limited, higher limits with a key.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "endoflifedate",
@@ -3231,7 +3487,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "Keyless.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "hn-algolia",
@@ -3244,7 +3501,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "Free to use; check the site for current terms.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": false
     },
     {
       "id": "wikipedia-rest",
@@ -3257,7 +3515,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "Keyless; cache politely.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "semantic-scholar-graph-api",
@@ -3270,7 +3529,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "Keyless with rate limits; a free key raises them.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "doaj-api",
@@ -3283,7 +3543,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "Keyless; CC BY.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "opencitations",
@@ -3296,7 +3557,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "Keyless; CC0.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "orcid-public-api",
@@ -3309,7 +3571,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "Keyless read access (rate limited); a free key is available.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "openaire-graph-api",
@@ -3322,7 +3585,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "Keyless; registration needed for bulk mining.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "biorxivmedrxiv-api",
@@ -3335,7 +3599,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "Keyless.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "osf-preprints-api",
@@ -3348,7 +3613,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "Keyless for public data.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "hal",
@@ -3361,7 +3627,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "Keyless; full texts free.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "global-dataverse-network",
@@ -3374,7 +3641,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "Keyless search.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "dryad",
@@ -3387,7 +3655,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "Keyless; CC0.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "pangaea",
@@ -3400,7 +3669,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "Keyless; mostly CC BY.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "oecd-sdmx-rest",
@@ -3413,7 +3683,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "Keyless with an Accept header; attribution free.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "un-sdg-api",
@@ -3426,7 +3697,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "Keyless.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "dataworld",
@@ -3439,7 +3711,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "Public datasets viewable keyless.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "physorg-rss",
@@ -3452,7 +3725,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "Keyless; free.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "eurekalert-rss",
@@ -3465,7 +3739,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "Keyless.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "overpass-api",
@@ -3478,7 +3753,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "ODbL; keyless, some cloud IPs blocked, use the kumi.systems mirror.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "openfreemap",
@@ -3491,7 +3767,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "Fully free, including commercial use.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "geofabrik-downloads",
@@ -3504,7 +3781,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "ODbL; keyless.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "whos-on-first",
@@ -3517,7 +3795,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "CC BY / CC0.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "openrouteservice",
@@ -3530,7 +3809,8 @@
       "access": "API key",
       "format": "JSON · CSV",
       "limitation": "Free API key with daily quotas.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "graphhopper-directions-api",
@@ -3543,7 +3823,8 @@
       "access": "API key",
       "format": "JSON · CSV",
       "limitation": "Free plan with limits requires registration.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "osrm-demo-server",
@@ -3556,7 +3837,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "Keyless; for testing only.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "valhalla-fossgis",
@@ -3569,7 +3851,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "Keyless under fair use.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "noaa-nomads",
@@ -3582,7 +3865,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "Public domain; keyless.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "rainviewer-api",
@@ -3595,7 +3879,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "Keyless with attribution.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "opentopodata",
@@ -3608,7 +3893,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "MIT; keyless under fair use, 1 million points per request.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "usgs-earthexplorer",
@@ -3621,7 +3907,8 @@
       "access": "API key",
       "format": "JSON · CSV",
       "limitation": "Requires a free account; US public domain.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "libretranslate",
@@ -3634,7 +3921,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "AGPL; keyless instances with rate limits.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "lingva-translate",
@@ -3647,7 +3935,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "MIT; keyless.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "wiktionary-api",
@@ -3660,7 +3949,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "Keyless; CC BY-SA.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "timeapiio",
@@ -3673,7 +3963,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "Keyless.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "iana-zeitzonen-db",
@@ -3686,7 +3977,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "Public domain.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "jpl-horizons-2",
@@ -3699,7 +3991,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "Keyless; NASA open data.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "celestrak-gp",
@@ -3712,7 +4005,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "Keyless; free.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "in-the-sky-ephemeris",
@@ -3725,7 +4019,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "Keyless; free for non-commercial use.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "opencity-berlin",
@@ -3738,7 +4033,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "Keyless; check API availability before use.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "openmunchen",
@@ -3751,7 +4047,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "Keyless; mostly CC BY.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "serviceportal-bund",
@@ -3764,7 +4061,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "Keyless; government data free.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "worldpop",
@@ -3777,7 +4075,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "Keyless; CC BY.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "gdelt-doc-20",
@@ -3790,7 +4089,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "Keyless; free for non-commercial use.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "global-energy-monitor",
@@ -3803,7 +4103,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "Free for non-commercial use; commercial licenses are paid.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "fragdenstaat-api",
@@ -3816,7 +4117,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "Keyless read access; platform under AGPL.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "abgeordnetenwatch-api",
@@ -3829,7 +4131,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "Keyless; cite the source.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "lobbyregister-des-bundes",
@@ -3842,7 +4145,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "Keyless web search; no API.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "nina-biwapp",
@@ -3855,7 +4159,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "Web and app keyless; API only via the BIWAPP module.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "global-mobility-database",
@@ -3868,7 +4173,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "Keyless; ODbL data, Apache 2.0 code.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "wikisource",
@@ -3881,7 +4187,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "Keyless; original texts public domain, pages CC BY-SA.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "perseusscaife",
@@ -3894,7 +4201,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "Keyless; some translations CC BY-NC.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "sacred-texts-archive",
@@ -3907,7 +4215,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "Keyless; public domain.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "84000-early-buddhist-texts",
@@ -3920,7 +4229,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "Keyless; attribution required.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "oapen-library",
@@ -3933,7 +4243,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "Keyless; mostly CC BY.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "cleveland-museum-of-art",
@@ -3946,7 +4257,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "Keyless; CC0.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "louvre-collections",
@@ -3959,7 +4271,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "CC BY; the API is not yet public.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "cantus-database",
@@ -3972,7 +4285,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "Keyless browsing; free for research.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "ccmixter",
@@ -3985,7 +4299,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "Keyless; licensing varies per sample.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "blender-studio-open-works",
@@ -3998,7 +4313,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "Free to use; mixed Creative Commons licenses (BY/NC/0) apply per file.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "fontsource",
@@ -4011,7 +4327,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "No key required; licensed under the SIL Open Font License.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "iconify-api",
@@ -4024,7 +4341,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "No key required; MIT, Apache or CC0 licenses apply per set.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "openligadb",
@@ -4037,7 +4355,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "No key required; CC BY-SA applies.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "football-datacouk",
@@ -4050,7 +4369,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "No key required; attribution to the source requested.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "cricsheet",
@@ -4063,7 +4383,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "No key required; freely usable.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "lichess-database-tablebase",
@@ -4076,7 +4397,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "No key required; CC0.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "chess-results",
@@ -4089,7 +4411,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "Free to use in the browser; check the site for current terms.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": false
     },
     {
       "id": "serlo",
@@ -4102,7 +4425,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "No key required; CC BY-SA applies.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "zum-wiki",
@@ -4115,7 +4439,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "No key required; CC BY-SA applies.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "wiki-ed-dashboard",
@@ -4128,7 +4453,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "No key required; open source.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "open-textbook-library",
@@ -4141,7 +4467,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "No key required; individual books carry Creative Commons licenses.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "cia-foia-reading-room-crest",
@@ -4154,7 +4481,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "No key required; public domain.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "wilson-center-digital-archive",
@@ -4167,7 +4495,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "Free for research and citation.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "kosis-open-api",
@@ -4180,7 +4509,8 @@
       "access": "API key",
       "format": "JSON · CSV",
       "limitation": "Free API key after registration.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "e-stat",
@@ -4193,7 +4523,8 @@
       "access": "API key",
       "format": "JSON · CSV",
       "limitation": "Free API key after registration.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "ssb-statistics-api",
@@ -4206,7 +4537,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "No key required; mostly CC0 or Norwegian NSL license.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "uk-ons-api",
@@ -4219,7 +4551,8 @@
       "access": "API key",
       "format": "JSON · CSV",
       "limitation": "Keyless access is rate-limited; an official key is free.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "datagovau-ckan-api",
@@ -4232,7 +4565,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "No key required; most datasets are CC BY.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "pbcore",
@@ -4245,7 +4579,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "No key required; fully open standard.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "kenney-assets",
@@ -4258,7 +4593,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "No key required; CC0.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "quaternius",
@@ -4271,7 +4607,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "No key required; CC0.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "kay-lousberg",
@@ -4284,7 +4621,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "Pay-what-you-want on itch.io; CC0, check each entry.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "0x72d",
@@ -4297,7 +4635,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "Free on itch.io; CC0.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "ansimuz-games",
@@ -4310,7 +4649,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "Free on itch.io; CC BY 4.0.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "nasa-3d-resources",
@@ -4323,7 +4663,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "Direct download; US government public domain.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "nih-3d-print-exchange",
@@ -4336,7 +4677,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "Account recommended; public domain or CC BY mix per model.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "sketchfab-cc-archiv-2019",
@@ -4349,7 +4691,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "Slowly reachable, check before use; CC BY.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "blender-market-free",
@@ -4362,7 +4705,8 @@
       "access": "API key",
       "format": "JSON · CSV",
       "limitation": "Registration required; mostly royalty-free, CC0 on a case-by-case basis.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "opentopography",
@@ -4375,7 +4719,8 @@
       "access": "API key",
       "format": "JSON · CSV",
       "limitation": "Registration required; public domain or CC mix per dataset.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "unavcoearthscope-tls",
@@ -4388,7 +4733,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "Direct download; CC BY.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "berlin-lod1",
@@ -4401,7 +4747,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "Free WFS and download; data access licence roughly equivalent to CC BY.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "hamburg-lgv-3d",
@@ -4414,7 +4761,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "Free, partly with registration; Geofreigabe licence.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "3dbag-kadaster-nl",
@@ -4427,7 +4775,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "No key required; CC BY 4.0.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "viewfinder-panoramas-dem",
@@ -4440,7 +4789,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "Direct download; named licence, redistribution of raw tiles prohibited.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "openbuilds",
@@ -4453,7 +4803,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "Hub; CERN-OHL/GPL for designs, documentation CC BY-SA.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "reprap-wiki",
@@ -4466,7 +4817,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "Wiki; GPL/copyleft, keep modifications shared.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "openflexure",
@@ -4479,7 +4831,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "On GitHub; CERN-OHL/GPL.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "oshwa-zertifizierte-projekte",
@@ -4492,7 +4845,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "Licence varies per project; commercially usable by definition.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "pd-texture",
@@ -4505,7 +4859,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "Direct download; CC0/public domain.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "texturesdev",
@@ -4518,7 +4873,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "Direct download; CC0.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "hdrlabs",
@@ -4531,7 +4887,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "Newsletter opt-in; CC0 promotion.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "greg-zaal-100-free-hdris",
@@ -4544,7 +4901,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "Free on Gumroad; CC0.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "noirman-environments",
@@ -4557,7 +4915,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "Free on itch.io; CC BY 4.0.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "3d-textures-ansell",
@@ -4570,7 +4929,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "Direct download; CC BY 4.0.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "texturescom-free",
@@ -4583,7 +4943,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "Free account; embedding allowed, resale of raw files not.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "cgtextures",
@@ -4596,7 +4957,8 @@
       "access": "API key",
       "format": "JSON · CSV",
       "limitation": "Registration required; use is fine, redistribution of the texture files is not.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "bundesbank-statistics",
@@ -4609,7 +4971,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "No login required; close to public domain under the BGew licence.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "stooq",
@@ -4622,7 +4985,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "No login; database rights bar raw resale, bots are blocked but browser access is open.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "uspto-patentsview",
@@ -4635,7 +4999,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "No key required; public domain (US government).",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "openjur",
@@ -4648,7 +5013,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "No login; court decisions are public domain under Section 5 UrhG.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "courtlistener-recap",
@@ -4661,7 +5027,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "No key for basic use; public domain.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "bank-of-canada-valet-api",
@@ -4674,7 +5041,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "No key required; attribution requested.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "wipo-patentscope",
@@ -4687,7 +5055,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "No login; citation required, no bulk mirroring.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "dailymed",
@@ -4700,7 +5069,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "No login; public domain (FDA/NLM).",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "eea-datahub",
@@ -4713,7 +5083,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "No login; mostly CC BY.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "earthchem",
@@ -4726,7 +5097,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "No login; CC BY.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "http-archive",
@@ -4739,7 +5111,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "No payment required; CC0.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "invidious",
@@ -4752,7 +5125,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "No login; AGPL, but underlying content falls under YouTube's ToS.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "piped",
@@ -4765,7 +5139,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "No login; AGPL.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "breezewiki",
@@ -4778,7 +5153,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "No login; wiki content is CC BY-SA.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "kiwix",
@@ -4791,7 +5167,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "Free download; content under Creative Commons licenses.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "open-knowledge-maps",
@@ -4804,7 +5181,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "No login; CC BY.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "doab",
@@ -4817,7 +5195,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "No login; metadata CC BY, check individual titles.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "apnic-stats-labs",
@@ -4830,7 +5209,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "No login; CC BY.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "cdnjs",
@@ -4843,7 +5223,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "No key; MIT-licensed libraries.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "jsdelivr",
@@ -4856,7 +5237,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "No key; open-source assets under their project licenses.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "openjs-foundation",
@@ -4869,7 +5251,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "No login; library licenses vary, mostly MIT.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "faostat",
@@ -4882,7 +5265,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "No login; observe FAO publication terms.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "isric-soil-grids",
@@ -4895,7 +5279,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "No key; CC BY 4.0.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "catalogue-of-life",
@@ -4908,7 +5293,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "No key; CC BY.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "encyclopedia-of-life",
@@ -4921,7 +5307,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "Freely readable; CC BY, the API sometimes blocks bots.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "worms",
@@ -4934,7 +5321,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "No key; CC BY.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "plntnet-identify",
@@ -4947,7 +5335,8 @@
       "access": "API key",
       "format": "JSON · CSV",
       "limitation": "Free API key; data usable, images non-commercial.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "agmip",
@@ -4960,7 +5349,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "Free for research; citation required, licence per dataset.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "aquamaps",
@@ -4973,7 +5363,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "No login; CC BY, terms vary per species.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "world-flora-online",
@@ -4986,7 +5377,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "No login; CC BY 4.0, API available.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "tree-of-life-web-project",
@@ -4999,7 +5391,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "No login; mixed copyrights, please cite.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "trakt-api",
@@ -5012,7 +5405,8 @@
       "access": "API key",
       "format": "JSON · CSV",
       "limitation": "Free client ID; Trakt credit required.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "wikfilm",
@@ -5025,7 +5419,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "Open wiki; CC BY-SA.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "silent-era-nsdb",
@@ -5038,7 +5433,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "Free with attribution.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "igdb-api",
@@ -5051,7 +5447,8 @@
       "access": "API key",
       "format": "JSON · CSV",
       "limitation": "Twitch account required; Twitch ToS and credit apply.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "launchbox-games-database",
@@ -5064,7 +5461,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "Free; LaunchBox attribution requested.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "radio-browser-api",
@@ -5077,7 +5475,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "No key; CC0.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "podcast-index-api",
@@ -5090,7 +5489,8 @@
       "access": "API key",
       "format": "JSON · CSV",
       "limitation": "Free key and secret; attribution appreciated.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "itunes-searchlookup-api",
@@ -5103,7 +5503,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "No key; Apple's Human Interface (HUE) display rules apply.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "usgs-water-data-api",
@@ -5116,7 +5517,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "No key; public domain (US federal).",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "epa-water-quality-portal",
@@ -5129,7 +5531,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "No key; public domain, but as of 11/2026 the legacy API returns 406/400; the successor is USGS Water Data.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "uba-wasserdaten-de",
@@ -5142,7 +5545,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "No login; attribution requested.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "hydrosheds-wwf",
@@ -5155,7 +5559,8 @@
       "access": "API key",
       "format": "JSON · CSV",
       "limitation": "Free download with registration; CC BY (WWF/TNC).",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "gleon",
@@ -5168,7 +5573,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "Basic access free; citation conventions apply.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "aviso-altimetrie-cnes",
@@ -5181,7 +5587,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "Free account; CNES/CLS attribution requested.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "floodlist",
@@ -5194,7 +5601,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "No login; editorial content, cite the source.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": true
     },
     {
       "id": "carbonnowsh",
@@ -5207,7 +5615,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "Free to use; check the site for current terms.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": false
     },
     {
       "id": "pagespeedwebdev",
@@ -5220,7 +5629,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "Free to use; check the site for current terms.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": false
     },
     {
       "id": "eyesnasagov",
@@ -5233,7 +5643,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "Free to use; check the site for current terms.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": false
     },
     {
       "id": "apodnasagov",
@@ -5246,7 +5657,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "Free to use; check the site for current terms.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": false
     },
     {
       "id": "imagesnasagov",
@@ -5259,7 +5671,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "Free to use; check the site for current terms.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": false
     },
     {
       "id": "artsandculturegooglecom",
@@ -5272,7 +5685,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "Free to use; check the site for current terms.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": false
     },
     {
       "id": "datatuikgovtr",
@@ -5285,7 +5699,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "Free to use; check the site for current terms.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": false
     },
     {
       "id": "listenhatnotecom",
@@ -5298,7 +5713,8 @@
       "access": "No key",
       "format": "JSON · CSV",
       "limitation": "Free to use; check the site for current terms.",
-      "verifiedAt": "2026-11-12"
+      "verifiedAt": "2026-11-12",
+      "licenseSpecified": false
     }
   ]
 }

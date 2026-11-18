@@ -1,7 +1,7 @@
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { ArrowLeft, ArrowUpRight, Orbit } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { resources } from "@/lib/resources";
+import { licenseSpecified, resources } from "@/lib/resources";
 import { resourcePageUrl, resourceStructuredData } from "@/lib/seo";
 
 export const Route = createFileRoute("/resources/$id")({
@@ -45,6 +45,7 @@ function ResourcePage() {
         <div><dt>Pricing</dt><dd>{resource.pricing}</dd></div>
         <div><dt>Access</dt><dd>{resource.access}</dd></div>
         <div><dt>Formats</dt><dd>{resource.format}</dd></div>
+        <div><dt>License</dt><dd>{licenseSpecified(resource) ? "Stated by original source" : "Unspecified — check the original source"}</dd></div>
       </dl>
       <section className="source-conditions">
         <h2 className="text-xl font-medium mb-3">Access & usage conditions</h2>

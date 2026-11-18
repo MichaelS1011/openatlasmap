@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { filterResources, resources, resourceSchema, searchResources } from "@/lib/resources";
+import { filterResources, licenseSpecified, resources, resourceSchema, searchResources } from "@/lib/resources";
 import { curatedCategories } from "@/lib/resource-categories";
 
 describe("Free resource discovery", () => {
@@ -76,5 +76,14 @@ describe("searchResources", () => {
     expect(searchResources("")).toEqual([]);
     expect(searchResources("zzzzqqq")).toEqual([]);
     expect(searchResources("real time weather").length).toBeGreaterThan(0);
+  });
+});
+
+describe("licenseSpecified", () => {
+  it("flags only the generic placeholder limitations", () => {
+    const generic = resources.filter((r) => !licenseSpecified(r));
+    expect(generic.length).toBe(10);
+    for (const r of generic) expect(r.limitation.toLowerCase()).toContain("check the site for current terms");
+    expect(licenseSpecified(resources.find((r) => r.id === "open-meteo")!)).toBe(true);
   });
 });

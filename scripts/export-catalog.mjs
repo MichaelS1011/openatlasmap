@@ -7,7 +7,7 @@ import { dirname, join } from "node:path";
 import { fileURLToPath, pathToFileURL } from "node:url";
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
-const { resources } = await import(pathToFileURL(join(root, "src/lib/resources.ts")).href);
+const { resources, licenseSpecified } = await import(pathToFileURL(join(root, "src/lib/resources.ts")).href);
 
 const catalog = {
   name: "OpenAtlas catalog",
@@ -21,6 +21,7 @@ const catalog = {
   count: resources.length,
   resources: resources.map(({ id, name, url, description, category, type, pricing, access, format, limitation, verifiedAt }) => ({
     id, name, url, description, category, type, pricing, access, format, limitation, verifiedAt,
+    licenseSpecified: licenseSpecified({ limitation }),
   })),
 };
 
@@ -38,6 +39,7 @@ for (const r of catalog.resources) {
   lines.push(`- Category: ${r.category}`);
   lines.push(`- Type: ${r.type} | Pricing: ${r.pricing} | Access: ${r.access}`);
   lines.push(`- Limitation: ${r.limitation}`);
+  lines.push(`- License stated at source: ${r.licenseSpecified ? "yes" : "no — check the original source"}`);
   lines.push(`- Verified: ${r.verifiedAt}`);
   lines.push(`- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/${encodeURIComponent(r.id)}`);
   lines.push(`- Original source: ${r.url}`, "");

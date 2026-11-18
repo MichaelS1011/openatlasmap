@@ -441,6 +441,13 @@ export function filterResources(items: Resource[], filters: { type: string; cate
     && (!filters.fullyFree || r.pricing === "Free"));
 }
 
+// Some merged entries only carry the generic placeholder limitation. Treat
+// them as "license unspecified" so the UI can flag them transparently.
+const GENERIC_LIMITATION = "check the site for current terms";
+export function licenseSpecified(resource: Pick<Resource, "limitation">): boolean {
+  return !resource.limitation.toLowerCase().includes(GENERIC_LIMITATION);
+}
+
 // Relevance scoring for catalog search: name hits outrank description hits,
 // which outrank metadata hits. Every word must match somewhere (AND search).
 export function searchResources(term: string): Resource[] {
