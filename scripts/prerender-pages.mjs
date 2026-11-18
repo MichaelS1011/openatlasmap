@@ -15,6 +15,7 @@ const { resources } = await import(pathToFileURL(join(root, "src/lib/resources.t
 // Resource detail pages (mirrors resourcePageUrl / resources.$id route).
 const routes = [
   ["/", "index.html"],
+  ["/about", "about/index.html"],
   ["/sitemap.xml", "sitemap.xml"],
   ...resources.map((r) => [`/resources/${encodeURIComponent(r.id)}`, `resources/${r.id}/index.html`]),
 ];

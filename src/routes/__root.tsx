@@ -11,7 +11,10 @@ import {
 import { useEffect, type ReactNode } from "react";
 
 import appCss from "../styles.css?url";
+import "@fontsource-variable/manrope";
+import "@fontsource-variable/space-grotesk";
 import { reportLovableError } from "../lib/lovable-error-reporting";
+import { siteUrl, socialCardUrl } from "../lib/seo";
 
 function NotFoundComponent() {
   return (
@@ -62,7 +65,7 @@ function ErrorComponent({ error, reset }: ErrorComponentProps) {
             Try again
           </button>
           <a
-            href="/"
+            href={`${siteUrl}/`}
             className="inline-flex items-center justify-center rounded-md border border-input bg-background px-4 py-2 text-sm font-medium text-foreground transition-colors hover:bg-accent"
           >
             Go home
@@ -84,18 +87,25 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       { title: "OpenAtlas — Free APIs & Open Data" },
       { name: "description", content: "Discover free APIs and open datasets from original sources." },
+      { name: "author", content: "Michael Soppa" },
       { property: "og:title", content: "OpenAtlas — Free APIs & Open Data" },
       { property: "og:description", content: "Discover free APIs and open datasets from original sources." },
       { property: "og:type", content: "website" },
+      { property: "og:site_name", content: "OpenAtlas" },
+      { property: "og:locale", content: "en_US" },
+      { property: "og:image", content: socialCardUrl },
+      { property: "og:image:width", content: "1200" },
+      { property: "og:image:height", content: "630" },
+      { property: "og:image:alt", content: "openatlas. — Discover free APIs & open data" },
       { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:image", content: socialCardUrl },
     ],
     links: [
       {
         rel: "stylesheet",
         href: appCss,
       },
-      { rel: "icon", href: "/favicon.ico", type: "image/x-icon" },
-      { rel: "stylesheet", href: "https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" },
+      { rel: "icon", href: `${siteUrl}/favicon.ico`, type: "image/x-icon" },
     ],
   }),
   shellComponent: RootShell,

@@ -89,7 +89,6 @@ function Index() {
   }, [saved]);
   const [collection, setCollection] = useState(false);
   const [selected, setSelected] = useState<Resource | null>(null);
-  const [about, setAbout] = useState(false);
   const [searchedAt, setSearchedAt] = useState("");
   const inputRef = useRef<HTMLInputElement>(null);
   const base = collection ? saved : searchTerm.trim().length >= 2 ? searchResources(searchTerm) : resources;
@@ -110,11 +109,11 @@ function Index() {
 
   return <TooltipProvider delayDuration={300}>
     <header className="site-header shell">
-      <a className="brand" href="/" aria-label="OpenAtlas home"><span className="brand-symbol"><Orbit size={22} strokeWidth={1.7} /></span>openatlas<span className="text-primary">.</span></a>
+      <a className="brand" href={`${siteUrl}/`} aria-label="OpenAtlas home"><span className="brand-symbol"><Orbit size={22} strokeWidth={1.7} /></span>openatlas<span className="text-primary">.</span></a>
       <nav className="main-nav" aria-label="Main navigation">
         <Button variant="ghost" onClick={showExplore} className={`nav-item ${!collection ? "active" : ""}`}>Explore</Button>
         <Button variant="ghost" onClick={() => { setCollection(true); resetFilters(); }} className={`nav-item ${collection ? "active" : ""}`}><Bookmark size={14} /><span className="collection-label">My collection</span>{saved.length > 0 && <span>{saved.length}</span>}</Button>
-        <Button variant="ghost" className="nav-item" onClick={() => setAbout(true)}>About <ArrowUpRight size={13} /></Button>
+        <Button asChild variant="ghost" className="nav-item"><Link to="/about">About</Link></Button>
       </nav>
       <span className="header-note"><span className="status-dot" />Open data. Endless possibilities.</span>
     </header>
@@ -157,9 +156,8 @@ function Index() {
         </section>
       </div>
     </main>
-    <footer className="site-footer shell"><span className="brand"><Orbit size={19} />openatlas.</span><span>A little curiosity. A world of possibilities.</span><span className="flex items-center gap-3"><Button variant="link" className="h-auto p-0 text-xs font-normal" onClick={() => setAbout(true)}>About</Button><a className="text-xs text-muted-foreground hover:text-foreground" href="https://github.com/MichaelS1011/openatlasmap" target="_blank" rel="noopener noreferrer">GitHub</a><a className="text-xs text-muted-foreground hover:text-foreground" href="https://github.com/MichaelS1011/openatlasmap/issues/new?title=Suggest%20a%20free%20API%20or%20dataset" target="_blank" rel="noopener noreferrer">Suggest a source</a></span></footer>
+    <footer className="site-footer shell"><span className="brand"><Orbit size={19} />openatlas.</span><span>A little curiosity. A world of possibilities.</span><span className="flex items-center gap-3"><Button asChild variant="link" className="h-auto p-0 text-xs font-normal"><Link to="/about">About</Link></Button><a className="text-xs text-muted-foreground hover:text-foreground" href="https://github.com/MichaelS1011/openatlasmap" target="_blank" rel="noopener noreferrer">GitHub</a><a className="text-xs text-muted-foreground hover:text-foreground" href="https://github.com/MichaelS1011/openatlasmap/issues/new?title=Suggest%20a%20free%20API%20or%20dataset" target="_blank" rel="noopener noreferrer">Suggest a source</a></span></footer>
 
     <Dialog open={selected !== null} onOpenChange={(open) => { if (!open) setSelected(null); }}><DialogContent className="sm:max-w-lg"><DialogHeader><DialogTitle className="font-display text-2xl">{selected?.name}</DialogTitle><DialogDescription>{selected?.description}</DialogDescription></DialogHeader>{selected && <div className="space-y-5"><div className="flex flex-wrap gap-2"><Tip label={badgeTips[selected.type] ?? selected.type}><span className="type-badge">{selected.type}</span></Tip><Tip label={badgeTips[selected.pricing] ?? selected.pricing}><span className="type-badge">{selected.pricing}</span></Tip><Tip label={badgeTips[selected.access] ?? selected.access}><span className="type-badge">{selected.access}</span></Tip><span className="type-badge">{selected.format}</span></div><div className="border-t pt-4"><h3 className="font-semibold text-sm mb-2">Access & usage conditions</h3><p className="text-sm text-muted-foreground leading-relaxed">{selected.limitation}</p></div><p className="text-xs text-muted-foreground break-all">{selected.url}</p><div className="flex gap-3"><Button asChild><a href={selected.url} target="_blank" rel="noopener noreferrer">Open original source <ArrowUpRight size={15} /></a></Button><Button variant="outline" onClick={() => toggleSave(selected)}><Bookmark size={14} />{saved.some((r) => r.url === selected.url) ? "Saved" : "Save"}</Button></div></div>}</DialogContent></Dialog>
-    <Dialog open={about} onOpenChange={setAbout}><DialogContent><DialogHeader><DialogTitle className="font-display text-2xl">For the next generation of builders.</DialogTitle><DialogDescription>Created by Michael Soppa to help the next generation turn curiosity into something real.</DialogDescription></DialogHeader><div className="text-sm text-muted-foreground leading-relaxed space-y-4"><p>I'm Michael Soppa, and I built OpenAtlas because I want to support the next generation. Access to knowledge and data can be the starting point for learning, experimenting, and bringing new ideas to life.</p><p>My hope is to make that first step easier: to help curious people discover free APIs and open datasets, explore what's possible, and build something of their own.</p><p>You don't need a big budget to have a big idea. Sometimes, you just need a place to start.</p><div className="border-t pt-4"><p className="font-medium text-foreground">Michael Soppa</p><p className="text-xs mt-1">Creator of OpenAtlas</p><Button asChild variant="link" className="px-0 mt-1"><a href="https://www.linkedin.com/in/michael-soppa/" target="_blank" rel="noopener noreferrer">Connect with me on LinkedIn <ArrowUpRight size={14} /></a></Button></div><p className="text-xs">Resource availability can change. Please check the original source for licenses, pricing, and usage limits.</p></div></DialogContent></Dialog>
   </TooltipProvider>;
 }

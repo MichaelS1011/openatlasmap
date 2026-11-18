@@ -40,15 +40,16 @@ function isSafeSitemapPath(pathname: string): boolean {
   catch { return false; }
 }
 export function sitemapXML(baseURL: string, entries: SitemapEntry[]): string {
-  const origin = new URL(baseURL);
-  if (!/^https?:$/.test(origin.protocol) || origin.username || origin.password || origin.pathname !== "/" || origin.search || origin.hash) throw new Error("The sitemap base URL must be the public site origin");
+  // baseURL may include a path prefix (GitHub Pages project sites), e.g. https://user.github.io/repo
+  const origin = new URL(baseURL.endsWith("/") ? baseURL : `${baseURL}/`);
+  if (!/^https?:$/.test(origin.protocol) || origin.username || origin.password || origin.search || origin.hash) throw new Error("The sitemap base URL must be the public site origin");
   const entities: Record<string, string> = { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&apos;" };
   const escape = (value: string) => value.replace(/[&<>"']/g, (character) => entities[character] ?? character);
   const seen = new Set<string>();
   const urls: string[] = [];
   for (const entry of entries) {
     if (!isSafeSitemapPath(entry.path)) throw new Error("Invalid sitemap path");
-    const url = new URL(entry.path, origin);
+    const url = new URL(entry.path.replace(/^\//, ""), origin);
     if (seen.has(url.href)) continue;
     seen.add(url.href);
     urls.push(`<url><loc>${escape(url.href)}</loc>${entry.lastmod ? `<lastmod>${escape(entry.lastmod)}</lastmod>` : ""}</url>`);

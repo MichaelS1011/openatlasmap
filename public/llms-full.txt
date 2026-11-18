@@ -1,0 +1,4580 @@
+# OpenAtlas — full catalog
+
+Curated directory of 416 free APIs and open datasets (MIT license).
+Fields per entry: category, type, pricing, access, limitation, verified date, canonical page, original source.
+
+## Open-Meteo
+
+Global weather forecasts, historical climate data, and air quality. Built for your next weather-powered project.
+
+- Category: Weather & Climate
+- Type: API | Pricing: Free | Access: No key
+- Limitation: Free for non-commercial use; usage limits apply.
+- Verified: undefined
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/open-meteo
+- Original source: https://open-meteo.com/
+
+## World Bank Open Data
+
+Economic, development, and population indicators from countries around the world.
+
+- Category: Finance & Economics
+- Type: Dataset | Pricing: Free | Access: No key
+- Limitation: Check the license and attribution requirements of each dataset.
+- Verified: undefined
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/world-bank
+- Original source: https://data.worldbank.org/
+
+## NASA Open APIs
+
+Explore space with astronomy images, Earth observation, and data from NASA missions.
+
+- Category: Science & Space
+- Type: API | Pricing: Free | Access: API key
+- Limitation: A free API key is recommended; endpoint rate limits apply.
+- Verified: undefined
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/nasa
+- Original source: https://api.nasa.gov/
+
+## REST Countries
+
+Country names, capitals, currencies, languages, and flags in one straightforward API.
+
+- Category: Geography
+- Type: API | Pricing: Free | Access: No key
+- Limitation: Community-operated service; no uptime guarantee.
+- Verified: undefined
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/rest-countries
+- Original source: https://restcountries.com/
+
+## Open Library
+
+Millions of books, authors, editions, and cover images from the Internet Archive's open catalog.
+
+- Category: Arts & Culture
+- Type: API | Pricing: Free | Access: No key
+- Limitation: Use responsibly and follow the documented request limits.
+- Verified: undefined
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/open-library
+- Original source: https://openlibrary.org/developers/api
+
+## Data.gov
+
+Public US government datasets covering agriculture, cities, health, energy, and much more.
+
+- Category: Government
+- Type: Dataset | Pricing: Free | Access: No key
+- Limitation: Formats, licenses, and access vary by publisher.
+- Verified: undefined
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/data-gov
+- Original source: https://data.gov/
+
+## GBIF Biodiversity Data
+
+Open species observations and biodiversity records contributed by institutions worldwide.
+
+- Category: Nature & Environment
+- Type: API | Pricing: Free | Access: No key
+- Limitation: Bulk downloads require an account; individual dataset licenses vary.
+- Verified: undefined
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/gbif
+- Original source: https://www.gbif.org/developer/summary
+
+## Open Food Facts
+
+A collaborative database of food products, ingredients, nutrition, and packaging information.
+
+- Category: Food & Health
+- Type: Dataset | Pricing: Free | Access: No key
+- Limitation: ODbL attribution and share-alike conditions apply.
+- Verified: undefined
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/open-food
+- Original source: https://world.openfoodfacts.org/data
+
+## National Weather Service
+
+Official US weather forecasts, active alerts, station observations, and gridded forecast data.
+
+- Category: Weather & Climate
+- Type: API | Pricing: Free | Access: No key
+- Limitation: Free for any purpose. Identify your application with a User-Agent and respect service rate limits.
+- Verified: undefined
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/nws
+- Original source: https://www.weather.gov/documentation/services-web-API
+
+## USGS Earthquake Catalog
+
+Search global earthquake events by location, time, magnitude, and depth, or use recent-event feeds.
+
+- Category: Nature & Environment
+- Type: API | Pricing: Free | Access: No key
+- Limitation: Use cached GeoJSON feeds for repeated real-time queries and follow documented query-size limits.
+- Verified: undefined
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/usgs
+- Original source: https://earthquake.usgs.gov/fdsnws/event/1/index
+
+## Crossref Scholarly Metadata
+
+Find research publications, DOI records, funding information, licenses, and scholarly references.
+
+- Category: Science & Space
+- Type: API | Pricing: Free | Access: No key
+- Limitation: No sign-up required. Respect rate limits and identify requests; some abstracts have separate copyright restrictions.
+- Verified: undefined
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/crossref
+- Original source: https://www.crossref.org/documentation/retrieve-metadata/rest-api/
+
+## Eurostat Statistics API
+
+European population, employment, trade, energy, and economic indicators with programmatic downloads.
+
+- Category: Finance & Economics
+- Type: API | Pricing: Free | Access: No key
+- Limitation: Free programmatic access. Cite Eurostat and check reuse notices; the database provides current versions rather than a full version history.
+- Verified: undefined
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/eurostat
+- Original source: https://ec.europa.eu/eurostat/web/user-guides/data-browser/api-data-access/api-introduction
+
+## Wikidata Knowledge Graph
+
+Structured facts connecting people, places, organizations, works, and scientific concepts.
+
+- Category: Technology
+- Type: API | Pricing: Free | Access: No key
+- Limitation: Structured data is CC0. Public query services have execution and traffic limits; use bulk dumps for large workloads.
+- Verified: undefined
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/wikidata
+- Original source: https://www.wikidata.org/wiki/Help:Data_access
+
+## OpenStreetMap Planet Data
+
+Download the global community map of roads, buildings, places, paths, and geographic features.
+
+- Category: Geography
+- Type: Dataset | Pricing: Free | Access: No key
+- Limitation: ODbL attribution and share-alike obligations apply. Full planet downloads are large; regional extracts may be more practical.
+- Verified: undefined
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/osm-planet
+- Original source: https://planet.openstreetmap.org/
+
+## MusicBrainz Database
+
+Open music metadata for artists, albums, recordings, labels, genres, and their relationships.
+
+- Category: Arts & Culture
+- Type: Dataset | Pricing: Free | Access: No key
+- Limitation: Core data is CC0; supplementary data has separate licensing. Commercial services and live replication feeds have additional terms.
+- Verified: undefined
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/musicbrainz-data
+- Original source: https://musicbrainz.org/doc/MusicBrainz_Database
+
+## Transitous Journey Planning
+
+Community-operated public transport routing across multiple regions using open timetable feeds.
+
+- Category: Transport & Mobility
+- Type: API | Pricing: Free | Access: No key
+- Limitation: For lightweight, non-commercial, open-source applications only. Identify your client, credit underlying sources, and follow the usage policy; no service guarantee.
+- Verified: undefined
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/transitous
+- Original source: https://transitous.org/api/
+
+## France Public Transit Data
+
+Open French transport feeds with stops, routes, scheduled departures, and selected real-time updates.
+
+- Category: Transport & Mobility
+- Type: Dataset | Pricing: Free | Access: No key
+- Limitation: This collection is filtered for open-license feeds. Check each publisher's attribution, update frequency, and real-time access conditions.
+- Verified: undefined
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/france-transit
+- Original source: https://transport.data.gouv.fr/datasets?licence=licence-ouverte&locale=en&type=public-transit
+
+## Frankfurter Exchange Rates
+
+Currency reference rates and historical exchange data from central banks and official financial sources.
+
+- Category: Finance & Economics
+- Type: API | Pricing: Free | Access: No key
+- Limitation: No API key required. These are reference rates, not live market quotes; check the underlying providers' attribution and reuse terms.
+- Verified: undefined
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/frankfurter
+- Original source: https://frankfurter.dev/
+
+## openFDA
+
+Search drug adverse events, product recalls, labeling, and other public FDA health records.
+
+- Category: Food & Health
+- Type: API | Pricing: Free | Access: API key
+- Limitation: A free API key is required by the current authentication guidance; request quotas apply. These records are not a substitute for medical advice.
+- Verified: undefined
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/openfda
+- Original source: https://open.fda.gov/apis/authentication/
+
+## OSV Vulnerability API
+
+Look up known open-source vulnerabilities by package, version, commit, or vulnerability identifier.
+
+- Category: Technology
+- Type: API | Pricing: Free | Access: No key
+- Limitation: Check the licenses of contributing vulnerability databases. Large responses have protocol-dependent size limits; keep requests targeted.
+- Verified: undefined
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/osv
+- Original source: https://google.github.io/osv.dev/api/
+
+## CISA Exploited Vulnerabilities
+
+Download a public catalog of security vulnerabilities known to have been exploited in the wild.
+
+- Category: Technology
+- Type: Dataset | Pricing: Free | Access: No key
+- Limitation: Check the catalog's license and update date. Inclusion is evidence of known exploitation, not a complete inventory of all vulnerabilities.
+- Verified: undefined
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/cisa-kev
+- Original source: https://www.cisa.gov/known-exploited-vulnerabilities-catalog
+
+## UCI Machine Learning Repository
+
+Explore research datasets for classification, regression, clustering, and model evaluation.
+
+- Category: AI & Machine Learning
+- Type: Dataset | Pricing: Free | Access: No key
+- Limitation: Dataset formats and licenses vary. Review each record's terms, citation requirements, and suitability before training a model.
+- Verified: undefined
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/uci
+- Original source: https://archive.ics.uci.edu/
+
+## Common Crawl
+
+Public web crawl archives with page captures, metadata, and extracted text for large-scale research.
+
+- Category: AI & Machine Learning
+- Type: Dataset | Pricing: Free | Access: No key
+- Limitation: Corpus access is free; processing and cloud compute can cost money. Crawled content retains its original rights and may contain personal data.
+- Verified: undefined
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/common-crawl
+- Original source: https://commoncrawl.org/overview
+
+## CERN Open Data
+
+Particle physics research data from CERN experiments, with supporting analysis software and documentation.
+
+- Category: Science & Space
+- Type: Dataset | Pricing: Free | Access: No key
+- Limitation: Products carry record-specific open licenses and citation requirements. Large datasets may require specialist software and substantial storage.
+- Verified: undefined
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/cern
+- Original source: https://opendata.cern.ch/docs/about
+
+## DWD Open Weather Data
+
+German Weather Service observations, forecast products, radar information, and historical climate files.
+
+- Category: Weather & Climate
+- Type: Dataset | Pricing: Free | Access: No key
+- Limitation: Read the server's README and product-specific reuse and attribution notices. Formats and update schedules vary by directory.
+- Verified: undefined
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/dwd
+- Original source: https://opendata.dwd.de/
+
+## MET Norway Weather API
+
+Forecasts and meteorological products from the Norwegian Meteorological Institute for locations worldwide.
+
+- Category: Weather & Climate
+- Type: API | Pricing: Free | Access: No key
+- Limitation: CC BY 4.0 attribution required. Identify your application, obey cache headers, and keep total application traffic below 20 requests per second unless agreed otherwise.
+- Verified: undefined
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/met-norway
+- Original source: https://api.met.no/doc/TermsOfService
+
+## Metropolitan Museum Collection
+
+Explore museum objects, artists, collection metadata, and images made available through The Met's open-access program.
+
+- Category: Arts & Culture
+- Type: API | Pricing: Free | Access: No key
+- Limitation: Check each object's public-domain and image rights status. Follow current API documentation and use the current paginated search endpoint.
+- Verified: undefined
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/met-museum
+- Original source: https://metmuseum.github.io/
+
+## OpenAlex Research Graph
+
+Search connected scholarly works, authors, institutions, publication sources, and research topics.
+
+- Category: Science & Space
+- Type: API | Pricing: Free tier | Access: No key
+- Limitation: Public queries are free to start without a key. Higher-volume and additional features may require an account or paid access; verify current quotas.
+- Verified: undefined
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/openalex
+- Original source: https://docs.openalex.org/how-to-use-the-api/api-overview
+
+## EIA Energy Data
+
+US and international energy time series covering electricity, petroleum, natural gas, renewables, and consumption.
+
+- Category: Energy
+- Type: API | Pricing: Free | Access: API key
+- Limitation: Register for a free API key. Follow EIA's API terms, reuse policy, and endpoint-specific response and request limits.
+- Verified: undefined
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/eia
+- Original source: https://www.eia.gov/opendata/
+
+## US Treasury Fiscal Data
+
+Public debt, treasury statements, government spending, and other federal financial records with searchable metadata.
+
+- Category: Finance & Economics
+- Type: API | Pricing: Free | Access: No key
+- Limitation: Data is offered free for commercial and non-commercial use. Use pagination and filters, and check each table's update frequency and definitions.
+- Verified: undefined
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/treasury
+- Original source: https://fiscaldata.treasury.gov/api-documentation/
+
+## OpenFEC Campaign Finance
+
+Explore US election candidates, committees, campaign receipts, expenditures, and financial filings.
+
+- Category: Government
+- Type: API | Pricing: Free | Access: API key
+- Limitation: A registered key allows 1,000 calls per hour and at most 100 results per page. Contributor lists may not be used to solicit donations or for commercial purposes.
+- Verified: undefined
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/fec
+- Original source: https://api.open.fec.gov/developers/
+
+## USDA FoodData Central
+
+Food composition and nutrient records for branded products, research foods, and dietary surveys.
+
+- Category: Food & Health
+- Type: API | Pricing: Free | Access: API key
+- Limitation: Free data.gov key required. Default limit: 1,000 requests per hour per IP; exceeding it can block the key for an hour. Data is CC0; source citation is requested.
+- Verified: undefined
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/fooddata-central
+- Original source: https://fdc.nal.usda.gov/api-guide
+
+## College Scorecard Data
+
+Download US college costs, enrollment, completion, student debt, repayment, and earnings data.
+
+- Category: Education
+- Type: Dataset | Pricing: Free | Access: No key
+- Limitation: Public bulk downloads need no API key. Read the data dictionary, reporting-year coverage, and privacy-suppression notes before comparisons.
+- Verified: undefined
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/college-scorecard
+- Original source: https://collegescorecard.ed.gov/data/
+
+## NOAA Tides & Currents
+
+Coastal station water levels, tide predictions, currents, and associated oceanographic observations.
+
+- Category: Oceans & Water
+- Type: API | Pricing: Free | Access: No key
+- Limitation: Data windows depend on interval: 1-minute observations allow 4 days per request, 6-minute observations 1 month, and hourly observations 1 year. Heavy query volumes may be throttled.
+- Verified: undefined
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/noaa-tides
+- Original source: https://api.tidesandcurrents.noaa.gov/api/prod/
+
+## NASA POWER
+
+Solar radiation and meteorological data tailored to renewable energy, agriculture, and building research.
+
+- Category: Energy
+- Type: API | Pricing: Free | Access: No key
+- Limitation: Free public datasets. Choose appropriate spatial and temporal endpoints, cite NASA POWER, and reduce request volume if the service returns HTTP 429.
+- Verified: undefined
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/nasa-power
+- Original source: https://power.larc.nasa.gov/docs/services/api/
+
+## Our World in Data
+
+Download chart data on health, poverty, population, education, emissions, and long-term global change.
+
+- Category: Society & Development
+- Type: Dataset | Pricing: Free | Access: No key
+- Limitation: OWID-produced material generally uses CC BY with attribution. Most underlying data comes from third parties and remains subject to their separate licenses.
+- Verified: undefined
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/owid
+- Original source: https://ourworldindata.org/how-to-use-our-world-in-data
+
+## UK Government Open Data
+
+Public UK datasets covering local services, spending, transport, the environment, and government statistics.
+
+- Category: Government
+- Type: Dataset | Pricing: Free | Access: No key
+- Limitation: Licenses, file formats, and access conditions differ by publisher. Check each record rather than assuming the portal's Open Government Licence covers every linked dataset.
+- Verified: undefined
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/uk-open-data
+- Original source: https://data.gov.uk/
+
+## GovData Germany
+
+Discover German federal, state, and municipal open data, including public administration and geographic records.
+
+- Category: Government
+- Type: Dataset | Pricing: Free | Access: No key
+- Limitation: The portal links to datasets hosted by individual publishers. Check the recorded license, attribution, download access, and freshness for each dataset.
+- Verified: undefined
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/govdata
+- Original source: https://www.govdata.de/
+
+## Research Organization Registry
+
+Persistent organization identifiers, names, locations, and relationships for research institutions around the world.
+
+- Category: Science & Space
+- Type: API | Pricing: Free | Access: No key
+- Limitation: No registration required. Maximum 2,000 requests per 5-minute period per IP address; use downloads or a local instance for larger workloads.
+- Verified: undefined
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/ror
+- Original source: https://ror.readme.io/docs/rest-api
+
+## DataCite Public Metadata
+
+Find DOI metadata for research datasets, software, and other scholarly outputs deposited by DataCite members.
+
+- Category: Science & Space
+- Type: API | Pricing: Free | Access: No key
+- Limitation: Public metadata retrieval needs no authentication. Creating or updating DOIs requires a member account; identify frequent scripted requests and respect pagination and service limits.
+- Verified: undefined
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/datacite
+- Original source: https://support.datacite.org/docs/api
+
+## TVmaze Public API
+
+Search television shows, episode guides, schedules, people, and cast information through a public catalog.
+
+- Category: Arts & Culture
+- Type: API | Pricing: Free | Access: No key
+- Limitation: The public API uses CC BY-SA: credit TVmaze and follow share-alike terms. At least 20 calls per 10 seconds per IP are normally allowed, but stricter temporary limits can apply. Premium user APIs are separate.
+- Verified: undefined
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/tvmaze
+- Original source: https://www.tvmaze.com/api
+
+## Chess.com Published Data
+
+Read public player profiles, game archives, clubs, tournaments, and chess statistics.
+
+- Category: Sports & Games
+- Type: API | Pricing: Free | Access: No key
+- Limitation: Read-only public records, not private account data. Make requests sequentially; parallel traffic can trigger HTTP 429. Respect Chess.com's terms, intellectual property, and caching guidance.
+- Verified: undefined
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/chess-com
+- Original source: https://www.chess.com/news/view/published-data-api
+
+## Smithsonian Open Access & 3D
+
+Millions of Smithsonian collection records, images, and downloadable 3D models of museum objects and specimens.
+
+- Category: 3D & Graphics
+- Type: API | Pricing: Free | Access: API key
+- Limitation: Free api.data.gov key required for the API. Only items marked CC0 are open access; check each record's usage status.
+- Verified: undefined
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/smithsonian-3d
+- Original source: https://www.si.edu/openaccess/devtools
+
+## Poly Haven Assets API
+
+CC0 HDRIs, PBR textures, and 3D models with metadata and download links for games, rendering, and visualization.
+
+- Category: 3D & Graphics
+- Type: API | Pricing: Free | Access: No key
+- Limitation: Assets are CC0. Identify your app with a unique User-Agent; commercial products using the API should contact Poly Haven and consider supporting it.
+- Verified: undefined
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/poly-haven
+- Original source: https://polyhaven.com/our-api
+
+## ambientCG Materials
+
+Public-domain PBR materials, HDRIs, and 3D models with a JSON API for searching and downloading assets.
+
+- Category: 3D & Graphics
+- Type: API | Pricing: Free | Access: No key
+- Limitation: Assets are CC0 and usable commercially. Avoid excessive automated downloads and cache results where possible.
+- Verified: undefined
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/ambientcg
+- Original source: https://docs.ambientcg.com/api/
+
+## NASA 3D Resources
+
+3D models, textures, and printable files of spacecraft, planets, and mission hardware published by NASA.
+
+- Category: 3D & Graphics
+- Type: Dataset | Pricing: Free | Access: No key
+- Limitation: Generally free to use under NASA media guidelines; NASA logos and implied endorsement are restricted.
+- Verified: undefined
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/nasa-3d
+- Original source: https://science.nasa.gov/3d-resources/
+
+## Materials Project API
+
+Computed properties of over 150,000 inorganic materials, including crystal structures, band gaps, and elastic data.
+
+- Category: Industry & Materials
+- Type: API | Pricing: Free | Access: API key
+- Limitation: Free account and API key required. Data is CC BY 4.0; cite the Materials Project and respect request rate limits.
+- Verified: undefined
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/materials-project
+- Original source: https://next-gen.materialsproject.org/api
+
+## PubChem PUG-REST
+
+Chemical compounds, substances, properties, safety information, and bioassay results from the NIH chemistry database.
+
+- Category: Industry & Materials
+- Type: API | Pricing: Free | Access: No key
+- Limitation: No more than 5 requests per second and 400 per minute; heavy users can be blocked temporarily. Use FTP downloads for bulk data.
+- Verified: undefined
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/pubchem
+- Original source: https://pubchem.ncbi.nlm.nih.gov/docs/pug-rest
+
+## US Census Bureau Data API
+
+Economic census, manufacturing, business patterns, trade, and population statistics for the United States.
+
+- Category: Industry & Materials
+- Type: API | Pricing: Free | Access: No key
+- Limitation: Up to 500 queries per day per IP without a key; a free key is needed for more. Results must not imply Census Bureau endorsement.
+- Verified: undefined
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/census-api
+- Original source: https://www.census.gov/data/developers.html
+
+## FRED Economic Data
+
+Over 800,000 economic time series including industrial production, manufacturing, prices, and employment.
+
+- Category: Industry & Materials
+- Type: API | Pricing: Free | Access: API key
+- Limitation: Free API key required. Some series are copyrighted by third parties; check series notes and FRED terms before redistribution.
+- Verified: undefined
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/fred
+- Original source: https://fred.stlouisfed.org/docs/api/fred/
+
+## arXiv API
+
+Search metadata and abstracts for millions of preprints in physics, mathematics, computer science, and more.
+
+- Category: Research
+- Type: API | Pricing: Free | Access: No key
+- Limitation: Make no more than one request every three seconds. Metadata is CC0; full papers keep their individual licenses. Credit arXiv per its API terms.
+- Verified: undefined
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/arxiv
+- Original source: https://info.arxiv.org/help/api/index.html
+
+## Zenodo Research Repository
+
+Search and download open research datasets, software, publications, and records deposited by researchers.
+
+- Category: Research
+- Type: API | Pricing: Free | Access: No key
+- Limitation: Searching public records needs no token; uploads require an access token. Rate limits apply, and each record has its own license.
+- Verified: undefined
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/zenodo
+- Original source: https://developers.zenodo.org/
+
+## Europe PMC REST API
+
+Life-science literature search with abstracts, open-access full texts, citations, and text-mined annotations.
+
+- Category: Research
+- Type: API | Pricing: Free | Access: No key
+- Limitation: Free without registration. Full-text reuse depends on each article's license; use bulk downloads for large text-mining jobs.
+- Verified: undefined
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/europe-pmc
+- Original source: https://europepmc.org/RestfulWebService
+
+## NCBI PubMed E-utilities
+
+Programmatic search and retrieval for PubMed citations and other NCBI biomedical databases.
+
+- Category: Research
+- Type: API | Pricing: Free | Access: No key
+- Limitation: Up to 3 requests per second without a key, 10 with a free key. Include tool and email parameters; run large jobs off-peak.
+- Verified: undefined
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/pubmed-eutils
+- Original source: https://www.ncbi.nlm.nih.gov/books/NBK25497/
+
+## Hugging Face Hub API
+
+Search and download public AI models, datasets, and demo apps, including model cards and metadata.
+
+- Category: AI & Machine Learning
+- Type: API | Pricing: Free tier | Access: No key
+- Limitation: Public repos can be read without a token, but rate limits are stricter. Gated models need an account. Every model and dataset has its own license.
+- Verified: undefined
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/hugging-face-hub
+- Original source: https://huggingface.co/docs/hub/api
+
+## OpenML
+
+An open machine learning platform with datasets, tasks, algorithms, and benchmark results for reproducible experiments.
+
+- Category: AI & Machine Learning
+- Type: API | Pricing: Free | Access: No key
+- Limitation: Reading public data needs no key; uploads need a free account key. Check each dataset's license and citation.
+- Verified: undefined
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/openml
+- Original source: https://www.openml.org/apis
+
+## Kaggle Datasets
+
+A large community library of datasets for data science, machine learning, and competitions.
+
+- Category: AI & Machine Learning
+- Type: Dataset | Pricing: Free | Access: API key
+- Limitation: A free Kaggle account and API token are needed to download. Licenses are set by each uploader and some datasets restrict commercial use.
+- Verified: undefined
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/kaggle-datasets
+- Original source: https://www.kaggle.com/docs/api
+
+## Mozilla Common Voice
+
+Crowd-sourced speech recordings with transcripts in many languages for training speech recognition models.
+
+- Category: AI & Machine Learning
+- Type: Dataset | Pricing: Free | Access: No key
+- Limitation: Released under CC0. You confirm an email address and agree not to try to identify speakers. Downloads are very large.
+- Verified: undefined
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/common-voice
+- Original source: https://commonvoice.mozilla.org/en/datasets
+
+## Wikimedia Data Dumps
+
+Full downloads of Wikipedia and other Wikimedia projects: articles, revisions, and page metadata in many languages.
+
+- Category: Data & Knowledge
+- Type: Dataset | Pricing: Free | Access: No key
+- Limitation: Text is mostly CC BY-SA, which means attribution and share-alike. Limit parallel downloads; mirrors are recommended for large jobs.
+- Verified: undefined
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/wikimedia-dumps
+- Original source: https://dumps.wikimedia.org/
+
+## Stack Exchange API
+
+Questions, answers, tags, and users from Stack Overflow and the rest of the Stack Exchange network.
+
+- Category: Data & Knowledge
+- Type: API | Pricing: Free | Access: No key
+- Limitation: 300 requests per day per IP without a key, about 10,000 with a free app key. Content is CC BY-SA and requires attribution. Follow backoff signals.
+- Verified: undefined
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/stack-exchange
+- Original source: https://api.stackexchange.com/docs
+
+## GitHub REST API
+
+Public repositories, issues, releases, contributors, and code metadata from the world's largest code host.
+
+- Category: Software & Developer Tools
+- Type: API | Pricing: Free | Access: No key
+- Limitation: 60 requests per hour without a token; a free token raises this to 5,000. Each repository keeps its own license.
+- Verified: undefined
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/github-rest
+- Original source: https://docs.github.com/en/rest
+
+## PyPI JSON API
+
+Package metadata, versions, release files, and project links for every Python package on PyPI.
+
+- Category: Software & Developer Tools
+- Type: API | Pricing: Free | Access: No key
+- Limitation: No key needed. Cache responses and avoid heavy polling; use the BigQuery dataset for bulk download statistics.
+- Verified: undefined
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/pypi-json
+- Original source: https://docs.pypi.org/api/json/
+
+## npm Registry API
+
+Package documents, versions, dependencies, and search for the JavaScript npm package registry.
+
+- Category: Software & Developer Tools
+- Type: API | Pricing: Free | Access: No key
+- Limitation: Public reads need no key. Excessive traffic can be rate limited; package licenses vary.
+- Verified: undefined
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/npm-registry
+- Original source: https://github.com/npm/registry/blob/main/docs/REGISTRY-API.md
+
+## deps.dev API
+
+Google's open source insights: dependency graphs, licenses, security advisories, and project scores for packages.
+
+- Category: Software & Developer Tools
+- Type: API | Pricing: Free | Access: No key
+- Limitation: No key needed. Data is CC BY 4.0; the BigQuery dataset is free to access but query costs can apply.
+- Verified: undefined
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/deps-dev
+- Original source: https://docs.deps.dev/api/
+
+## Libraries.io API
+
+Search open source packages across dozens of package managers, with dependency and repository details.
+
+- Category: Software & Developer Tools
+- Type: API | Pricing: Free | Access: API key
+- Limitation: Free account API key required; 60 requests per minute. Data is CC BY-SA 4.0.
+- Verified: undefined
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/libraries-io
+- Original source: https://libraries.io/api
+
+## Software Heritage Archive
+
+The universal archive of public source code, with browsable history of millions of software projects.
+
+- Category: Software & Developer Tools
+- Type: API | Pricing: Free | Access: No key
+- Limitation: Anonymous access has low rate limits; a free account token raises them. Archived code keeps its original licenses.
+- Verified: undefined
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/software-heritage
+- Original source: https://archive.softwareheritage.org/api/
+
+## Internet Archive APIs
+
+Search and download books, audio, video, software, and web collections held by the Internet Archive.
+
+- Category: Archives & Libraries
+- Type: API | Pricing: Free | Access: No key
+- Limitation: Free to read. Rights differ per item; uploads need an account. Keep request volume moderate.
+- Verified: undefined
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/internet-archive
+- Original source: https://archive.org/developers/
+
+## Wayback Machine API
+
+Check whether a web page was archived and retrieve snapshots from the Wayback Machine.
+
+- Category: Archives & Libraries
+- Type: API | Pricing: Free | Access: No key
+- Limitation: No key needed. Archived pages keep their original copyright; heavy crawling may be throttled.
+- Verified: undefined
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/wayback
+- Original source: https://archive.org/help/wayback_api.php
+
+## Europeana APIs
+
+Access millions of digitized items from European museums, libraries, and archives.
+
+- Category: Archives & Libraries
+- Type: API | Pricing: Free | Access: API key
+- Limitation: Free API key required. Metadata is CC0; each media item carries its own rights statement.
+- Verified: undefined
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/europeana
+- Original source: https://pro.europeana.eu/page/apis
+
+## Digital Public Library of America
+
+Search millions of items from US libraries, archives, and museums through one API.
+
+- Category: Archives & Libraries
+- Type: API | Pricing: Free | Access: API key
+- Limitation: Free API key requested by email. Metadata is CC0; linked items keep their providers' rights.
+- Verified: undefined
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/dpla
+- Original source: https://pro.dp.la/developers/api-codex
+
+## Library of Congress API
+
+Search Library of Congress collections, including photos, maps, manuscripts, and recordings.
+
+- Category: Archives & Libraries
+- Type: API | Pricing: Free | Access: No key
+- Limitation: No key needed. Rate limits apply and exceeding them can block access temporarily; check rights per item.
+- Verified: undefined
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/loc
+- Original source: https://www.loc.gov/apis/json-and-yaml/
+
+## Chronicling America
+
+Historic American newspaper pages with OCR text, searchable by title, date, and place.
+
+- Category: Archives & Libraries
+- Type: API | Pricing: Free | Access: No key
+- Limitation: No key needed. Mostly public-domain pages; respect Library of Congress rate limits.
+- Verified: undefined
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/chronicling-america
+- Original source: https://chroniclingamerica.loc.gov/about/api/
+
+## Art Institute of Chicago API
+
+Artworks, artists, exhibitions, and images from the Art Institute of Chicago's collection.
+
+- Category: Arts & Culture
+- Type: API | Pricing: Free | Access: No key
+- Limitation: No key needed. Metadata is CC0; images marked public domain are CC0. Use the data dumps for bulk work.
+- Verified: undefined
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/artic
+- Original source: https://api.artic.edu/docs/
+
+## Rijksmuseum Data Services
+
+Collection data and high-resolution images from the national museum of the Netherlands.
+
+- Category: Arts & Culture
+- Type: API | Pricing: Free | Access: Unknown
+- Limitation: Open data with many public-domain images. Access methods changed recently; check current documentation for key requirements.
+- Verified: undefined
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/rijksmuseum
+- Original source: https://data.rijksmuseum.nl/
+
+## Harvard Art Museums API
+
+Objects, people, exhibitions, and images from Harvard's art collections.
+
+- Category: Arts & Culture
+- Type: API | Pricing: Free | Access: API key
+- Limitation: Free API key required; non-commercial use. Image rights vary per object.
+- Verified: undefined
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/harvard-art
+- Original source: https://github.com/harvardartmuseums/api-docs
+
+## Project Gutenberg Catalog
+
+Catalog data and full texts of more than 70,000 free public-domain ebooks.
+
+- Category: Archives & Libraries
+- Type: Dataset | Pricing: Free | Access: No key
+- Limitation: Use the offline catalogs or mirrors instead of scraping the website. Public domain in the US; check laws in your country.
+- Verified: undefined
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/gutenberg
+- Original source: https://www.gutenberg.org/ebooks/offline_catalogs.html
+
+## Gutendex
+
+A simple JSON API for searching Project Gutenberg books by title, author, language, and topic.
+
+- Category: Archives & Libraries
+- Type: API | Pricing: Free | Access: No key
+- Limitation: Community-run service without guarantees; you can self-host it for heavy use.
+- Verified: undefined
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/gutendex
+- Original source: https://gutendex.com/
+
+## DBpedia SPARQL
+
+Structured knowledge extracted from Wikipedia, queryable as a linked-data graph.
+
+- Category: Data & Knowledge
+- Type: API | Pricing: Free | Access: No key
+- Limitation: Free public endpoint with query time limits. Data is CC BY-SA; use downloads for large workloads.
+- Verified: undefined
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/dbpedia
+- Original source: https://www.dbpedia.org/resources/sparql/
+
+## Wikimedia API Portal
+
+Page content, summaries, and feeds from Wikipedia and other Wikimedia projects.
+
+- Category: Data & Knowledge
+- Type: API | Pricing: Free tier | Access: No key
+- Limitation: Works anonymously with lower limits; a free token raises them. Content is mostly CC BY-SA.
+- Verified: undefined
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/wikimedia-api
+- Original source: https://api.wikimedia.org/wiki/Main_Page
+
+## ConceptNet
+
+A multilingual knowledge graph of common-sense relations between words and phrases.
+
+- Category: Data & Knowledge
+- Type: Dataset | Pricing: Free | Access: No key
+- Limitation: CC BY-SA 4.0. The public API is not guaranteed to be online; downloads are more reliable.
+- Verified: undefined
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/conceptnet
+- Original source: https://conceptnet.io/
+
+## Princeton WordNet
+
+A lexical database of English words grouped into synonyms with meanings and relations.
+
+- Category: Data & Knowledge
+- Type: Dataset | Pricing: Free | Access: No key
+- Limitation: Free under the WordNet license, including commercial use, with the copyright notice kept.
+- Verified: undefined
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/wordnet
+- Original source: https://wordnet.princeton.edu/download
+
+## Free Dictionary API
+
+English word definitions, phonetics, examples, and synonyms through a simple API.
+
+- Category: Data & Knowledge
+- Type: API | Pricing: Free | Access: No key
+- Limitation: No key needed. Community project without uptime guarantees; please cache results.
+- Verified: undefined
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/free-dictionary
+- Original source: https://dictionaryapi.dev/
+
+## Datamuse API
+
+A word-finding engine for rhymes, similar meanings, autocomplete, and related words.
+
+- Category: Data & Knowledge
+- Type: API | Pricing: Free | Access: No key
+- Limitation: No key needed for up to 100,000 requests per day. Credit Datamuse if you use it in an app.
+- Verified: undefined
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/datamuse
+- Original source: https://www.datamuse.com/api/
+
+## Nominatim Geocoding
+
+Turn addresses into coordinates and back using OpenStreetMap data.
+
+- Category: Geography
+- Type: API | Pricing: Free | Access: No key
+- Limitation: Public server: maximum 1 request per second, valid User-Agent, attribution required, no bulk geocoding.
+- Verified: undefined
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/nominatim
+- Original source: https://nominatim.org/release-docs/latest/api/Overview/
+
+## Overpass API
+
+Query specific OpenStreetMap features such as shops, roads, or buildings in any area.
+
+- Category: Geography
+- Type: API | Pricing: Free | Access: No key
+- Limitation: Public instances have fair-use limits (about 10,000 queries per day). ODbL attribution applies.
+- Verified: undefined
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/overpass
+- Original source: https://wiki.openstreetmap.org/wiki/Overpass_API
+
+## GeoNames
+
+Place names, postal codes, time zones, and geographic data for millions of locations.
+
+- Category: Geography
+- Type: API | Pricing: Free tier | Access: API key
+- Limitation: A free username is required; 10,000 credits per day and 1,000 per hour. Data is CC BY 4.0; paid plans exist.
+- Verified: undefined
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/geonames
+- Original source: https://www.geonames.org/export/web-services.html
+
+## Natural Earth
+
+Public-domain map data for countries, borders, rivers, and cities at several scales.
+
+- Category: Geography
+- Type: Dataset | Pricing: Free | Access: No key
+- Limitation: Public domain; no permission or attribution needed.
+- Verified: undefined
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/natural-earth
+- Original source: https://www.naturalearthdata.com/
+
+## NASA Earthdata
+
+Satellite and Earth science data on climate, land, oceans, and the atmosphere.
+
+- Category: Science & Space
+- Type: Dataset | Pricing: Free | Access: API key
+- Limitation: Free Earthdata Login account required for most downloads. NASA data is openly shared; cite datasets.
+- Verified: undefined
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/earthdata
+- Original source: https://www.earthdata.nasa.gov/
+
+## Copernicus Data Space
+
+Sentinel satellite images and Earth observation products from the EU's Copernicus programme.
+
+- Category: Science & Space
+- Type: Dataset | Pricing: Free tier | Access: API key
+- Limitation: Free account needed. Data is free and open; processing quotas apply to free users.
+- Verified: undefined
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/copernicus
+- Original source: https://dataspace.copernicus.eu/
+
+## USGS Water Services
+
+Real-time and historical streamflow, groundwater, and water quality from US monitoring sites.
+
+- Category: Oceans & Water
+- Type: API | Pricing: Free | Access: No key
+- Limitation: No key needed. Public domain; keep queries targeted. Services are moving to new USGS water data APIs.
+- Verified: undefined
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/usgs-water
+- Original source: https://waterservices.usgs.gov/
+
+## JPL Horizons API
+
+Positions and orbits of planets, moons, asteroids, comets, and spacecraft.
+
+- Category: Science & Space
+- Type: API | Pricing: Free | Access: No key
+- Limitation: No key needed. Run one request at a time; heavy parallel use can be blocked.
+- Verified: undefined
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/jpl-horizons
+- Original source: https://ssd-api.jpl.nasa.gov/doc/horizons.html
+
+## Launch Library 2
+
+Rocket launches, space events, astronauts, and spacecraft data from The Space Devs.
+
+- Category: Science & Space
+- Type: API | Pricing: Free tier | Access: No key
+- Limitation: 15 requests per hour without a key; paid support raises limits.
+- Verified: undefined
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/launch-library
+- Original source: https://thespacedevs.com/llapi
+
+## NASA Exoplanet Archive
+
+Confirmed planets outside our solar system with orbits, sizes, and host star data.
+
+- Category: Science & Space
+- Type: API | Pricing: Free | Access: No key
+- Limitation: No key needed. Cite the archive and the original discovery papers.
+- Verified: undefined
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/exoplanet-archive
+- Original source: https://exoplanetarchive.ipac.caltech.edu/docs/TAP/usingTAP.html
+
+## UniProt
+
+Protein sequences and functional information for life-science research.
+
+- Category: Food & Health
+- Type: API | Pricing: Free | Access: No key
+- Limitation: No key needed. CC BY 4.0; use streaming or FTP for large downloads.
+- Verified: undefined
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/uniprot
+- Original source: https://www.uniprot.org/help/api
+
+## Ensembl REST API
+
+Genomes, genes, variants, and comparative genomics for vertebrates and more.
+
+- Category: Food & Health
+- Type: API | Pricing: Free | Access: No key
+- Limitation: No key needed; about 15 requests per second. Follow rate-limit headers.
+- Verified: undefined
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/ensembl
+- Original source: https://rest.ensembl.org/
+
+## RCSB Protein Data Bank
+
+3D structures of proteins, DNA, and other biological molecules with search and data APIs.
+
+- Category: Science & Space
+- Type: API | Pricing: Free | Access: No key
+- Limitation: No key needed. Structures are free to use under CC0; cite the PDB entries.
+- Verified: undefined
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/rcsb-pdb
+- Original source: https://data.rcsb.org/
+
+## ChEMBL
+
+Bioactive molecules with drug-like properties and their measured biological activities.
+
+- Category: Food & Health
+- Type: API | Pricing: Free | Access: No key
+- Limitation: No key needed. CC BY-SA 3.0; use downloads for full-database work.
+- Verified: undefined
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/chembl
+- Original source: https://www.ebi.ac.uk/chembl/api/data/docs
+
+## ClinicalTrials.gov API
+
+Registered clinical studies worldwide with status, conditions, locations, and results.
+
+- Category: Food & Health
+- Type: API | Pricing: Free | Access: No key
+- Limitation: No key needed; about 50 requests per minute. Not medical advice.
+- Verified: undefined
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/clinicaltrials
+- Original source: https://clinicaltrials.gov/data-api/api
+
+## WHO Global Health Observatory
+
+Health statistics from the World Health Organization on diseases, mortality, and health systems.
+
+- Category: Food & Health
+- Type: API | Pricing: Free | Access: No key
+- Limitation: No key needed. Follow WHO terms and cite the source; the API is moving to a new data platform.
+- Verified: undefined
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/who-gho
+- Original source: https://www.who.int/data/gho/info/gho-odata-api
+
+## CDC Open Data
+
+Public health datasets from the US Centers for Disease Control and Prevention.
+
+- Category: Food & Health
+- Type: Dataset | Pricing: Free | Access: No key
+- Limitation: Works without a key with shared limits; a free app token gives more. Read each dataset's notes.
+- Verified: undefined
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/cdc-data
+- Original source: https://data.cdc.gov/
+
+## UNdata
+
+Statistics from United Nations agencies on population, trade, energy, and more.
+
+- Category: Society & Development
+- Type: Dataset | Pricing: Free | Access: No key
+- Limitation: Free for non-commercial and commercial use with attribution. Check terms of the underlying agency.
+- Verified: undefined
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/un-data
+- Original source: https://data.un.org/
+
+## ECB Data Portal API
+
+Euro area exchange rates, interest rates, money, and banking statistics.
+
+- Category: Finance & Economics
+- Type: API | Pricing: Free | Access: No key
+- Limitation: No key needed. Reuse allowed with source citation.
+- Verified: undefined
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/ecb-data
+- Original source: https://data.ecb.europa.eu/help/api/overview
+
+## SEC EDGAR APIs
+
+US company filings and financial statement data from the Securities and Exchange Commission.
+
+- Category: Finance & Economics
+- Type: API | Pricing: Free | Access: No key
+- Limitation: No key needed. Declare a User-Agent with contact info; maximum 10 requests per second.
+- Verified: undefined
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/sec-edgar
+- Original source: https://www.sec.gov/search-filings/edgar-application-programming-interfaces
+
+## CoinGecko API
+
+Cryptocurrency prices, market data, exchanges, and historical charts.
+
+- Category: Finance & Economics
+- Type: API | Pricing: Free tier | Access: API key
+- Limitation: Free demo key with monthly call limits and attribution; paid plans for more. Not financial advice.
+- Verified: undefined
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/coingecko
+- Original source: https://www.coingecko.com/en/api
+
+## Open Charge Map
+
+A global registry of electric vehicle charging locations.
+
+- Category: Energy
+- Type: API | Pricing: Free | Access: API key
+- Limitation: Free API key required. Data is mostly CC BY 4.0; check data provider licenses.
+- Verified: undefined
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/openchargemap
+- Original source: https://openchargemap.org/site/develop/api
+
+## OpenAQ
+
+Air quality measurements from government and research sensors worldwide.
+
+- Category: Nature & Environment
+- Type: API | Pricing: Free | Access: API key
+- Limitation: Free API key required; rate limits apply. Each data provider sets its own license.
+- Verified: undefined
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/openaq
+- Original source: https://docs.openaq.org/
+
+## data.europa.eu
+
+The official portal for open data from EU institutions and European countries.
+
+- Category: Government
+- Type: Dataset | Pricing: Free | Access: No key
+- Limitation: Licenses and formats vary by publisher; check each dataset.
+- Verified: undefined
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/eu-open-data
+- Original source: https://data.europa.eu/en
+
+## Humanitarian Data Exchange
+
+Data on crises, population, health, and infrastructure shared by humanitarian organizations.
+
+- Category: Society & Development
+- Type: Dataset | Pricing: Free | Access: No key
+- Limitation: Free to browse and download. Licenses vary, and some datasets need approval because they are sensitive.
+- Verified: undefined
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/hdx
+- Original source: https://data.humdata.org/
+
+## OpenAddresses
+
+Free address point data collected from governments around the world.
+
+- Category: Geography
+- Type: Dataset | Pricing: Free | Access: No key
+- Limitation: Free downloads; each source has its own license and attribution rules.
+- Verified: undefined
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/openaddresses
+- Original source: https://openaddresses.io/
+
+## Open Trivia Database
+
+Thousands of user-contributed quiz questions across many categories.
+
+- Category: Sports & Games
+- Type: API | Pricing: Free | Access: No key
+- Limitation: No key needed. CC BY-SA 4.0; one request every 5 seconds per IP.
+- Verified: undefined
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/open-trivia
+- Original source: https://opentdb.com/api_config.php
+
+## PokéAPI
+
+Pokémon species, moves, abilities, types, and games in a detailed open API.
+
+- Category: Sports & Games
+- Type: API | Pricing: Free | Access: No key
+- Limitation: No key needed. Cache resources locally; Pokémon names and images are owned by their rights holders.
+- Verified: undefined
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/pokeapi
+- Original source: https://pokeapi.co/docs/v2
+
+## TheSportsDB
+
+Teams, players, leagues, events, and artwork across many sports.
+
+- Category: Sports & Games
+- Type: API | Pricing: Free tier | Access: API key
+- Limitation: A free test key with limited calls; live scores and more need a paid key.
+- Verified: undefined
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/thesportsdb
+- Original source: https://www.thesportsdb.com/free_sports_api
+
+## Jikan Anime API
+
+Unofficial MyAnimeList data for anime, manga, characters, and reviews.
+
+- Category: Arts & Culture
+- Type: API | Pricing: Free | Access: No key
+- Limitation: No key needed. 3 requests per second and 60 per minute; respect MyAnimeList's terms.
+- Verified: undefined
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/jikan
+- Original source: https://docs.api.jikan.moe/
+
+## Nager.Date Holidays
+
+Public holidays for more than 100 countries by year.
+
+- Category: Data & Knowledge
+- Type: API | Pricing: Free | Access: No key
+- Limitation: No key needed. Open source and community-maintained; self-hosting is possible.
+- Verified: undefined
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/nager-date
+- Original source: https://date.nager.at/Api
+
+## Openverse API
+
+Search hundreds of millions of openly licensed images and audio files.
+
+- Category: Arts & Culture
+- Type: API | Pricing: Free tier | Access: No key
+- Limitation: Anonymous use has low limits; register a free client for more. Check each media license.
+- Verified: undefined
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/openverse
+- Original source: https://api.openverse.org/v1/
+
+## Wikimedia Commons API
+
+Free images, video, and audio files with license and author metadata.
+
+- Category: Archives & Libraries
+- Type: API | Pricing: Free | Access: No key
+- Limitation: No key needed. Each file has its own free license; give the required attribution.
+- Verified: undefined
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/wikimedia-commons
+- Original source: https://commons.wikimedia.org/wiki/Commons:API
+
+## Sensor.Community
+
+A citizen-science sensor network reporting particulate matter and noise levels in Germany.
+
+- Category: Weather & Climate
+- Type: Dataset | Pricing: Free | Access: No key
+- Limitation: Open, community-run DIY sensor network; check the site for usage terms.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/sensorcommunity
+- Original source: https://maps.sensor.community
+
+## NASA FIRMS
+
+Near-real-time satellite detections of active fires and thermal anomalies worldwide.
+
+- Category: Weather & Climate
+- Type: Dataset | Pricing: Free | Access: API key
+- Limitation: NASA public-domain data; an account is required for some tools.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/nasa-firms
+- Original source: https://firms.modaps.eosdis.nasa.gov
+
+## Copernicus EFFIS
+
+The EU's official wildfire information system tracking fire activity across Europe and beyond.
+
+- Category: Weather & Climate
+- Type: Dataset | Pricing: Free | Access: No key
+- Limitation: Official EU service; free to use.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/copernicus-effis
+- Original source: https://forest-fire.emergency.copernicus.eu
+
+## GDACS
+
+A United Nations system issuing near-real-time alerts for earthquakes, tsunamis, floods and storms.
+
+- Category: Weather & Climate
+- Type: Dataset | Pricing: Free | Access: No key
+- Limitation: UN service; free to use.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/gdacs
+- Original source: https://www.gdacs.org
+
+## Google Flood Hub
+
+Machine-learning flood forecasts for rivers in more than 40 countries, from Google Research.
+
+- Category: Weather & Climate
+- Type: Dataset | Pricing: Free | Access: No key
+- Limitation: Google Research service; free to use.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/google-flood-hub
+- Original source: https://sites.research.google/floods/
+
+## Copernicus FFWS
+
+The Copernicus global flood early-warning service, showing daily river flood risk worldwide.
+
+- Category: Weather & Climate
+- Type: Dataset | Pricing: Free | Access: API key
+- Limitation: Copernicus service; free with registration.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/copernicus-ffws
+- Original source: https://global-flood.emergency.copernicus.eu
+
+## NOAA Tsunami
+
+Live tsunami warnings and advisories from the U.S. National Tsunami Warning Center.
+
+- Category: Weather & Climate
+- Type: Dataset | Pricing: Free | Access: No key
+- Limitation: U.S. government data in the public domain.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/noaa-tsunami
+- Original source: https://www.tsunami.gov
+
+## Copernicus Marine
+
+Copernicus ocean monitoring data covering currents, sea temperature and sea ice.
+
+- Category: Weather & Climate
+- Type: Dataset | Pricing: Free | Access: API key
+- Limitation: Free with registration.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/copernicus-marine
+- Original source: https://marine.copernicus.eu
+
+## OBIS
+
+An open database of marine species occurrence records from oceans worldwide.
+
+- Category: Weather & Climate
+- Type: Dataset | Pricing: Free | Access: No key
+- Limitation: Open data; check the site for terms.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/obis
+- Original source: https://obis.org
+
+## BirdCast
+
+Live bird-migration forecasts derived from weather radar, run by the Cornell Lab of Ornithology.
+
+- Category: Weather & Climate
+- Type: API | Pricing: Free | Access: No key
+- Limitation: Free, Cornell Lab project; API terms to be clarified.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/birdcast
+- Original source: https://birdcast.org
+
+## VolcanoDiscovery
+
+Live volcano eruption reports with photos and travel advisories.
+
+- Category: Weather & Climate
+- Type: Dataset | Pricing: Free | Access: No key
+- Limitation: Ad-supported site; free to use.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/volcanodiscovery
+- Original source: https://www.volcanodiscovery.com
+
+## Cloudflare Radar
+
+Cloudflare's dashboard of global internet traffic, cyberattacks and outages.
+
+- Category: Weather & Climate
+- Type: API | Pricing: Free | Access: API key
+- Limitation: Free; the API requires a login.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/cloudflare-radar
+- Original source: https://radar.cloudflare.com
+
+## RIPEstat + Atlas
+
+RIPE's platform of worldwide internet measurements and network analytics.
+
+- Category: Weather & Climate
+- Type: Dataset | Pricing: Free | Access: No key
+- Limitation: Free, operated by the non-profit RIPE NCC.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/ripestat-atlas
+- Original source: https://stat.ripe.net
+
+## IODA
+
+A Georgia Tech tool that detects global internet outages in near real time.
+
+- Category: Weather & Climate
+- Type: Dataset | Pricing: Free | Access: No key
+- Limitation: Free, provided by Georgia Tech.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/ioda
+- Original source: https://ioda.inetintel.cc.gatech.edu
+
+## OONI Explorer
+
+An open archive of OONI network-measurement results showing censorship by provider and country.
+
+- Category: Weather & Climate
+- Type: Dataset | Pricing: Free tier | Access: No key
+- Limitation: Open-source project with openly published measurement data; quotas to be confirmed.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/ooni-explorer
+- Original source: https://explorer.ooni.org
+
+## NetBlocks
+
+Real-time monitoring and reporting of internet shutdowns and connectivity anomalies.
+
+- Category: Weather & Climate
+- Type: Dataset | Pricing: Free tier | Access: No key
+- Limitation: Freemium; basic access is free.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/netblocks
+- Original source: https://netblocks.org
+
+## nPerf Maps
+
+Crowdsourced maps of mobile network coverage from 2G to 5G.
+
+- Category: Weather & Climate
+- Type: Dataset | Pricing: Free tier | Access: No key
+- Limitation: Freemium; basic access is free.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/nperf-maps
+- Original source: https://www.nperf.com/en/map
+
+## Light Pollution Map
+
+An interactive map of artificial night-sky light pollution based on VIIRS satellite data.
+
+- Category: Weather & Climate
+- Type: Dataset | Pricing: Free tier | Access: No key
+- Limitation: The map is free; high-resolution data is paid.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/light-pollution-map
+- Original source: https://www.lightpollutionmap.info
+
+## Noise-Planet
+
+Crowdsourced community noise maps of cities around the world.
+
+- Category: Weather & Climate
+- Type: Dataset | Pricing: Free | Access: No key
+- Limitation: University project; free to use.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/noise-planet
+- Original source: https://noise-planet.org
+
+## SpaceWeatherLive
+
+A live space-weather dashboard with aurora forecasts and the planetary Kp index.
+
+- Category: Weather & Climate
+- Type: Dataset | Pricing: Free | Access: No key
+- Limitation: Free, ad-supported site.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/spaceweatherlive
+- Original source: https://www.spaceweatherlive.com
+
+## SolarMonitor
+
+A community-run gallery of live solar images from a network of amateur telescopes.
+
+- Category: Weather & Climate
+- Type: Dataset | Pricing: Free | Access: No key
+- Limitation: Community project; attribution required.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/solarmonitor
+- Original source: https://solarmonitor.org
+
+## NOAA SWPC
+
+The official U.S. government space-weather forecast and alert service.
+
+- Category: Weather & Climate
+- Type: Dataset | Pricing: Free | Access: No key
+- Limitation: U.S. government data in the public domain.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/noaa-swpc
+- Original source: https://www.spaceweather.gov
+
+## N2YO
+
+Live satellite tracking with ISS pass predictions and a research API.
+
+- Category: Weather & Climate
+- Type: API | Pricing: Free | Access: No key
+- Limitation: Free; the API is intended for research use.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/n2yo
+- Original source: https://www.n2yo.com
+
+## WorldMetrics
+
+Aggregated live counters tracking current world statistics.
+
+- Category: Weather & Climate
+- Type: Dataset | Pricing: Free | Access: No key
+- Limitation: Free; a newer site, so quality should be verified.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/worldmetrics
+- Original source: https://www.world-metrics.com
+
+## Earth (Nullschool)
+
+An animated global map of wind, ocean and weather conditions.
+
+- Category: Weather & Climate
+- Type: API | Pricing: Free | Access: No key
+- Limitation: Free; underlying data from NOAA.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/earth-nullschool
+- Original source: https://earth.nullschool.net
+
+## OpenSky Network
+
+Open ADS-B aircraft-tracking data collected by a community sensor network.
+
+- Category: Weather & Climate
+- Type: Dataset | Pricing: Free | Access: No key
+- Limitation: Research-licensed data from community sensors.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/opensky-network
+- Original source: https://opensky-network.org
+
+## EMSC
+
+Live earthquake information with a crowdsourced 'Did you feel it?' reporting tool.
+
+- Category: Weather & Climate
+- Type: Dataset | Pricing: Free | Access: No key
+- Limitation: Non-profit service; free to use.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/emsc
+- Original source: https://www.emsc-csem.org
+
+## Blitzortung
+
+A volunteer-run lightning-detection network publishing its location data openly.
+
+- Category: Weather & Climate
+- Type: Dataset | Pricing: Free | Access: No key
+- Limitation: Volunteer project based in Germany; open data.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/blitzortung
+- Original source: https://www.blitzortung.org
+
+## Getty Open Content
+
+High-resolution images of artworks from the Getty Museum released for open use.
+
+- Category: Arts & Culture
+- Type: Dataset | Pricing: Free | Access: No key
+- Limitation: CC0 for a selection of images.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/getty-open-content
+- Original source: https://www.getty.edu/projects/open-content-program/
+
+## Wellcome Collection Images
+
+Some 2.5 million images from the Wellcome Collection's cultural and medical-history archive.
+
+- Category: Arts & Culture
+- Type: Dataset | Pricing: Free | Access: No key
+- Limitation: CC BY 4.0.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/wellcome-collection-images
+- Original source: https://wellcomecollection.org/search/images
+
+## British Library on Flickr
+
+British Library scans of illustrations, maps and periodicals shared on Flickr.
+
+- Category: Arts & Culture
+- Type: Dataset | Pricing: Free | Access: No key
+- Limitation: Items are marked out-of-copyright / public domain.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/british-library-on-flickr
+- Original source: https://www.flickr.com/photos/britishlibrary
+
+## Gallica (BnF)
+
+The National Library of France's portal with millions of digitised books, maps and recordings.
+
+- Category: Arts & Culture
+- Type: Dataset | Pricing: Free | Access: No key
+- Limitation: Mostly public domain.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/gallica-bnf
+- Original source: https://gallica.bnf.fr
+
+## e-codices
+
+A virtual library of medieval manuscripts held in Switzerland.
+
+- Category: Arts & Culture
+- Type: Dataset | Pricing: Free | Access: No key
+- Limitation: Licensing varies by object.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/e-codices
+- Original source: https://www.e-codices.unifr.ch
+
+## DigitaltMuseum
+
+Some 11 million museum object photographs from Nordic and European collections.
+
+- Category: Arts & Culture
+- Type: Dataset | Pricing: Free | Access: No key
+- Limitation: Licensing varies by object.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/digitaltmuseum
+- Original source: https://digitaltmuseum.org
+
+## Arkivism
+
+Aggregates more than 4 million public-domain images and videos from many sources.
+
+- Category: Arts & Culture
+- Type: Dataset | Pricing: Free | Access: No key
+- Limitation: Free to search.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/arkivism
+- Original source: https://arkivism.com
+
+## Public Domain Search
+
+A search engine for public-domain films, books and artwork.
+
+- Category: Arts & Culture
+- Type: Dataset | Pricing: Free | Access: No key
+- Limitation: Free.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/public-domain-search
+- Original source: https://publicdomainsearch.org
+
+## Fine Art Free
+
+A German-language portal offering some 500,000 public-domain paintings.
+
+- Category: Arts & Culture
+- Type: Dataset | Pricing: Free | Access: No key
+- Limitation: Public domain.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/fine-art-free
+- Original source: https://fineartfree.com
+
+## Old Book Illustrations
+
+More than 30,000 scanned engravings and illustrations from old books.
+
+- Category: Arts & Culture
+- Type: Dataset | Pricing: Free | Access: No key
+- Limitation: Public domain.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/old-book-illustrations
+- Original source: https://www.oldbookillustrations.com
+
+## Biodiversity Heritage Library
+
+More than 200,000 digitised natural-history classics, freely available.
+
+- Category: Arts & Culture
+- Type: Dataset | Pricing: Free | Access: No key
+- Limitation: Public domain / Creative Commons.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/biodiversity-heritage-library
+- Original source: https://www.biodiversitylibrary.org
+
+## e-rara.ch
+
+Digitised rare early printed books from Swiss libraries.
+
+- Category: Arts & Culture
+- Type: Dataset | Pricing: Free | Access: No key
+- Limitation: Mostly public domain.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/e-rarach
+- Original source: https://www.e-rara.ch
+
+## Trove (NLA)
+
+Australia's vast aggregator of digitised books, newspapers and full-text records.
+
+- Category: Arts & Culture
+- Type: Dataset | Pricing: Free | Access: No key
+- Limitation: Mostly public domain.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/trove-nla
+- Original source: https://trove.nla.gov.au
+
+## Deutsches Zeitungsportal (DDB)
+
+More than 6,000 historical German newspaper volumes from the German Digital Library.
+
+- Category: Arts & Culture
+- Type: Dataset | Pricing: Free | Access: No key
+- Limitation: Public domain.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/deutsches-zeitungsportal-ddb
+- Original source: https://www.deutsche-digitale-bibliothek.de/newspaper
+
+## ANNO (ÖNB)
+
+Historical Austrian newspapers digitised by the Austrian National Library.
+
+- Category: Arts & Culture
+- Type: Dataset | Pricing: Free | Access: No key
+- Limitation: Public domain.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/anno-onb
+- Original source: https://anno.onb.ac.at
+
+## Media History Digital Library
+
+A complete scanned archive of early film-industry trade press.
+
+- Category: Arts & Culture
+- Type: Dataset | Pricing: Free | Access: No key
+- Limitation: Public-domain scans.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/media-history-digital-library
+- Original source: https://mediahistoryproject.org
+
+## National Film Board Canada
+
+More than 1,000 documentaries from the National Film Board of Canada, free to stream.
+
+- Category: Arts & Culture
+- Type: Dataset | Pricing: Free | Access: No key
+- Limitation: Ad-supported; free to watch.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/national-film-board-canada
+- Original source: https://www.nfb.ca
+
+## AdAccess (Duke)
+
+Some 7,000 original advertisements from 1910 to 1945, digitised by Duke University.
+
+- Category: Arts & Culture
+- Type: Dataset | Pricing: Free | Access: No key
+- Limitation: Public domain.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/adaccess-duke
+- Original source: https://repository.duke.edu/dc/adaccess
+
+## Mutopia Project
+
+Freely performable public-domain sheet music, re-engraved by volunteers.
+
+- Category: Arts & Culture
+- Type: Dataset | Pricing: Free | Access: No key
+- Limitation: Public domain / Creative Commons.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/mutopia-project
+- Original source: https://www.mutopiaproject.org
+
+## CPDL
+
+A free library of public-domain choral sheet music.
+
+- Category: Arts & Culture
+- Type: Dataset | Pricing: Free | Access: No key
+- Limitation: Mostly public domain.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/cpdl
+- Original source: https://cpdl.org
+
+## Musopen
+
+Free public-domain classical recordings and sheet music.
+
+- Category: Arts & Culture
+- Type: Dataset | Pricing: Free | Access: No key
+- Limitation: Creative Commons / public domain.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/musopen
+- Original source: https://musopen.org
+
+## sachsen.digital (SLUB)
+
+Digitised collections of the Saxon State Library, including historical sheet music.
+
+- Category: Arts & Culture
+- Type: Dataset | Pricing: Free | Access: No key
+- Limitation: Mostly public domain.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/sachsendigital-slub
+- Original source: https://sachsen.digital
+
+## FamilySearch
+
+Billions of genealogy records from FamilySearch for family-history research.
+
+- Category: Arts & Culture
+- Type: Dataset | Pricing: Free tier | Access: API key
+- Limitation: Free, partly freemium; account/registration required.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/familysearch
+- Original source: https://www.familysearch.org
+
+## Matricula Online
+
+European parish-register records for the DACH region, available online.
+
+- Category: Arts & Culture
+- Type: Dataset | Pricing: Free | Access: No key
+- Limitation: Licensing varies by collection.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/matricula-online
+- Original source: https://data.matricula-online.eu
+
+## Google Patents
+
+A free search engine for patents worldwide, with citation networks.
+
+- Category: Arts & Culture
+- Type: Dataset | Pricing: Free tier | Access: No key
+- Limitation: Free.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/google-patents
+- Original source: https://patents.google.com
+
+## Espacenet (EPA)
+
+The official European Patent Office portal with over 150 million patent documents.
+
+- Category: Arts & Culture
+- Type: Dataset | Pricing: Free | Access: No key
+- Limitation: Free.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/espacenet-epa
+- Original source: https://worldwide.espacenet.com
+
+## Gesetze im Internet (BMJ)
+
+The official German federal statutes published by the Federal Ministry of Justice.
+
+- Category: Arts & Culture
+- Type: Dataset | Pricing: Free | Access: No key
+- Limitation: Official text; free.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/gesetze-im-internet-bmj
+- Original source: https://www.gesetze-im-internet.de
+
+## EUR-Lex
+
+The official primary-source portal for European Union law.
+
+- Category: Arts & Culture
+- Type: Dataset | Pricing: Free | Access: No key
+- Limitation: Official source.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/eur-lex
+- Original source: https://eur-lex.europa.eu
+
+## US Code
+
+The official codified body of United States federal law.
+
+- Category: Arts & Culture
+- Type: Dataset | Pricing: Free | Access: No key
+- Limitation: Public domain.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/us-code
+- Original source: https://uscode.house.gov
+
+## Caselaw Access Project
+
+Some 30 million U.S. court opinions, digitised as open data.
+
+- Category: Arts & Culture
+- Type: Dataset | Pricing: Free | Access: No key
+- Limitation: CC0.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/caselaw-access-project
+- Original source: https://case.law
+
+## CyberChef
+
+A browser-based tool for encoding, hashing and decrypting data.
+
+- Category: Software & Developer Tools
+- Type: API | Pricing: Free | Access: No key
+- Limitation: Apache-2.0 (GCHQ).
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/cyberchef
+- Original source: https://gchq.github.io/CyberChef
+
+## DevDocs
+
+An offline-capable aggregator of programming API documentation.
+
+- Category: Software & Developer Tools
+- Type: API | Pricing: Free | Access: No key
+- Limitation: MPL-2.0.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/devdocs
+- Original source: https://devdocs.io
+
+## curlconverter
+
+Converts curl commands into code in more than 30 programming languages.
+
+- Category: Software & Developer Tools
+- Type: API | Pricing: Free | Access: No key
+- Limitation: MIT.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/curlconverter
+- Original source: https://curlconverter.com
+
+## JSON Crack
+
+Visualises JSON and SQL as an interactive graph.
+
+- Category: Software & Developer Tools
+- Type: API | Pricing: Free tier | Access: No key
+- Limitation: Open source, freemium.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/json-crack
+- Original source: https://jsoncrack.com
+
+## Python Tutor
+
+Visualises code execution step by step to explain how programs run.
+
+- Category: Software & Developer Tools
+- Type: API | Pricing: Free | Access: No key
+- Limitation: Free.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/python-tutor
+- Original source: https://pythontutor.com
+
+## Can I Use
+
+A compatibility matrix for browser support of web platform features.
+
+- Category: Software & Developer Tools
+- Type: Dataset | Pricing: Free | Access: No key
+- Limitation: Free.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/can-i-use
+- Original source: https://caniuse.com
+
+## AST Explorer
+
+An in-browser tool for inspecting source code as an abstract syntax tree.
+
+- Category: Software & Developer Tools
+- Type: API | Pricing: Free | Access: No key
+- Limitation: Open source.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/ast-explorer
+- Original source: https://astexplorer.net
+
+## Exec Apps Suite
+
+A suite of small web tools for regular expressions, colours and JSON.
+
+- Category: Software & Developer Tools
+- Type: API | Pricing: Free | Access: No key
+- Limitation: Free.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/exec-apps-suite
+- Original source: https://10015.io
+
+## SecurityHeaders
+
+Scores a website's HTTP response headers with an A-to-F grade.
+
+- Category: Software & Developer Tools
+- Type: API | Pricing: Free | Access: No key
+- Limitation: Free.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/securityheaders
+- Original source: https://securityheaders.com
+
+## Qualys SSL Labs
+
+Tests and grades a server's TLS/SSL configuration.
+
+- Category: Software & Developer Tools
+- Type: API | Pricing: Free | Access: API key
+- Limitation: Free (account required).
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/qualys-ssl-labs
+- Original source: https://www.ssllabs.com/ssltest
+
+## mail-tester
+
+Tests email deliverability and returns a spam score.
+
+- Category: Software & Developer Tools
+- Type: API | Pricing: Free | Access: No key
+- Limitation: Works without registration.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/mail-tester
+- Original source: https://mail-tester.com
+
+## urlscan.io
+
+Deep-scans a URL, recording its requests and a screenshot.
+
+- Category: Software & Developer Tools
+- Type: API | Pricing: Free tier | Access: No key
+- Limitation: Freemium.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/urlscanio
+- Original source: https://urlscan.io
+
+## VirusTotal
+
+Scans files and URLs with more than 70 antivirus engines.
+
+- Category: Software & Developer Tools
+- Type: API | Pricing: Free | Access: API key
+- Limitation: Free (account required).
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/virustotal
+- Original source: https://www.virustotal.com
+
+## MXToolbox
+
+Web tools for DNS lookups, blacklist checks and SMTP diagnostics.
+
+- Category: Software & Developer Tools
+- Type: API | Pricing: Free tier | Access: No key
+- Limitation: Freemium.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/mxtoolbox
+- Original source: https://mxtoolbox.com
+
+## DNSChecker
+
+Checks DNS propagation worldwide across many resolvers.
+
+- Category: Software & Developer Tools
+- Type: API | Pricing: Free | Access: No key
+- Limitation: Free.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/dnschecker
+- Original source: https://dnschecker.org
+
+## DNSDumpster
+
+A free DNS reconnaissance tool that maps a domain's infrastructure.
+
+- Category: Software & Developer Tools
+- Type: API | Pricing: Free | Access: API key
+- Limitation: Free (account required).
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/dnsdumpster
+- Original source: https://dnsdumpster.com
+
+## OSINT Framework
+
+A curated, branching catalogue of OSINT research resources.
+
+- Category: Software & Developer Tools
+- Type: Dataset | Pricing: Free | Access: No key
+- Limitation: Open source.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/osint-framework
+- Original source: https://osintframework.com
+
+## crt.sh
+
+Searchable certificate-transparency logs for finding SSL/TLS certificates.
+
+- Category: Software & Developer Tools
+- Type: API | Pricing: Free | Access: No key
+- Limitation: Free; sometimes slow.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/crtsh
+- Original source: https://crt.sh
+
+## Exploit-DB GHDB
+
+A curated database of Google dorks for advanced search queries.
+
+- Category: Software & Developer Tools
+- Type: Dataset | Pricing: Free tier | Access: API key
+- Limitation: Free (account required).
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/exploit-db-ghdb
+- Original source: https://www.exploit-db.com/google-hacking-database
+
+## OSV.dev
+
+A Google-run open database of vulnerabilities in open-source software.
+
+- Category: Software & Developer Tools
+- Type: Dataset | Pricing: Free | Access: No key
+- Limitation: Open source; actively maintained.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/osvdev
+- Original source: https://osv.dev
+
+## Privacy Guides
+
+A curated guide to privacy-respecting software.
+
+- Category: Software & Developer Tools
+- Type: Dataset | Pricing: Free tier | Access: No key
+- Limitation: CC-BY-SA.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/privacy-guides
+- Original source: https://www.privacyguides.org
+
+## switching.software
+
+Guides for switching to ethical, privacy-friendly software alternatives.
+
+- Category: Software & Developer Tools
+- Type: Dataset | Pricing: Free | Access: No key
+- Limitation: Open source.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/switchingsoftware
+- Original source: https://switching.software
+
+## Exodus Privacy
+
+Reports the trackers found in Android app packages.
+
+- Category: Software & Developer Tools
+- Type: Dataset | Pricing: Free | Access: No key
+- Limitation: AGPL.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/exodus-privacy
+- Original source: https://exodus-privacy.eu.org
+
+## Blacklight
+
+Audits a website for surveillance and tracking technologies.
+
+- Category: Software & Developer Tools
+- Type: API | Pricing: Free | Access: No key
+- Limitation: Open source.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/blacklight
+- Original source: https://themarkup.org/blacklight
+
+## PortSwigger Web Security Academy
+
+A free web-hacking training course from the makers of Burp Suite.
+
+- Category: Software & Developer Tools
+- Type: Dataset | Pricing: Free | Access: No key
+- Limitation: Completely free.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/portswigger-web-security-academy
+- Original source: https://portswigger.net/web-security
+
+## CyLab Security Academy
+
+A free CTF and security-training academy from CMU, formerly picoCTF.
+
+- Category: Software & Developer Tools
+- Type: Dataset | Pricing: Free | Access: No key
+- Limitation: Completely free.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/cylab-security-academy
+- Original source: https://cylabacademy.org
+
+## OverTheWire
+
+Free Linux and security wargames played over SSH.
+
+- Category: Software & Developer Tools
+- Type: Dataset | Pricing: Free | Access: No key
+- Limitation: Free.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/overthewire
+- Original source: https://overthewire.org/wargames
+
+## TryHackMe
+
+Guided, hands-on cybersecurity labs and learning paths.
+
+- Category: Software & Developer Tools
+- Type: Dataset | Pricing: Free tier | Access: No key
+- Limitation: Freemium (generous free tier).
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/tryhackme
+- Original source: https://tryhackme.com
+
+## GRC Password Haystacks
+
+Estimates password crack times locally in the browser.
+
+- Category: Software & Developer Tools
+- Type: API | Pricing: Free | Access: No key
+- Limitation: Runs locally in the browser.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/grc-password-haystacks
+- Original source: https://www.grc.com/haystack.htm
+
+## MIT OpenCourseWare
+
+Complete MIT courses, including lecture materials and assignments.
+
+- Category: Education
+- Type: Dataset | Pricing: Free | Access: No key
+- Limitation: CC BY-NC-SA.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/mit-opencourseware
+- Original source: https://ocw.mit.edu/
+
+## OpenStax
+
+Peer-reviewed open university textbooks.
+
+- Category: Education
+- Type: Dataset | Pricing: Free | Access: No key
+- Limitation: Creative Commons; downloads open.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/openstax
+- Original source: https://openstax.org/
+
+## LibreTexts
+
+An open, collaborative library of subject textbooks.
+
+- Category: Education
+- Type: Dataset | Pricing: Free | Access: No key
+- Limitation: OER / Creative Commons.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/libretexts
+- Original source: https://libretexts.org/
+
+## Wikiversity
+
+Wikimedia's platform for open learning projects and courses.
+
+- Category: Education
+- Type: Dataset | Pricing: Free | Access: No key
+- Limitation: CC BY-SA.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/wikiversity
+- Original source: https://en.wikiversity.org/
+
+## openHPI
+
+German-language MOOCs on IT and artificial intelligence from the HPI.
+
+- Category: Education
+- Type: Dataset | Pricing: Free | Access: No key
+- Limitation: Free; certificates partly paid.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/openhpi
+- Original source: https://open.hpi.de/
+
+## Full Stack Open
+
+A free full-stack web development course from the University of Helsinki, with a certificate.
+
+- Category: Education
+- Type: Dataset | Pricing: Free | Access: No key
+- Limitation: Creative Commons; completely free.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/full-stack-open
+- Original source: https://fullstackopen.com/en/
+
+## Exercism
+
+Coding exercises in more than 70 languages with free human mentoring.
+
+- Category: Education
+- Type: Dataset | Pricing: Free tier | Access: No key
+- Limitation: Open source / freemium.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/exercism
+- Original source: https://exercism.org/
+
+## 3Blue1Brown
+
+Visual math explanations through animated video lessons.
+
+- Category: Education
+- Type: Dataset | Pricing: Free | Access: No key
+- Limitation: Videos free.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/3blue1brown
+- Original source: https://www.3blue1brown.com/
+
+## BetterExplained
+
+Intuitive explanations of math and statistics concepts.
+
+- Category: Education
+- Type: Dataset | Pricing: Free | Access: No key
+- Limitation: Articles free.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/betterexplained
+- Original source: https://betterexplained.com/
+
+## Seeing Theory
+
+Interactive visual explanations of probability and statistics.
+
+- Category: Education
+- Type: API | Pricing: Free | Access: No key
+- Limitation: Open source.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/seeing-theory
+- Original source: https://seeing-theory.brown.edu/
+
+## PhET Simulations
+
+Interactive simulations for physics, chemistry, biology and math.
+
+- Category: Education
+- Type: API | Pricing: Free | Access: No key
+- Limitation: Free; partly open source.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/phet-simulations
+- Original source: https://phet.colorado.edu/
+
+## GeoGebra
+
+Interactive tools for learning and teaching mathematics dynamically.
+
+- Category: Education
+- Type: API | Pricing: Free | Access: No key
+- Limitation: Free to use and openly licensed.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/geogebra
+- Original source: https://www.geogebra.org/
+
+## Lichess
+
+Free, ad-free online chess platform with a public database and API.
+
+- Category: Education
+- Type: API | Pricing: Free | Access: No key
+- Limitation: Open source under AGPL.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/lichess
+- Original source: https://lichess.org/
+
+## Tatoeba
+
+A community collection of 12 million example sentences in many languages.
+
+- Category: Education
+- Type: Dataset | Pricing: Free | Access: No key
+- Limitation: CC BY 2.0 FR; open downloads.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/tatoeba
+- Original source: https://tatoeba.org/
+
+## OPUS Corpora
+
+A collection of parallel language corpora for translation and NLP research.
+
+- Category: Education
+- Type: Dataset | Pricing: Free | Access: No key
+- Limitation: Mostly free to use.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/opus-corpora
+- Original source: https://opus.nlpl.eu/
+
+## Lingua Libre
+
+A collaborative, Wikimedia-hosted database of pronunciation recordings from around the world.
+
+- Category: Education
+- Type: Dataset | Pricing: Free | Access: No key
+- Limitation: Creative Commons licensing via Wikimedia.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/lingua-libre
+- Original source: https://meta.wikimedia.org/wiki/Lingua_Libre
+
+## Language Transfer
+
+Free audio language courses built on a thinking-based learning method.
+
+- Category: Education
+- Type: Dataset | Pricing: Free | Access: No key
+- Limitation: Completely free.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/language-transfer
+- Original source: https://www.languagetransfer.org/
+
+## musictheory.net
+
+Interactive music theory lessons, exercises and an ear-training tool.
+
+- Category: Education
+- Type: API | Pricing: Free | Access: No key
+- Limitation: Free to use.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/musictheorynet
+- Original source: https://www.musictheory.net/
+
+## Chrome Music Lab
+
+Interactive web experiments for exploring music through play.
+
+- Category: Education
+- Type: API | Pricing: Free | Access: No key
+- Limitation: Free to use.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/chrome-music-lab
+- Original source: https://musiclab.chromeexperiments.com/
+
+## MuseScore
+
+A community catalog of sheet music with an online score editor.
+
+- Category: Education
+- Type: API | Pricing: Free | Access: No key
+- Limitation: Scores under varying licenses; editor software GPL.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/musescore
+- Original source: https://musescore.com/
+
+## iFixit
+
+Community-written repair manuals and device teardowns.
+
+- Category: Education
+- Type: Dataset | Pricing: Free | Access: No key
+- Limitation: CC BY-NC.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/ifixit
+- Original source: https://www.ifixit.com/
+
+## Stanford Encyclopedia of Philosophy
+
+A peer-reviewed online encyclopedia of philosophy.
+
+- Category: Education
+- Type: Dataset | Pricing: Free | Access: No key
+- Limitation: Creative Commons licensed.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/stanford-encyclopedia-of-philosophy
+- Original source: https://plato.stanford.edu/
+
+## Zooniverse
+
+A platform where volunteers contribute to real citizen-science research projects.
+
+- Category: Education
+- Type: API | Pricing: Free | Access: No key
+- Limitation: Run by a nonprofit; free to participate.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/zooniverse
+- Original source: https://www.zooniverse.org/
+
+## OneZoom Tree of Life
+
+An interactive fractal tree visualising the evolutionary relationships of all known species.
+
+- Category: Education
+- Type: API | Pricing: Free | Access: No key
+- Limitation: Open source.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/onezoom-tree-of-life
+- Original source: https://www.onezoom.org/
+
+## Standard Ebooks
+
+Carefully typeset, freely downloadable public-domain e-books.
+
+- Category: Education
+- Type: Dataset | Pricing: Free | Access: No key
+- Limitation: Public domain with CC0 editions.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/standard-ebooks
+- Original source: https://standardebooks.org/
+
+## LibriVox
+
+Audiobooks of public-domain texts read by volunteers.
+
+- Category: Education
+- Type: Dataset | Pricing: Free | Access: No key
+- Limitation: Public domain / CC0.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/librivox
+- Original source: https://librivox.org/
+
+## Learn Git Branching
+
+An interactive browser-based game for learning Git branches and workflows.
+
+- Category: Education
+- Type: API | Pricing: Free | Access: No key
+- Limitation: Open source under MIT.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/learn-git-branching
+- Original source: https://learngitbranching.js.org/
+
+## Rustlings
+
+Small command-line exercises for learning Rust.
+
+- Category: Education
+- Type: Dataset | Pricing: Free | Access: No key
+- Limitation: MIT / Apache licensed.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/rustlings
+- Original source: https://rustlings.rust-lang.org/
+
+## Devhints
+
+Concise cheatsheets for widely used developer tools.
+
+- Category: Education
+- Type: Dataset | Pricing: Free | Access: No key
+- Limitation: Open source.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/devhints
+- Original source: https://devhints.io/
+
+## Finanzfluss
+
+German-language financial education content and courses.
+
+- Category: Education
+- Type: Dataset | Pricing: Free tier | Access: No key
+- Limitation: Content free; courses freemium.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/finanzfluss
+- Original source: https://www.finanzfluss.de/
+
+## Mixkit
+
+Free stock video, music and template downloads.
+
+- Category: Arts & Culture
+- Type: Dataset | Pricing: Free | Access: No key
+- Limitation: Free to use under the site's own license.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/mixkit
+- Original source: https://mixkit.co
+
+## Coverr
+
+A curated collection of free stock videos.
+
+- Category: Arts & Culture
+- Type: Dataset | Pricing: Free | Access: No key
+- Limitation: Free license.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/coverr
+- Original source: https://coverr.co
+
+## Pexels
+
+Free stock photos and videos with a public API.
+
+- Category: Arts & Culture
+- Type: API | Pricing: Free | Access: No key
+- Limitation: CC0-like license.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/pexels
+- Original source: https://pexels.com
+
+## Pixabay
+
+Free photos, vectors, illustrations, music and sound effects.
+
+- Category: Arts & Culture
+- Type: Dataset | Pricing: Free | Access: No key
+- Limitation: Pixabay Content License.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/pixabay
+- Original source: https://pixabay.com
+
+## SplitShire
+
+Free stock photos and videos.
+
+- Category: Arts & Culture
+- Type: Dataset | Pricing: Free | Access: No key
+- Limitation: Some items require attribution.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/splitshire
+- Original source: https://splitshire.com
+
+## StockSnap
+
+A daily-updated collection of CC0 photos.
+
+- Category: Arts & Culture
+- Type: Dataset | Pricing: Free | Access: No key
+- Limitation: CC0.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/stocksnap
+- Original source: https://stocksnap.io
+
+## Public Domain Vectors
+
+An archive of public-domain vector graphics.
+
+- Category: Arts & Culture
+- Type: Dataset | Pricing: Free | Access: No key
+- Limitation: Public domain / CC0.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/public-domain-vectors
+- Original source: https://publicdomainvectors.org
+
+## Openclipart
+
+A community library of free SVG clip art.
+
+- Category: Arts & Culture
+- Type: Dataset | Pricing: Free | Access: No key
+- Limitation: CC0.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/openclipart
+- Original source: https://openclipart.org
+
+## Lots of Sounds
+
+A curated collection of CC0 sound effects with a public API.
+
+- Category: Arts & Culture
+- Type: API | Pricing: Free | Access: No key
+- Limitation: CC0.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/lots-of-sounds
+- Original source: https://lotsofsounds.com
+
+## Free To Use Sounds
+
+A large library of freely usable field recordings.
+
+- Category: Arts & Culture
+- Type: Dataset | Pricing: Free | Access: No key
+- Limitation: CC0 / public domain.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/free-to-use-sounds
+- Original source: https://freetousesounds.com
+
+## Incompetech
+
+Royalty-free production music by Kevin MacLeod.
+
+- Category: Arts & Culture
+- Type: Dataset | Pricing: Free | Access: No key
+- Limitation: CC BY; possible Content ID claims on YouTube.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/incompetech
+- Original source: https://incompetech.com
+
+## Fontshare
+
+Professional-quality fonts, entirely free to use.
+
+- Category: Arts & Culture
+- Type: Dataset | Pricing: Free | Access: No key
+- Limitation: Free to use under the site's own license.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/fontshare
+- Original source: https://fontshare.com
+
+## Font Squirrel
+
+A web font generator and downloadable font kits.
+
+- Category: Arts & Culture
+- Type: API | Pricing: Free | Access: No key
+- Limitation: Mostly SIL OFL.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/font-squirrel
+- Original source: https://fontsquirrel.com
+
+## League of Moveable Type
+
+A curated collection of open-source typefaces.
+
+- Category: Arts & Culture
+- Type: Dataset | Pricing: Free | Access: No key
+- Limitation: SIL Open Font License.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/league-of-moveable-type
+- Original source: https://theleagueofmoveabletype.com
+
+## Poly Pizza
+
+Around 50,000 low-poly 3D models in GLB format.
+
+- Category: Arts & Culture
+- Type: Dataset | Pricing: Free | Access: No key
+- Limitation: Mostly CC BY.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/poly-pizza
+- Original source: https://poly.pizza
+
+## KayLous free
+
+Free low-poly 3D asset packs for game development.
+
+- Category: Arts & Culture
+- Type: Dataset | Pricing: Free | Access: No key
+- Limitation: RoyaltyFree license; attribution requested.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/kaylous-free
+- Original source: https://kaylous.itch.io/free
+
+## TextureCan
+
+PBR textures for 3D work, free and premium.
+
+- Category: Arts & Culture
+- Type: Dataset | Pricing: Free tier | Access: No key
+- Limitation: Freemium.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/texturecan
+- Original source: https://texturecan.com
+
+## OpenToonz
+
+Professional 2D animation software with roots in Studio Ghibli's Toonz.
+
+- Category: Arts & Culture
+- Type: Dataset | Pricing: Free | Access: No key
+- Limitation: BSD licensed.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/opentoonz
+- Original source: https://opentoonz.github.io
+
+## memegen.link
+
+A self-hostable API for generating meme images from templates.
+
+- Category: Arts & Culture
+- Type: API | Pricing: Free | Access: No key
+- Limitation: MIT.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/memegenlink
+- Original source: https://memegen.link
+
+## DaVinci Resolve free
+
+Professional video editing, color grading and audio in a free edition.
+
+- Category: Arts & Culture
+- Type: Dataset | Pricing: Free tier | Access: No key
+- Limitation: Freemium.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/davinci-resolve-free
+- Original source: https://www.blackmagicdesign.com/products/davinciresolve
+
+## Tenacity
+
+An Audacity fork focused on privacy, without telemetry.
+
+- Category: Arts & Culture
+- Type: Dataset | Pricing: Free | Access: No key
+- Limitation: GPL.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/tenacity
+- Original source: https://tenacityteam.org
+
+## QuickChart
+
+An API that renders chart images from JSON specifications.
+
+- Category: Technology
+- Type: API | Pricing: Free tier | Access: No key
+- Limitation: Free tier with usage limits.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/quickchart
+- Original source: https://quickchart.io
+
+## r.jina.ai
+
+A proxy that converts any URL to clean Markdown for AI agents, about 20 requests per minute without a key.
+
+- Category: Technology
+- Type: API | Pricing: Free tier | Access: No key
+- Limitation: Free without a key; rate limited, higher limits with a key.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/rjinaai
+- Original source: https://r.jina.ai
+
+## endoflife.date
+
+An API listing end-of-life and support dates for software products.
+
+- Category: Technology
+- Type: API | Pricing: Free | Access: No key
+- Limitation: Keyless.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/endoflifedate
+- Original source: https://endoflife.date
+
+## HN-Algolia
+
+A keyless API for searching and measuring Hacker News discussions.
+
+- Category: Technology
+- Type: API | Pricing: Free | Access: No key
+- Limitation: Free to use; check the site for current terms.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/hn-algolia
+- Original source: https://hn.algolia.com/api
+
+## Wikipedia REST
+
+A keyless REST API for Wikipedia page summaries and links.
+
+- Category: Technology
+- Type: API | Pricing: Free | Access: No key
+- Limitation: Keyless; cache politely.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/wikipedia-rest
+- Original source: https://en.wikipedia.org/api/rest_v1/
+
+## Semantic Scholar Graph API
+
+A scholarly graph API covering 230 million papers, citations and TLDR summaries.
+
+- Category: Research
+- Type: API | Pricing: Free tier | Access: No key
+- Limitation: Keyless with rate limits; a free key raises them.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/semantic-scholar-graph-api
+- Original source: https://api.semanticscholar.org/graph/v1
+
+## DOAJ API
+
+An API with metadata for articles from around 19,000 vetted open-access journals.
+
+- Category: Research
+- Type: API | Pricing: Free | Access: No key
+- Limitation: Keyless; CC BY.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/doaj-api
+- Original source: https://doaj.org/api/search/articles
+
+## OpenCitations
+
+Open citation data with over 1.7 billion citations and a downloadable dump.
+
+- Category: Research
+- Type: Dataset | Pricing: Free | Access: No key
+- Limitation: Keyless; CC0.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/opencitations
+- Original source: https://opencitations.net
+
+## ORCID Public API
+
+Author identifiers and research profiles from around the world.
+
+- Category: Research
+- Type: API | Pricing: Free | Access: No key
+- Limitation: Keyless read access (rate limited); a free key is available.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/orcid-public-api
+- Original source: https://orcid.org/developers/members-api
+
+## OpenAIRE Graph API
+
+An API linking European open-access publications to their funding projects.
+
+- Category: Research
+- Type: API | Pricing: Free | Access: No key
+- Limitation: Keyless; registration needed for bulk mining.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/openaire-graph-api
+- Original source: https://api.openaire.eu
+
+## bioRxiv/medRxiv API
+
+A keyless JSON API with daily bioRxiv and medRxiv preprint listings.
+
+- Category: Research
+- Type: API | Pricing: Free | Access: No key
+- Limitation: Keyless.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/biorxivmedrxiv-api
+- Original source: https://api.biorxiv.org
+
+## OSF Preprints API
+
+A keyless API for preprints across disciplines, including SocArXiv.
+
+- Category: Research
+- Type: API | Pricing: Free | Access: No key
+- Limitation: Keyless for public data.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/osf-preprints-api
+- Original source: https://api.osf.io/v2/preprints
+
+## HAL
+
+A paneuropean open-access repository API with more than 14 million documents.
+
+- Category: Research
+- Type: API | Pricing: Free | Access: No key
+- Limitation: Keyless; full texts free.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/hal
+- Original source: https://api.archives-ouvertes.fr/search/
+
+## Global Dataverse Network
+
+A network of research-data repositories with a keyless search API.
+
+- Category: Research
+- Type: API | Pricing: Free | Access: No key
+- Limitation: Keyless search.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/global-dataverse-network
+- Original source: https://dataverse.org
+
+## Dryad
+
+A curated repository of open data from the life sciences.
+
+- Category: Research
+- Type: Dataset | Pricing: Free | Access: No key
+- Limitation: Keyless; CC0.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/dryad
+- Original source: https://datadryad.org
+
+## PANGAEA
+
+An Earth and environmental data repository offering OAI-PMH access.
+
+- Category: Research
+- Type: Dataset | Pricing: Free | Access: No key
+- Limitation: Keyless; mostly CC BY.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/pangaea
+- Original source: https://www.pangaea.de
+
+## OECD SDMX REST
+
+Official OECD statistics such as GDP and education via SDMX REST.
+
+- Category: Research
+- Type: API | Pricing: Free | Access: No key
+- Limitation: Keyless with an Accept header; attribution free.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/oecd-sdmx-rest
+- Original source: https://sdmx.oecd.org/public/rest
+
+## UN SDG API
+
+A JSON API covering the 231 UN Sustainable Development Goal indicators.
+
+- Category: Research
+- Type: API | Pricing: Free | Access: No key
+- Limitation: Keyless.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/un-sdg-api
+- Original source: https://unstats.un.org/sdgapi/swagger
+
+## data.world
+
+A curated data catalog with Datasette-style querying.
+
+- Category: Research
+- Type: Dataset | Pricing: Free | Access: No key
+- Limitation: Public datasets viewable keyless.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/dataworld
+- Original source: https://data.world
+
+## Phys.org RSS
+
+RSS feeds with research and physics news.
+
+- Category: Research
+- Type: Dataset | Pricing: Free | Access: No key
+- Limitation: Keyless; free.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/physorg-rss
+- Original source: https://phys.org/rss-feed/
+
+## EurekAlert! RSS
+
+RSS feeds of AAAS press releases on research results.
+
+- Category: Research
+- Type: Dataset | Pricing: Free | Access: No key
+- Limitation: Keyless.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/eurekalert-rss
+- Original source: https://www.eurekalert.org/rss-feeds
+
+## Overpass API
+
+A query language and API for extracting all OpenStreetMap data.
+
+- Category: Geography
+- Type: API | Pricing: Free | Access: No key
+- Limitation: ODbL; keyless, some cloud IPs blocked, use the kumi.systems mirror.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/overpass-api
+- Original source: https://overpass-api.de/api/interpreter
+
+## OpenFreeMap
+
+Vector map tiles and styles with no token required.
+
+- Category: Geography
+- Type: API | Pricing: Free | Access: No key
+- Limitation: Fully free, including commercial use.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/openfreemap
+- Original source: https://openfreemap.org
+
+## Geofabrik Downloads
+
+Daily OpenStreetMap extracts by country and region.
+
+- Category: Geography
+- Type: Dataset | Pricing: Free | Access: No key
+- Limitation: ODbL; keyless.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/geofabrik-downloads
+- Original source: https://download.geofabrik.de
+
+## Who's On First
+
+A place gazetteer with stable IDs and geometries for locations worldwide.
+
+- Category: Geography
+- Type: Dataset | Pricing: Free | Access: No key
+- Limitation: CC BY / CC0.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/whos-on-first
+- Original source: https://whosonfirst.org
+
+## OpenRouteService
+
+Routing, isochrone and matrix services from servers in Germany.
+
+- Category: Geography
+- Type: API | Pricing: Free tier | Access: API key
+- Limitation: Free API key with daily quotas.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/openrouteservice
+- Original source: https://openrouteservice.org
+
+## GraphHopper Directions API
+
+Routing, isochrone and tour-planning APIs.
+
+- Category: Geography
+- Type: API | Pricing: Free tier | Access: API key
+- Limitation: Free plan with limits requires registration.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/graphhopper-directions-api
+- Original source: https://www.graphhopper.com/api/
+
+## OSRM Demo Server
+
+A keyless demo server for car routing without any SLA.
+
+- Category: Geography
+- Type: API | Pricing: Free | Access: No key
+- Limitation: Keyless; for testing only.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/osrm-demo-server
+- Original source: https://router.project-osrm.org
+
+## Valhalla (FOSSGIS)
+
+A keyless demo API for multimodal routing.
+
+- Category: Geography
+- Type: API | Pricing: Free | Access: No key
+- Limitation: Keyless under fair use.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/valhalla-fossgis
+- Original source: https://valhalla.openstreetmap.de
+
+## NOAA NOMADS
+
+Raw GFS and HRRR weather model data as subsetting-able GRIB2 files.
+
+- Category: Geography
+- Type: Dataset | Pricing: Free | Access: No key
+- Limitation: Public domain; keyless.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/noaa-nomads
+- Original source: https://nomads.ncep.noaa.gov
+
+## RainViewer API
+
+Radar precipitation tiles and animations via a keyless API.
+
+- Category: Geography
+- Type: API | Pricing: Free | Access: No key
+- Limitation: Keyless with attribution.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/rainviewer-api
+- Original source: https://www.rainviewer.com/api.html
+
+## OpenTopoData
+
+An API returning elevation and ocean depth per coordinate from SRTM/ASTER.
+
+- Category: Geography
+- Type: API | Pricing: Free | Access: No key
+- Limitation: MIT; keyless under fair use, 1 million points per request.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/opentopodata
+- Original source: https://api.opentopodata.org
+
+## USGS EarthExplorer
+
+The largest satellite imagery archive: Landsat 1-9, SRTM and NAIP.
+
+- Category: Geography
+- Type: Dataset | Pricing: Free | Access: API key
+- Limitation: Requires a free account; US public domain.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/usgs-earthexplorer
+- Original source: https://earthexplorer.usgs.gov
+
+## LibreTranslate
+
+An open machine-translation platform with web UI and API.
+
+- Category: Geography
+- Type: API | Pricing: Free | Access: No key
+- Limitation: AGPL; keyless instances with rate limits.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/libretranslate
+- Original source: https://libretranslate.de
+
+## Lingva Translate
+
+A keyless JSON API alternative to Google Translate.
+
+- Category: Geography
+- Type: API | Pricing: Free | Access: No key
+- Limitation: MIT; keyless.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/lingva-translate
+- Original source: https://lingva.ml
+
+## Wiktionary API
+
+Wiktionary's MediaWiki API serving lexical data as JSON.
+
+- Category: Geography
+- Type: API | Pricing: Free | Access: No key
+- Limitation: Keyless; CC BY-SA.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/wiktionary-api
+- Original source: https://en.wiktionary.org/w/api.php
+
+## timeapi.io
+
+An API for current time, UTC offset and DST status per time zone.
+
+- Category: Geography
+- Type: API | Pricing: Free | Access: No key
+- Limitation: Keyless.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/timeapiio
+- Original source: https://timeapi.io/api/Time/current/zone
+
+## IANA Zeitzonen-DB
+
+The authoritative IANA time-zone rules database.
+
+- Category: Geography
+- Type: Dataset | Pricing: Free | Access: No key
+- Limitation: Public domain.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/iana-zeitzonen-db
+- Original source: https://data.iana.org/time-zones/
+
+## JPL Horizons
+
+NASA's system for high-precision ephemerides of solar-system bodies.
+
+- Category: Geography
+- Type: API | Pricing: Free | Access: No key
+- Limitation: Keyless; NASA open data.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/jpl-horizons-2
+- Original source: https://ssd.jpl.nasa.gov/horizons/
+
+## Celestrak GP
+
+Current satellite TLE orbital data as JSON, TLE or CSV.
+
+- Category: Geography
+- Type: Dataset | Pricing: Free | Access: No key
+- Limitation: Keyless; free.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/celestrak-gp
+- Original source: https://celestrak.org
+
+## In-The-Sky Ephemeris
+
+Ephemerides and rise/set times for the Sun, Moon and planets.
+
+- Category: Geography
+- Type: Dataset | Pricing: Free | Access: No key
+- Limitation: Keyless; free for non-commercial use.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/in-the-sky-ephemeris
+- Original source: https://in-the-sky.org/ephemeris/
+
+## OpenCity Berlin
+
+Accessibility data for Berlin facilities via a GraphQL API.
+
+- Category: Government
+- Type: API | Pricing: Free | Access: No key
+- Limitation: Keyless; check API availability before use.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/opencity-berlin
+- Original source: https://www.opencity.eu
+
+## OpenMünchen
+
+Open data of the city of Munich, available as direct CSV downloads.
+
+- Category: Government
+- Type: Dataset | Pricing: Free | Access: No key
+- Limitation: Keyless; mostly CC BY.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/openmunchen
+- Original source: https://www.openmuenchen.de
+
+## Serviceportal Bund
+
+Directory of all German administrative services (OZG) with authority data.
+
+- Category: Government
+- Type: Dataset | Pricing: Free | Access: No key
+- Limitation: Keyless; government data free.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/serviceportal-bund
+- Original source: https://www.service.bund.de
+
+## WorldPop
+
+High-resolution population rasters as GeoTIFF or via API.
+
+- Category: Government
+- Type: API | Pricing: Free | Access: No key
+- Limitation: Keyless; CC BY.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/worldpop
+- Original source: https://www.worldpop.org
+
+## GDELT DOC 2.0
+
+An API for real-time news and event trends scanned by AI.
+
+- Category: Government
+- Type: API | Pricing: Free | Access: No key
+- Limitation: Keyless; free for non-commercial use.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/gdelt-doc-20
+- Original source: https://api.gdeltproject.org/api/v2/doc/doc
+
+## Global Energy Monitor
+
+Crowdsourced trackers for power plants, gas infrastructure and mining worldwide.
+
+- Category: Government
+- Type: Dataset | Pricing: Free | Access: No key
+- Limitation: Free for non-commercial use; commercial licenses are paid.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/global-energy-monitor
+- Original source: https://www.gem.wiki
+
+## FragDenStaat API
+
+An API for freedom-of-information requests and released government documents.
+
+- Category: Government
+- Type: API | Pricing: Free | Access: No key
+- Limitation: Keyless read access; platform under AGPL.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/fragdenstaat-api
+- Original source: https://fragdenstaat.de/api/
+
+## abgeordnetenwatch API
+
+An API for citizen questions, voting records and election checks of German politicians.
+
+- Category: Government
+- Type: API | Pricing: Free | Access: No key
+- Limitation: Keyless; cite the source.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/abgeordnetenwatch-api
+- Original source: https://www.abgeordnetenwatch.de/api
+
+## Lobbyregister des Bundes
+
+Germany's mandatory lobby register with associations and spending disclosures.
+
+- Category: Government
+- Type: Dataset | Pricing: Free | Access: No key
+- Limitation: Keyless web search; no API.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/lobbyregister-des-bundes
+- Original source: https://www.lobbyregister.bundestag.de
+
+## NINA / BIWAPP
+
+Official German civil-protection warnings from the BBK via web and app.
+
+- Category: Government
+- Type: Dataset | Pricing: Free | Access: No key
+- Limitation: Web and app keyless; API only via the BIWAPP module.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/nina-biwapp
+- Original source: https://www.nina.de
+
+## Global Mobility Database
+
+A curated global catalog of GTFS and GBFS transit feeds with an API.
+
+- Category: Government
+- Type: API | Pricing: Free | Access: No key
+- Limitation: Keyless; ODbL data, Apache 2.0 code.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/global-mobility-database
+- Original source: https://mobilitydatabase.org
+
+## Wikisource
+
+Wikimedia's full-text library of source texts, accessible via the MediaWiki API.
+
+- Category: Arts & Culture
+- Type: API | Pricing: Free | Access: No key
+- Limitation: Keyless; original texts public domain, pages CC BY-SA.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/wikisource
+- Original source: https://de.wikisource.org
+
+## Perseus/Scaife
+
+Greek, Latin and Arabic primary sources served through a CTS-URN API.
+
+- Category: Arts & Culture
+- Type: API | Pricing: Free | Access: No key
+- Limitation: Keyless; some translations CC BY-NC.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/perseusscaife
+- Original source: https://scaife.perseus.org
+
+## Sacred Texts Archive
+
+An archive of texts on world religions, mythology and alchemy.
+
+- Category: Arts & Culture
+- Type: Dataset | Pricing: Free | Access: No key
+- Limitation: Keyless; public domain.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/sacred-texts-archive
+- Original source: https://sacred-texts.com
+
+## 84000 Early Buddhist Texts
+
+The early Buddhist canon in fresh English translations.
+
+- Category: Arts & Culture
+- Type: Dataset | Pricing: Free | Access: No key
+- Limitation: Keyless; attribution required.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/84000-early-buddhist-texts
+- Original source: https://84000.co
+
+## OAPEN Library
+
+More than 30,000 open-access academic monographs.
+
+- Category: Arts & Culture
+- Type: Dataset | Pricing: Free | Access: No key
+- Limitation: Keyless; mostly CC BY.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/oapen-library
+- Original source: https://library.oapen.org
+
+## Cleveland Museum of Art
+
+About 69,000 museum objects served as a JSON API.
+
+- Category: Arts & Culture
+- Type: API | Pricing: Free | Access: No key
+- Limitation: Keyless; CC0.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/cleveland-museum-of-art
+- Original source: https://openaccess-api.clevelandart.org
+
+## Louvre Collections
+
+The Louvre's collection database with around 500,000 open images (2025).
+
+- Category: Arts & Culture
+- Type: Dataset | Pricing: Free | Access: No key
+- Limitation: CC BY; the API is not yet public.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/louvre-collections
+- Original source: https://collections.louvre.fr/en/
+
+## Cantus Database
+
+A database of more than 200,000 Gregorian chants.
+
+- Category: Arts & Culture
+- Type: Dataset | Pricing: Free | Access: No key
+- Limitation: Keyless browsing; free for research.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/cantus-database
+- Original source: https://cantusdatabase.org
+
+## ccMixter
+
+A community library of Creative Commons samples, stems and remixes.
+
+- Category: Arts & Culture
+- Type: Dataset | Pricing: Free | Access: No key
+- Limitation: Keyless; licensing varies per sample.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/ccmixter
+- Original source: https://dig.ccmixter.org
+
+## Blender Studio Open Works
+
+Open Blender Studio films with their production assets and rigs.
+
+- Category: Arts & Culture
+- Type: Dataset | Pricing: Free | Access: No key
+- Limitation: Free to use; mixed Creative Commons licenses (BY/NC/0) apply per file.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/blender-studio-open-works
+- Original source: https://download.blender.org/studio/
+
+## Fontsource
+
+Open-source web fonts versioned as npm packages for self-hosting.
+
+- Category: Arts & Culture
+- Type: Dataset | Pricing: Free | Access: No key
+- Limitation: No key required; licensed under the SIL Open Font License.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/fontsource
+- Original source: https://fontsource.org
+
+## Iconify API
+
+JSON and SVG API serving over 200,000 icons from more than 150 icon sets.
+
+- Category: Arts & Culture
+- Type: API | Pricing: Free | Access: No key
+- Limitation: No key required; MIT, Apache or CC0 licenses apply per set.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/iconify-api
+- Original source: https://api.iconify.design/collections
+
+## OpenLigaDB
+
+Live Bundesliga fixtures and results served as JSON.
+
+- Category: Arts & Culture
+- Type: API | Pricing: Free | Access: No key
+- Limitation: No key required; CC BY-SA applies.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/openligadb
+- Original source: https://api.openligadb.de/getmatchdata/bl1
+
+## Football-Data.co.uk
+
+Match results, statistics and betting odds for over 20 leagues back to 1993, as CSV.
+
+- Category: Arts & Culture
+- Type: Dataset | Pricing: Free | Access: No key
+- Limitation: No key required; attribution to the source requested.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/football-datacouk
+- Original source: https://www.football-data.co.uk/mmz4281/2425/E0.csv
+
+## Cricsheet
+
+Ball-by-ball cricket raw data for over 100 tournaments in YAML format.
+
+- Category: Arts & Culture
+- Type: Dataset | Pricing: Free | Access: No key
+- Limitation: No key required; freely usable.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/cricsheet
+- Original source: https://cricsheet.org
+
+## Lichess Database + Tablebase
+
+Over 500 million chess games as monthly dumps plus an endgame tablebase API.
+
+- Category: Arts & Culture
+- Type: API | Pricing: Free | Access: No key
+- Limitation: No key required; CC0.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/lichess-database-tablebase
+- Original source: https://database.lichess.org
+
+## Chess-Results
+
+FIDE tournament results, pairings and rating lists from around the world.
+
+- Category: Arts & Culture
+- Type: Dataset | Pricing: Free | Access: No key
+- Limitation: Free to use in the browser; check the site for current terms.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/chess-results
+- Original source: https://chess-results.com
+
+## Serlo
+
+Over 14,000 free learning articles and videos, mainly in German with multilingual coverage.
+
+- Category: Arts & Culture
+- Type: Dataset | Pricing: Free | Access: No key
+- Limitation: No key required; CC BY-SA applies.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/serlo
+- Original source: https://de.serlo.org
+
+## ZUM-Wiki
+
+A wiki of teaching materials for classroom teachers.
+
+- Category: Arts & Culture
+- Type: Dataset | Pricing: Free | Access: No key
+- Limitation: No key required; CC BY-SA applies.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/zum-wiki
+- Original source: https://unterrichten.zum.de/wiki/Hauptseite
+
+## Wiki Ed Dashboard
+
+Statistics API for Wikipedia education programs worldwide.
+
+- Category: Arts & Culture
+- Type: API | Pricing: Free | Access: No key
+- Limitation: No key required; open source.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/wiki-ed-dashboard
+- Original source: https://dashboard.wikiedu.org
+
+## Open Textbook Library
+
+Over 1,400 peer-reviewed open textbooks with reviews and a metadata export.
+
+- Category: Arts & Culture
+- Type: Dataset | Pricing: Free | Access: No key
+- Limitation: No key required; individual books carry Creative Commons licenses.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/open-textbook-library
+- Original source: https://open.umn.edu/opentextbooks
+
+## CIA FOIA Reading Room (CREST)
+
+Millions of declassified documents with full-text search and export.
+
+- Category: Arts & Culture
+- Type: Dataset | Pricing: Free | Access: No key
+- Limitation: No key required; public domain.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/cia-foia-reading-room-crest
+- Original source: https://www.cia.gov/readingroom/
+
+## Wilson Center Digital Archive
+
+Declassified primary sources on modern history, provided as scans.
+
+- Category: Arts & Culture
+- Type: Dataset | Pricing: Free | Access: No key
+- Limitation: Free for research and citation.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/wilson-center-digital-archive
+- Original source: https://www.wilsoncenter.org/digital-archive
+
+## KOSIS Open API
+
+Official government statistics of South Korea from over 35 ministries.
+
+- Category: Arts & Culture
+- Type: API | Pricing: Free | Access: API key
+- Limitation: Free API key after registration.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/kosis-open-api
+- Original source: https://kosis.kr/openapi/
+
+## e-Stat
+
+Japan's government statistics API covering roughly 60 public agencies.
+
+- Category: Arts & Culture
+- Type: API | Pricing: Free | Access: API key
+- Limitation: Free API key after registration.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/e-stat
+- Original source: https://www.e-stat.go.jp/en
+
+## SSB Statistics API
+
+Norway's official statistics as JSON or CSV via PX-Query.
+
+- Category: Arts & Culture
+- Type: API | Pricing: Free | Access: No key
+- Limitation: No key required; mostly CC0 or Norwegian NSL license.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/ssb-statistics-api
+- Original source: https://data.ssb.no/api/v0/en/table/11204?format=json
+
+## UK ONS API
+
+UK official statistics on population, prices and the labour market as JSON or CSV.
+
+- Category: Arts & Culture
+- Type: API | Pricing: Free | Access: API key
+- Limitation: Keyless access is rate-limited; an official key is free.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/uk-ons-api
+- Original source: https://api.beta.ons.gov.uk/v1/
+
+## data.gov.au CKAN API
+
+CKAN metadata search across all Australian government data catalogues.
+
+- Category: Arts & Culture
+- Type: API | Pricing: Free | Access: No key
+- Limitation: No key required; most datasets are CC BY.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/datagovau-ckan-api
+- Original source: https://data.gov.au/data/api/3/action/package_search
+
+## PBCore
+
+An open audio/video metadata standard with a radio and TV archive database.
+
+- Category: Arts & Culture
+- Type: Dataset | Pricing: Free | Access: No key
+- Limitation: No key required; fully open standard.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/pbcore
+- Original source: https://pbcore.org
+
+## Kenney Assets
+
+Over 7,000 free game assets covering models, UI and audio.
+
+- Category: 3D & Graphics
+- Type: Dataset | Pricing: Free | Access: No key
+- Limitation: No key required; CC0.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/kenney-assets
+- Original source: https://kenney.nl/assets
+
+## Quaternius
+
+Low-poly asset kits for nature, cities and animation, packaged as ZIP downloads.
+
+- Category: 3D & Graphics
+- Type: Dataset | Pricing: Free | Access: No key
+- Limitation: No key required; CC0.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/quaternius
+- Original source: https://quaternius.com
+
+## Kay Lousberg
+
+Stylized modular asset kits such as dungeons, vehicles and dioramas.
+
+- Category: 3D & Graphics
+- Type: Dataset | Pricing: Free | Access: No key
+- Limitation: Pay-what-you-want on itch.io; CC0, check each entry.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/kay-lousberg
+- Original source: https://kay.itch.io
+
+## 0x72D
+
+Detailed low-poly environment packs.
+
+- Category: 3D & Graphics
+- Type: Dataset | Pricing: Free | Access: No key
+- Limitation: Free on itch.io; CC0.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/0x72d
+- Original source: https://0x72d.itch.io
+
+## Ansimuz Games
+
+Pixel-art and 3D game environments, including the free Legacy Collection.
+
+- Category: 3D & Graphics
+- Type: Dataset | Pricing: Free | Access: No key
+- Limitation: Free on itch.io; CC BY 4.0.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/ansimuz-games
+- Original source: https://ansimuz.itch.io
+
+## NASA 3D Resources
+
+3D models of rovers, satellites and planets in STL, OBJ and glTF formats.
+
+- Category: 3D & Graphics
+- Type: Dataset | Pricing: Free | Access: No key
+- Limitation: Direct download; US government public domain.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/nasa-3d-resources
+- Original source: https://nasa3d.arc.nasa.gov
+
+## NIH 3D Print Exchange
+
+Biomedical 3D-printing models.
+
+- Category: 3D & Graphics
+- Type: Dataset | Pricing: Free | Access: No key
+- Limitation: Account recommended; public domain or CC BY mix per model.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/nih-3d-print-exchange
+- Original source: https://3d.nih.gov
+
+## Sketchfab CC-Archiv 2019
+
+Around 1,900 curated 3D models offered as bundle ZIPs.
+
+- Category: 3D & Graphics
+- Type: Dataset | Pricing: Free | Access: No key
+- Limitation: Slowly reachable, check before use; CC BY.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/sketchfab-cc-archiv-2019
+- Original source: https://download.sketchfab.com
+
+## Blender Market Free
+
+Free assets for Blender.
+
+- Category: 3D & Graphics
+- Type: Dataset | Pricing: Free | Access: API key
+- Limitation: Registration required; mostly royalty-free, CC0 on a case-by-case basis.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/blender-market-free
+- Original source: https://blender-market.com
+
+## OpenTopography
+
+Community-collected LiDAR and TLS data portal with an API.
+
+- Category: 3D & Graphics
+- Type: API | Pricing: Free | Access: API key
+- Limitation: Registration required; public domain or CC mix per dataset.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/opentopography
+- Original source: https://opentopography.org
+
+## UNAVCO/EarthScope TLS
+
+Terrestrial laser scans for geology and deformation research.
+
+- Category: 3D & Graphics
+- Type: Dataset | Pricing: Free | Access: No key
+- Limitation: Direct download; CC BY.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/unavcoearthscope-tls
+- Original source: https://tls.unavco.org
+
+## Berlin LoD1
+
+Berlin building models as CityGML, found via the 3D city model catalogue search.
+
+- Category: 3D & Graphics
+- Type: API | Pricing: Free | Access: No key
+- Limitation: Free WFS and download; data access licence roughly equivalent to CC BY.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/berlin-lod1
+- Original source: https://gdi.berlin.de
+
+## Hamburg LGV 3D
+
+Hamburg CityGML and 3D surface models distributed as streams.
+
+- Category: 3D & Graphics
+- Type: API | Pricing: Free | Access: No key
+- Limitation: Free, partly with registration; Geofreigabe licence.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/hamburg-lgv-3d
+- Original source: https://www.lgv.hamburg.de
+
+## 3DBAG (Kadaster NL)
+
+Nationwide 3D building model of the Netherlands at LOD2+ with an API.
+
+- Category: 3D & Graphics
+- Type: API | Pricing: Free | Access: No key
+- Limitation: No key required; CC BY 4.0.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/3dbag-kadaster-nl
+- Original source: https://www.pdok.nl/nl/datasets/3dbag
+
+## Viewfinder Panoramas DEM
+
+1, 3 and 15 arc-second elevation models with SRTM void filling in HGT format.
+
+- Category: 3D & Graphics
+- Type: Dataset | Pricing: Free | Access: No key
+- Limitation: Direct download; named licence, redistribution of raw tiles prohibited.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/viewfinder-panoramas-dem
+- Original source: https://www.viewfinderpanoramas.org/dem3.html
+
+## OpenBuilds
+
+Community profiles and machine CAD for CNC routers and 3D printers.
+
+- Category: 3D & Graphics
+- Type: Dataset | Pricing: Free | Access: No key
+- Limitation: Hub; CERN-OHL/GPL for designs, documentation CC BY-SA.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/openbuilds
+- Original source: https://openbuilds.com
+
+## RepRap Wiki
+
+The original RepRap printer designs and parts documented on a wiki.
+
+- Category: 3D & Graphics
+- Type: Dataset | Pricing: Free | Access: No key
+- Limitation: Wiki; GPL/copyleft, keep modifications shared.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/reprap-wiki
+- Original source: https://reprap.org/wiki
+
+## OpenFlexure
+
+Open-hardware DIY microscope including its CAD files.
+
+- Category: 3D & Graphics
+- Type: Dataset | Pricing: Free | Access: No key
+- Limitation: On GitHub; CERN-OHL/GPL.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/openflexure
+- Original source: https://openflexure.org
+
+## OSHWA-zertifizierte Projekte
+
+Directory of genuinely open-hardware projects with mandatory CAD, certified by OSHWA.
+
+- Category: 3D & Graphics
+- Type: Dataset | Pricing: Free | Access: No key
+- Limitation: Licence varies per project; commercially usable by definition.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/oshwa-zertifizierte-projekte
+- Original source: https://certification.oshwa.org
+
+## PD Texture
+
+Public-domain PBR textures.
+
+- Category: 3D & Graphics
+- Type: Dataset | Pricing: Free | Access: No key
+- Limitation: Direct download; CC0/public domain.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/pd-texture
+- Original source: https://pdtexture.com
+
+## textures.dev
+
+Curated free PBR texture sets.
+
+- Category: 3D & Graphics
+- Type: Dataset | Pricing: Free | Access: No key
+- Limitation: Direct download; CC0.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/texturesdev
+- Original source: https://textures.dev
+
+## HDRLabs
+
+Over 40 studio and architectural HDRIs.
+
+- Category: 3D & Graphics
+- Type: Dataset | Pricing: Free | Access: No key
+- Limitation: Newsletter opt-in; CC0 promotion.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/hdrlabs
+- Original source: https://www.hdrlabs.com/sieve/projects
+
+## Greg Zaal 100 Free HDRIs
+
+Realistic outdoor HDRIs.
+
+- Category: 3D & Graphics
+- Type: Dataset | Pricing: Free | Access: No key
+- Limitation: Free on Gumroad; CC0.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/greg-zaal-100-free-hdris
+- Original source: https://cdactions.pl/products/100-free-hdri
+
+## Noirman Environments
+
+Atmospheric HDRI environment packs.
+
+- Category: 3D & Graphics
+- Type: Dataset | Pricing: Free | Access: No key
+- Limitation: Free on itch.io; CC BY 4.0.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/noirman-environments
+- Original source: https://noirman.itch.io
+
+## 3D Textures (Ansell)
+
+Seamless PBR materials by Daniel Ansell.
+
+- Category: 3D & Graphics
+- Type: Dataset | Pricing: Free | Access: No key
+- Limitation: Direct download; CC BY 4.0.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/3d-textures-ansell
+- Original source: https://3dtextures.me
+
+## textures.com Free
+
+Huge photo texture library with 50 free downloads per day.
+
+- Category: 3D & Graphics
+- Type: Dataset | Pricing: Free | Access: No key
+- Limitation: Free account; embedding allowed, resale of raw files not.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/texturescom-free
+- Original source: https://www.textures.com
+
+## CGTextures
+
+Classic photo textures.
+
+- Category: 3D & Graphics
+- Type: Dataset | Pricing: Free | Access: API key
+- Limitation: Registration required; use is fine, redistribution of the texture files is not.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/cgtextures
+- Original source: https://www.cgtextures.com
+
+## Bundesbank Statistics
+
+German interest rates, prices and payment statistics as CSV or SDX.
+
+- Category: Finance & Economics
+- Type: Dataset | Pricing: Free | Access: No key
+- Limitation: No login required; close to public domain under the BGew licence.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/bundesbank-statistics
+- Original source: https://www.bundesbank.de/en/statistics
+
+## Stooq
+
+Daily and historical stock, ETF and index prices as CSV downloads.
+
+- Category: Finance & Economics
+- Type: Dataset | Pricing: Free | Access: No key
+- Limitation: No login; database rights bar raw resale, bots are blocked but browser access is open.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/stooq
+- Original source: https://stooq.com/db/
+
+## USPTO PatentsView
+
+US patents, inventors and CPC classifications via bulk files and API.
+
+- Category: Finance & Economics
+- Type: API | Pricing: Free | Access: No key
+- Limitation: No key required; public domain (US government).
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/uspto-patentsview
+- Original source: https://data.uspto.gov
+
+## openJur
+
+Millions of German court decisions.
+
+- Category: Finance & Economics
+- Type: Dataset | Pricing: Free | Access: No key
+- Limitation: No login; court decisions are public domain under Section 5 UrhG.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/openjur
+- Original source: https://openjur.de
+
+## CourtListener / RECAP
+
+US federal court opinions plus the PACER archive with full-text search.
+
+- Category: Finance & Economics
+- Type: Dataset | Pricing: Free | Access: No key
+- Limitation: No key for basic use; public domain.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/courtlistener-recap
+- Original source: https://www.courtlistener.com
+
+## Bank of Canada Valet API
+
+Official Bank of Canada time series on interest rates, GDP and inflation as JSON or CSV.
+
+- Category: Finance & Economics
+- Type: API | Pricing: Free | Access: No key
+- Limitation: No key required; attribution requested.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/bank-of-canada-valet-api
+- Original source: https://www.bankofcanada.ca/valet/docs
+
+## WIPO Patentscope
+
+Search interface over national patent collections including PCT, with XML export.
+
+- Category: Finance & Economics
+- Type: API | Pricing: Free | Access: No key
+- Limitation: No login; citation required, no bulk mirroring.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/wipo-patentscope
+- Original source: https://patentscope.wipo.int/search/en/search.jsf
+
+## DailyMed
+
+Official US drug labels (package inserts) as structured data.
+
+- Category: Finance & Economics
+- Type: Dataset | Pricing: Free | Access: No key
+- Limitation: No login; public domain (FDA/NLM).
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/dailymed
+- Original source: https://dailymed.nlm.nih.gov/dailymed/
+
+## EEA Datahub
+
+European environment data: air, water, soil and biodiversity.
+
+- Category: Finance & Economics
+- Type: Dataset | Pricing: Free | Access: No key
+- Limitation: No login; mostly CC BY.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/eea-datahub
+- Original source: https://www.eea.europa.eu/en/datahub/
+
+## EarthChem
+
+Globally harmonized geochemistry data from rock samples.
+
+- Category: Finance & Economics
+- Type: Dataset | Pricing: Free | Access: No key
+- Limitation: No login; CC BY.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/earthchem
+- Original source: https://earthchem.org/
+
+## HTTP Archive
+
+Web technology statistics for all top sites, queryable in BigQuery.
+
+- Category: Technology
+- Type: Dataset | Pricing: Free | Access: No key
+- Limitation: No payment required; CC0.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/http-archive
+- Original source: https://httparchive.org
+
+## Invidious
+
+Open YouTube frontend without ads or tracking, with a public instance list and API.
+
+- Category: Technology
+- Type: API | Pricing: Free | Access: No key
+- Limitation: No login; AGPL, but underlying content falls under YouTube's ToS.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/invidious
+- Original source: https://api.invidious.io
+
+## Piped
+
+Open-source YouTube proxy with account sync.
+
+- Category: Technology
+- Type: API | Pricing: Free | Access: No key
+- Limitation: No login; AGPL.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/piped
+- Original source: https://piped.video
+
+## BreezeWiki
+
+Ad-free, fast frontends for Fandom and Wikia wikis.
+
+- Category: Technology
+- Type: API | Pricing: Free | Access: No key
+- Limitation: No login; wiki content is CC BY-SA.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/breezewiki
+- Original source: https://breezewiki.com
+
+## Kiwix
+
+Offline readers for Wikipedia and other open wikis using ZIM files.
+
+- Category: Technology
+- Type: Dataset | Pricing: Free | Access: No key
+- Limitation: Free download; content under Creative Commons licenses.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/kiwix
+- Original source: https://kiwix.org
+
+## Open Knowledge Maps
+
+Visual knowledge maps of research topics.
+
+- Category: Technology
+- Type: API | Pricing: Free | Access: No key
+- Limitation: No login; CC BY.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/open-knowledge-maps
+- Original source: https://openknowledgemaps.org
+
+## DOAB
+
+Directory of peer-reviewed open-access books with full-text links.
+
+- Category: Technology
+- Type: Dataset | Pricing: Free | Access: No key
+- Limitation: No login; metadata CC BY, check individual titles.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/doab
+- Original source: https://www.doabooks.org
+
+## APNIC Stats Labs
+
+Worldwide network measurements: latency, DDoS, DNS and AS states.
+
+- Category: Technology
+- Type: API | Pricing: Free | Access: No key
+- Limitation: No login; CC BY.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/apnic-stats-labs
+- Original source: https://stats.labs.apnic.net
+
+## cdnjs
+
+Curated open-source JavaScript CDN operated by Cloudflare.
+
+- Category: Technology
+- Type: API | Pricing: Free | Access: No key
+- Limitation: No key; MIT-licensed libraries.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/cdnjs
+- Original source: https://cdnjs.com
+
+## jsDelivr
+
+Serves npm and GitHub assets instantly as CDN links.
+
+- Category: Technology
+- Type: API | Pricing: Free | Access: No key
+- Limitation: No key; open-source assets under their project licenses.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/jsdelivr
+- Original source: https://www.jsdelivr.com
+
+## OpenJS Foundation
+
+Home of hundreds of free web libraries such as Node.js and jQuery.
+
+- Category: Technology
+- Type: Dataset | Pricing: Free | Access: No key
+- Limitation: No login; library licenses vary, mostly MIT.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/openjs-foundation
+- Original source: https://openjsf.org
+
+## FAOSTAT
+
+FAO agricultural and food statistics for all countries as CSV.
+
+- Category: Food & Health
+- Type: Dataset | Pricing: Free | Access: No key
+- Limitation: No login; observe FAO publication terms.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/faostat
+- Original source: https://www.fao.org/faostat/
+
+## ISRIC Soil Grids
+
+Global soil property maps such as pH and carbon, as raster data.
+
+- Category: Food & Health
+- Type: Dataset | Pricing: Free | Access: No key
+- Limitation: No key; CC BY 4.0.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/isric-soil-grids
+- Original source: https://www.isric.org/explore/soilgrids
+
+## Catalogue of Life
+
+The complete species checklist of life as downloads.
+
+- Category: Food & Health
+- Type: Dataset | Pricing: Free | Access: No key
+- Limitation: No key; CC BY.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/catalogue-of-life
+- Original source: https://www.catalogueoflife.org
+
+## Encyclopedia of Life
+
+Encyclopedia of life with over 9 million media items.
+
+- Category: Food & Health
+- Type: API | Pricing: Free | Access: No key
+- Limitation: Freely readable; CC BY, the API sometimes blocks bots.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/encyclopedia-of-life
+- Original source: https://eol.org
+
+## WoRMS
+
+Authoritative names of all marine species.
+
+- Category: Food & Health
+- Type: Dataset | Pricing: Free | Access: No key
+- Limitation: No key; CC BY.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/worms
+- Original source: https://www.marinespecies.org
+
+## Pl@ntNet identify
+
+Open API for plant identification from photos.
+
+- Category: Food & Health
+- Type: API | Pricing: Free | Access: API key
+- Limitation: Free API key; data usable, images non-commercial.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/plntnet-identify
+- Original source: https://identify.plantnet.org/api
+
+## AgMIP
+
+Open crop-yield simulations and climate-scenario model intercomparisons.
+
+- Category: Food & Health
+- Type: Dataset | Pricing: Free | Access: No key
+- Limitation: Free for research; citation required, licence per dataset.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/agmip
+- Original source: https://agmip.org/
+
+## AquaMaps
+
+Frequency distribution maps of fish and marine species on each species page.
+
+- Category: Food & Health
+- Type: Dataset | Pricing: Free | Access: No key
+- Limitation: No login; CC BY, terms vary per species.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/aquamaps
+- Original source: https://aquamaps.org/
+
+## World Flora Online
+
+Complete plant species register including original descriptions.
+
+- Category: Food & Health
+- Type: API | Pricing: Free | Access: No key
+- Limitation: No login; CC BY 4.0, API available.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/world-flora-online
+- Original source: https://www.worldfloraonline.org/
+
+## Tree of Life Web Project
+
+Peer-reviewed articles on the tree of life and biodiversity.
+
+- Category: Food & Health
+- Type: Dataset | Pricing: Free | Access: No key
+- Limitation: No login; mixed copyrights, please cite.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/tree-of-life-web-project
+- Original source: https://tolweb.org/tree/
+
+## Trakt API
+
+Watch history, release calendars and trending titles for films and series.
+
+- Category: Arts & Culture
+- Type: API | Pricing: Free | Access: API key
+- Limitation: Free client ID; Trakt credit required.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/trakt-api
+- Original source: https://trakt.docs.apiary.io/
+
+## Wikfilm
+
+Filmographic database focused on Switzerland and Europe.
+
+- Category: Arts & Culture
+- Type: Dataset | Pricing: Free | Access: No key
+- Limitation: Open wiki; CC BY-SA.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/wikfilm
+- Original source: https://wikfilm.org
+
+## Silent Era (NSDB)
+
+Silent film filmography including preservation status.
+
+- Category: Arts & Culture
+- Type: Dataset | Pricing: Free | Access: No key
+- Limitation: Free with attribution.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/silent-era-nsdb
+- Original source: https://www.silentera.com/
+
+## IGDB API
+
+The largest video game database covering titles, genres and images.
+
+- Category: Arts & Culture
+- Type: API | Pricing: Free | Access: API key
+- Limitation: Twitch account required; Twitch ToS and credit apply.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/igdb-api
+- Original source: https://api-docs.igdb.com/
+
+## LaunchBox Games Database
+
+Video game metadata and cover art as bulk downloads.
+
+- Category: Arts & Culture
+- Type: Dataset | Pricing: Free | Access: No key
+- Limitation: Free; LaunchBox attribution requested.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/launchbox-games-database
+- Original source: https://gamesdb.launchbox-app.com/
+
+## Radio Browser API
+
+Worldwide radio stations with streams, logos and tags.
+
+- Category: Arts & Culture
+- Type: API | Pricing: Free | Access: No key
+- Limitation: No key; CC0.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/radio-browser-api
+- Original source: https://api.radio-browser.info
+
+## Podcast Index API
+
+Open podcast index supporting Podcasting 2.0.
+
+- Category: Arts & Culture
+- Type: API | Pricing: Free | Access: API key
+- Limitation: Free key and secret; attribution appreciated.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/podcast-index-api
+- Original source: https://podcastindex-org.github.io/docs-api/
+
+## iTunes Search/Lookup API
+
+Music and podcast metadata with 30-second previews.
+
+- Category: Arts & Culture
+- Type: API | Pricing: Free | Access: No key
+- Limitation: No key; Apple's Human Interface (HUE) display rules apply.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/itunes-searchlookup-api
+- Original source: https://performance-partners.apple.com/search-api
+
+## USGS Water Data API
+
+Discharge, gauge levels and water quality for US waters via an OGC API with daily, continuous and station collections.
+
+- Category: Nature & Environment
+- Type: API | Pricing: Free | Access: No key
+- Limitation: No key; public domain (US federal).
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/usgs-water-data-api
+- Original source: https://api.waterdata.usgs.gov
+
+## EPA Water Quality Portal
+
+The largest open collection of water monitoring stations for nutrients, sediment and groundwater in North America.
+
+- Category: Nature & Environment
+- Type: API | Pricing: Free | Access: No key
+- Limitation: No key; public domain, but as of 11/2026 the legacy API returns 406/400; the successor is USGS Water Data.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/epa-water-quality-portal
+- Original source: https://www.waterqualitydata.us
+
+## UBA-Wasserdaten DE
+
+German groundwater and surface water data: indicators, maps and datasets.
+
+- Category: Nature & Environment
+- Type: Dataset | Pricing: Free | Access: No key
+- Limitation: No login; attribution requested.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/uba-wasserdaten-de
+- Original source: https://www.umweltbundesamt.de/daten/wasser
+
+## HydroSHEDS (WWF)
+
+Global baseline hydrography: river networks and watersheds as raster and vector.
+
+- Category: Nature & Environment
+- Type: Dataset | Pricing: Free | Access: API key
+- Limitation: Free download with registration; CC BY (WWF/TNC).
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/hydrosheds-wwf
+- Original source: https://www.hydrosheds.org
+
+## GLEON
+
+Worldwide lake sensor time series for temperature, oxygen and chlorophyll.
+
+- Category: Nature & Environment
+- Type: Dataset | Pricing: Free tier | Access: No key
+- Limitation: Basic access free; citation conventions apply.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/gleon
+- Original source: https://gleon.org
+
+## AVISO Altimetrie (CNES)
+
+Satellite altimetry data: sea level, wave height and geostrophic currents.
+
+- Category: Nature & Environment
+- Type: Dataset | Pricing: Free | Access: No key
+- Limitation: Free account; CNES/CLS attribution requested.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/aviso-altimetrie-cnes
+- Original source: https://www.aviso.altimetry.fr/en/data.html
+
+## FloodList
+
+Global flood event archive with RSS feeds.
+
+- Category: Nature & Environment
+- Type: Dataset | Pricing: Free | Access: No key
+- Limitation: No login; editorial content, cite the source.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/floodlist
+- Original source: https://floodlist.com
+
+## carbon.now.sh
+
+Web tool that renders beautiful code screenshots.
+
+- Category: Technology
+- Type: API | Pricing: Free | Access: No key
+- Limitation: Free to use; check the site for current terms.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/carbonnowsh
+- Original source: https://carbon.now.sh/
+
+## pagespeed.web.dev
+
+Web tool for page speed tests based on Lighthouse.
+
+- Category: Technology
+- Type: API | Pricing: Free | Access: No key
+- Limitation: Free to use; check the site for current terms.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/pagespeedwebdev
+- Original source: https://pagespeed.web.dev/
+
+## eyes.nasa.gov
+
+Web tool to explore the solar system in 3D.
+
+- Category: Technology
+- Type: API | Pricing: Free | Access: No key
+- Limitation: Free to use; check the site for current terms.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/eyesnasagov
+- Original source: https://eyes.nasa.gov/
+
+## apod.nasa.gov
+
+NASA's Astronomy Picture of the Day.
+
+- Category: Technology
+- Type: Dataset | Pricing: Free | Access: No key
+- Limitation: Free to use; check the site for current terms.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/apodnasagov
+- Original source: https://apod.nasa.gov/
+
+## images.nasa.gov
+
+The entire NASA image and video archive, freely accessible with a public API.
+
+- Category: Technology
+- Type: API | Pricing: Free | Access: No key
+- Limitation: Free to use; check the site for current terms.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/imagesnasagov
+- Original source: https://images.nasa.gov/
+
+## artsandculture.google.com
+
+Web tool to explore museums and collections from home.
+
+- Category: Technology
+- Type: API | Pricing: Free | Access: No key
+- Limitation: Free to use; check the site for current terms.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/artsandculturegooglecom
+- Original source: https://artsandculture.google.com/
+
+## data.tuik.gov.tr
+
+Official statistics of Turkiye (TUIK), with an API portal.
+
+- Category: Technology
+- Type: API | Pricing: Free | Access: No key
+- Limitation: Free to use; check the site for current terms.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/datatuikgovtr
+- Original source: https://data.tuik.gov.tr/
+
+## listen.hatnote.com
+
+Web tool that turns recent Wikipedia edits into audio.
+
+- Category: Technology
+- Type: API | Pricing: Free | Access: No key
+- Limitation: Free to use; check the site for current terms.
+- Verified: 2026-11-12
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/listenhatnotecom
+- Original source: https://listen.hatnote.com/

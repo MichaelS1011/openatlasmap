@@ -10,7 +10,32 @@ Allow: /
 User-agent: facebookexternalhit
 Allow: /
 
+# AI answer engines are explicitly welcome: the catalog is open data.
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: DuckAssistBot
+Allow: /
+
 User-agent: *
 Allow: /
 
-Sitemap: https://open-data-treasure-map.lovable.app/sitemap.xml
+Sitemap: https://michaels1011.github.io/openatlasmap/sitemap.xml

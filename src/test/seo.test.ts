@@ -21,15 +21,19 @@ describe("Public source discovery", () => {
     expect(data.description).toContain(resource.limitation);
     expect(data.url).toBe(resourcePageUrl("open-meteo"));
   });
-  it("includes the homepage and all public source records without the sitemap itself", () => {
+  it("includes the homepage, about page, and all public source records without the sitemap itself", () => {
     const router = createRouter({ routeTree, context: { queryClient: new QueryClient() } });
     const paths = sitemapStaticPaths(router);
-    expect(paths).toEqual(["/"]);
+    expect(paths).toEqual(["/", "/about"]);
     for (const resource of resources) {
       const location = router.buildLocation({ to: "/resources/$id", params: { id: resource.id }, search: () => ({}), hash: "" });
       expect(sitemapPathForLocation(router, location, "/resources/$id")).toBe(`/resources/${resource.id}`);
     }
     expect(sitemapXML(siteUrl, paths.map((path) => ({ path })))).toContain(`${siteUrl}/</loc>`);
+    expect(sitemapXML(siteUrl, [{ path: "/about" }])).toContain(`${siteUrl}/about</loc>`);
+  });
+  it("resolves sitemap paths under a GitHub Pages path prefix", () => {
+    expect(sitemapXML("https://user.github.io/repo", [{ path: "/" }, { path: "/about" }])).toContain("https://user.github.io/repo/about</loc>");
   });
   it("rejects external or query-bearing sitemap paths", () => {
     expect(() => sitemapXML(siteUrl, [{ path: "//other.example" }])).toThrow();
