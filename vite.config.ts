@@ -9,10 +9,18 @@
 // You can pass additional config via defineConfig({ vite: { ... }, etc... }) if needed.
 import { defineConfig } from "@lovable.dev/vite-tanstack-config";
 
+// GitHub Pages static build: PAGES_STATIC=1 npm run build
+// builds the normal Cloudflare-Worker app with Pages asset URLs; the
+// prerender script (scripts/prerender-pages.mjs) then renders every route
+// to plain HTML. Without the flag, Lovable's build is produced unchanged.
+const PAGES = !!process.env.PAGES_STATIC;
+const PAGES_BASE = "/openatlasmap/";
+
 export default defineConfig({
   tanstackStart: {
     // Redirect TanStack Start's bundled server entry to src/server.ts (our SSR error wrapper).
     // nitro/vite builds from this
     server: { entry: "server" },
   },
+  ...(PAGES ? { vite: { base: PAGES_BASE } } : {}),
 });
