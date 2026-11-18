@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { filterResources, resources, resourceSchema } from "@/lib/resources";
+import { filterResources, resources, resourceSchema, searchResources } from "@/lib/resources";
 import { curatedCategories } from "@/lib/resource-categories";
 
 describe("Free resource discovery", () => {
@@ -59,5 +59,22 @@ describe("Free resource discovery", () => {
   it("assigns every curated entry to a defined subject category", () => {
     expect(new Set(curatedCategories).size).toBe(curatedCategories.length);
     for (const r of resources) expect(curatedCategories.includes(r.category)).toBe(true);
+  });
+});
+
+describe("searchResources", () => {
+  it("ranks name hits above description-only hits", () => {
+    const hits = searchResources("weather");
+    expect(hits.length).toBeGreaterThan(3);
+    const nameIndexes = hits.map((r, i) => r.name.toLowerCase().includes("weather") ? i : -1).filter((i) => i >= 0);
+    const otherIndexes = hits.map((r, i) => r.name.toLowerCase().includes("weather") ? -1 : i).filter((i) => i >= 0);
+    expect(nameIndexes.length).toBeGreaterThan(0);
+    expect(otherIndexes.length).toBeGreaterThan(0);
+    expect(Math.max(...nameIndexes)).toBeLessThan(Math.min(...otherIndexes));
+  });
+  it("requires every word to match and ignores short or unknown terms", () => {
+    expect(searchResources("")).toEqual([]);
+    expect(searchResources("zzzzqqq")).toEqual([]);
+    expect(searchResources("real time weather").length).toBeGreaterThan(0);
   });
 });

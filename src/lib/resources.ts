@@ -440,3 +440,28 @@ export function filterResources(items: Resource[], filters: { type: string; cate
     && (!filters.noKey || r.access === "No key")
     && (!filters.fullyFree || r.pricing === "Free"));
 }
+
+// Relevance scoring for catalog search: name hits outrank description hits,
+// which outrank metadata hits. Every word must match somewhere (AND search).
+export function searchResources(term: string): Resource[] {
+  const words = term.toLowerCase().split(/\s+/).filter(Boolean);
+  if (!words.length) return [];
+  const scored: { resource: Resource; score: number }[] = [];
+  for (const r of resources) {
+    const name = r.name.toLowerCase();
+    const description = r.description.toLowerCase();
+    const meta = `${r.category} ${r.type} ${r.limitation}`.toLowerCase();
+    let score = 0;
+    let matched = true;
+    for (const word of words) {
+      if (name.includes(word)) score += name.startsWith(word) ? 6 : 4;
+      else if (description.includes(word)) score += 2;
+      else if (meta.includes(word)) score += 1;
+      else { matched = false; break; }
+    }
+    if (matched) scored.push({ resource: r, score });
+  }
+  return scored
+    .sort((a, b) => b.score - a.score || a.resource.name.localeCompare(b.resource.name))
+    .map((entry) => entry.resource);
+}
