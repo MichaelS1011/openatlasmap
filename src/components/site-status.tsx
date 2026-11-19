@@ -11,7 +11,7 @@ import {
 } from "@/lib/analytics";
 import { ui, type Lang } from "@/lib/i18n";
 
-type Stats = { today: number; total: number; countries: number };
+type Stats = { today: number | null; total: number | null; countries: number | null };
 
 const json = (url: string) =>
   fetch(url, { headers: goatAuthHeaders(GOAT_API_KEY) }).then((r) => (r.ok ? r.json() : Promise.reject(r)));
@@ -39,10 +39,12 @@ function loadStats(): Promise<Stats | null> {
       const t = today.status === "fulfilled" ? Number(today.value?.total) : NaN;
       const a = total.status === "fulfilled" ? Number(total.value?.total) : NaN;
       if (Number.isNaN(t) && Number.isNaN(a)) return null;
+      // A dimension that failed (e.g. 429) stays null and its chip is omitted
+      // rather than showing a misleading 0.
       return {
-        today: Number.isNaN(t) ? 0 : t,
-        total: Number.isNaN(a) ? 0 : a,
-        countries: geo.status === "fulfilled" ? countCountryStats(geo.value?.stats) : 0,
+        today: Number.isNaN(t) ? null : t,
+        total: Number.isNaN(a) ? null : a,
+        countries: geo.status === "fulfilled" ? countCountryStats(geo.value?.stats) : null,
       };
     })
     .finally(() => {
@@ -90,10 +92,11 @@ export function SiteStatus({ lang }: { lang: Lang }) {
   if (!GOAT_API_KEY || !stats) return null;
 
   const items = [
-    { n: stats.today, label: t.statusVisitsToday },
-    { n: stats.total, label: t.statusVisitsTotal },
-    ...(stats.countries > 0 ? [{ n: stats.countries, label: t.statusCountries }] : []),
+    ...(stats.today !== null ? [{ n: stats.today, label: t.statusVisitsToday }] : []),
+    ...(stats.total !== null ? [{ n: stats.total, label: t.statusVisitsTotal }] : []),
+    ...(stats.countries !== null && stats.countries > 0 ? [{ n: stats.countries, label: t.statusCountries }] : []),
   ];
+  if (items.length === 0) return null;
 
   return (
     <section style={{ marginTop: 40 }}>
