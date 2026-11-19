@@ -1,5 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { ArrowUpRight, FileJson, Github, Globe, Orbit, Sparkles } from "lucide-react";
+import { ArrowUpRight, FileJson, Github, Globe, Sparkles } from "lucide-react";
+import { BrandMark } from "@/components/brand-mark";
 import { Button } from "@/components/ui/button";
 import { ThemeToggle, useScrolled } from "@/components/site-chrome";
 import { resources } from "@/lib/resources";
@@ -44,7 +45,7 @@ function AboutPage() {
   return (
     <>
       <header className={`site-header shell${scrolled ? " is-scrolled" : ""}`}>
-        <Link className="brand" to="/" aria-label="OpenAtlas home"><span className="brand-symbol"><Orbit size={22} strokeWidth={1.7} /></span>openatlas<span className="text-primary">.</span></Link>
+        <Link className="brand" to="/" aria-label="OpenAtlas home"><span className="brand-symbol"><BrandMark size={30} /></span>openatlas<span className="text-primary">.</span></Link>
         <nav className="main-nav" aria-label="Main navigation">
           <Button asChild variant="ghost" className="nav-item"><Link to="/">Explore</Link></Button>
           <ThemeToggle />
@@ -115,7 +116,7 @@ function AboutPage() {
         </section>
       </main>
 
-      <footer className="site-footer shell"><span className="brand"><Orbit size={19} />openatlas.</span><span>A little curiosity. A world of possibilities.</span><span className="flex items-center gap-3"><Button asChild variant="link" className="h-auto p-0 text-xs font-normal"><Link to="/">Explore</Link></Button><a className="text-xs text-muted-foreground hover:text-foreground" href={githubUrl} target="_blank" rel="noopener noreferrer">GitHub</a><a className="text-xs text-muted-foreground hover:text-foreground" href={suggestUrl} target="_blank" rel="noopener noreferrer">Suggest a source</a></span></footer>
+      <footer className="site-footer shell"><span className="brand"><BrandMark size={21} />openatlas.</span><span>A little curiosity. A world of possibilities.</span><span className="flex items-center gap-3"><Button asChild variant="link" className="h-auto p-0 text-xs font-normal"><Link to="/">Explore</Link></Button><a className="text-xs text-muted-foreground hover:text-foreground" href={githubUrl} target="_blank" rel="noopener noreferrer">GitHub</a><a className="text-xs text-muted-foreground hover:text-foreground" href={suggestUrl} target="_blank" rel="noopener noreferrer">Suggest a source</a></span></footer>
     </>
   );
 }
