@@ -3,12 +3,13 @@
 > OpenAtlas is a curated, open directory of free APIs and open datasets. Every entry links to the original source and states the pricing model, access requirements (API key or none), and usage limits, with a verification date per entry. The catalog is free to reuse under the MIT license.
 
 Canonical site: https://michaels1011.github.io/openatlasmap/
-Language: English
+Language: English (interface and catalog); a German interface is available at https://michaels1011.github.io/openatlasmap/de/ (catalog entries stay in English)
 Audience: students, educators, indie developers, and researchers looking for free data and API sources.
 
 ## Key resources
 
 - [Home / catalog](https://michaels1011.github.io/openatlasmap/): browse and search all entries by category, pricing, and access.
+- [Katalog auf Deutsch](https://michaels1011.github.io/openatlasmap/de/): deutschsprachige Oberfläche für dasselbe Verzeichnis; Einträge bleiben englisch.
 - [About](https://michaels1011.github.io/openatlasmap/about/): mission and the four curation rules (free to use, original source only, no duplicates, verified with a date).
 - [openatlas.json](https://michaels1011.github.io/openatlasmap/openatlas.json): the full catalog as machine-readable open data (MIT), including name, url, description, category, type, pricing, access, limitation, and verifiedAt per entry.
 - [llms-full.txt](https://michaels1011.github.io/openatlasmap/llms-full.txt): the same catalog as plain text, optimized for LLM context windows.

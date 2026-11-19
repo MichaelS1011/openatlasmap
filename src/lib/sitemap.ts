@@ -31,7 +31,17 @@ export function sitemapPathForLocation(router: AnyRouter, location: Pick<ParsedL
   const [params, foundRoute] = Array.isArray(result)
     ? [result[1], result[2]]
     : [result.routeParams, result.parseError ? undefined : result.foundRoute];
-  return params["**"] === undefined && foundRoute?.id === routeId && isSitemapRouteIncluded(foundRoute) ? location.publicHref : undefined;
+  if (params["**"] !== undefined || foundRoute?.id !== routeId || !isSitemapRouteIncluded(foundRoute)) return undefined;
+  // publicHref already contains the router basepath (GitHub Pages project sites);
+  // sitemapXML prefixes the base URL, so strip it here to avoid doubling.
+  // The basepath may be stored with or without a leading slash depending on the router instance.
+  const base = ((router.options as { basepath?: string }).basepath ?? "").replace(/^\/+|\/+$/g, "");
+  if (base) {
+    const path = location.publicHref.startsWith("/") ? location.publicHref.slice(1) : location.publicHref;
+    if (path === base) return "/";
+    if (path.startsWith(`${base}/`)) return `/${path.slice(base.length + 1)}`;
+  }
+  return location.publicHref;
 }
 export interface SitemapEntry { path: string; lastmod?: string }
 function isSafeSitemapPath(pathname: string): boolean {

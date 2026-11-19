@@ -4,7 +4,7 @@ import { BrandMark } from "@/components/brand-mark";
 import { Button } from "@/components/ui/button";
 import { ThemeToggle, useScrolled } from "@/components/site-chrome";
 import { licenseSpecified, resources } from "@/lib/resources";
-import { resourcePageUrl, resourceStructuredData } from "@/lib/seo";
+import { breadcrumbStructuredData, resourcePageUrl, resourceStructuredData, siteUrl } from "@/lib/seo";
 
 export const Route = createFileRoute("/resources/$id")({
   staticData: { sitemap: true },
@@ -22,10 +22,14 @@ export const Route = createFileRoute("/resources/$id")({
         { title }, { name: "description", content: description },
         { property: "og:title", content: title }, { property: "og:description", content: description },
         { property: "og:type", content: "website" }, { property: "og:url", content: resourcePageUrl(loaderData.id) },
+        { property: "og:locale", content: "en_US" },
         { name: "twitter:card", content: "summary" },
       ],
       links: [{ rel: "canonical", href: resourcePageUrl(loaderData.id) }],
-      scripts: [{ type: "application/ld+json", children: JSON.stringify(resourceStructuredData(loaderData)) }],
+      scripts: [
+        { type: "application/ld+json", children: JSON.stringify(resourceStructuredData(loaderData)) },
+        { type: "application/ld+json", children: JSON.stringify(breadcrumbStructuredData(loaderData)) },
+      ],
     };
   },
   component: ResourcePage,
@@ -39,6 +43,7 @@ function ResourcePage() {
       <Link className="brand" to="/"><span className="brand-symbol"><BrandMark size={30} /></span>openatlas<span className="text-primary">.</span></Link>
       <div className="flex items-center gap-2">
         <Button asChild variant="ghost"><Link to="/"><ArrowLeft size={15} />Explore</Link></Button>
+        <Button asChild variant="ghost" className="nav-item" aria-label="Zur deutschen Version wechseln"><a href={`${siteUrl}/de/`}>Deutsch</a></Button>
         <ThemeToggle />
       </div>
     </header>

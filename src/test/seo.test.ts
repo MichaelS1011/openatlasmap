@@ -24,7 +24,7 @@ describe("Public source discovery", () => {
   it("includes the homepage, about page, and all public source records without the sitemap itself", () => {
     const router = createRouter({ routeTree, context: { queryClient: new QueryClient() } });
     const paths = sitemapStaticPaths(router);
-    expect(paths).toEqual(["/", "/about"]);
+    expect(paths).toEqual(["/", "/about", "/de", "/de/about"]);
     for (const resource of resources) {
       const location = router.buildLocation({ to: "/resources/$id", params: { id: resource.id }, search: () => ({}), hash: "" });
       expect(sitemapPathForLocation(router, location, "/resources/$id")).toBe(`/resources/${resource.id}`);
@@ -34,6 +34,18 @@ describe("Public source discovery", () => {
   });
   it("resolves sitemap paths under a GitHub Pages path prefix", () => {
     expect(sitemapXML("https://user.github.io/repo", [{ path: "/" }, { path: "/about" }])).toContain("https://user.github.io/repo/about</loc>");
+  });
+  it("strips the router basepath so the Pages prefix is not doubled", () => {
+    const router = createRouter({ routeTree, context: { queryClient: new QueryClient() }, basepath: "/repo" });
+    const location = router.buildLocation({ to: "/about" });
+    expect(location.publicHref).toBe("/repo/about");
+    expect(sitemapPathForLocation(router, location, "/about")).toBe("/about");
+  });
+  it("strips a basepath stored without a leading slash (react-start server router)", () => {
+    const router = createRouter({ routeTree, context: { queryClient: new QueryClient() } });
+    (router.options as { basepath?: string }).basepath = "repo";
+    expect(sitemapPathForLocation(router, { pathname: "/about", publicHref: "/repo/about" }, "/about")).toBe("/about");
+    expect(sitemapPathForLocation(router, { pathname: "/", publicHref: "/repo" }, "/")).toBe("/");
   });
   it("rejects external or query-bearing sitemap paths", () => {
     expect(() => sitemapXML(siteUrl, [{ path: "//other.example" }])).toThrow();

@@ -1,4 +1,5 @@
 import type { Resource } from "./resources";
+import { ui, type Lang } from "./i18n";
 
 export const siteUrl = "https://michaels1011.github.io/openatlasmap";
 export const resourcePageUrl = (id: string) => `${siteUrl}/resources/${encodeURIComponent(id)}`;
@@ -7,15 +8,27 @@ export const catalogJsonUrl = `${siteUrl}/openatlas.json`;
 export const llmsTxtUrl = `${siteUrl}/llms.txt`;
 
 const person = { "@type": "Person", name: "Michael Soppa", sameAs: "https://www.linkedin.com/in/michael-soppa/" };
-const webSite = {
-  "@type": "WebSite", "@id": `${siteUrl}/#website`,
-  name: "OpenAtlas", url: `${siteUrl}/`,
-  alternateName: "OpenAtlas — Discover Free APIs & Open Data",
-  description: "Curated directory of free APIs and open datasets with original source links, access requirements, and usage conditions.",
-  inLanguage: "en",
+
+const webSiteCopy: Record<Lang, { alternateName: string; description: string }> = {
+  en: {
+    alternateName: "OpenAtlas — Discover Free APIs & Open Data",
+    description: "Curated directory of free APIs and open datasets with original source links, access requirements, and usage conditions.",
+  },
+  de: {
+    alternateName: "OpenAtlas — Kostenlose APIs & Open Data entdecken",
+    description: "Kuratiertes Verzeichnis kostenloser APIs und offener Datensätze mit Links zur Originalquelle, Zugangsvoraussetzungen und Nutzungsbedingungen.",
+  },
+};
+
+const webSite = (lang: Lang) => ({
+  "@type": "WebSite", "@id": lang === "en" ? `${siteUrl}/#website` : `${siteUrl}/de/#website`,
+  name: "OpenAtlas", url: lang === "en" ? `${siteUrl}/` : `${siteUrl}/de/`,
+  alternateName: webSiteCopy[lang].alternateName,
+  description: webSiteCopy[lang].description,
+  inLanguage: lang === "en" ? "en" : "de",
   creator: person,
   publisher: person,
-};
+});
 
 export function resourceStructuredData(resource: Resource) {
   return {
@@ -31,13 +44,31 @@ export function resourceStructuredData(resource: Resource) {
   };
 }
 
-export function catalogStructuredData(items: Resource[]) {
+export function breadcrumbStructuredData(resource: Resource) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "OpenAtlas", item: `${siteUrl}/` },
+      { "@type": "ListItem", position: 2, name: resource.category, item: `${siteUrl}/#explore` },
+      { "@type": "ListItem", position: 3, name: resource.name, item: resourcePageUrl(resource.id) },
+    ],
+  };
+}
+
+const itemListName: Record<Lang, string> = {
+  en: "OpenAtlas free API and open data directory",
+  de: "OpenAtlas-Verzeichnis kostenloser APIs und offener Datensätze",
+};
+
+export function catalogStructuredData(items: Resource[], lang: Lang = "en") {
   return {
     "@context": "https://schema.org",
     "@graph": [
-      webSite,
+      webSite(lang),
       {
-        "@type": "ItemList", name: "OpenAtlas free API and open data directory",
+        "@type": "ItemList", name: itemListName[lang],
+        inLanguage: lang === "en" ? "en" : "de",
         numberOfItems: items.length,
         itemListElement: items.map((item, index) => ({
           "@type": "ListItem", position: index + 1, name: item.name, url: resourcePageUrl(item.id),
@@ -47,53 +78,59 @@ export function catalogStructuredData(items: Resource[]) {
   };
 }
 
-const faq = [
-  {
-    "@type": "Question",
-    name: "What is OpenAtlas?",
-    acceptedAnswer: { "@type": "Answer", text: "OpenAtlas is a free, curated directory of APIs and open datasets. Every entry links to the original source and states the access requirements, pricing model, and usage limits, so you can judge in seconds whether a resource fits your project." },
+const aboutPageCopy: Record<Lang, { name: string; description: string }> = {
+  en: {
+    name: "About OpenAtlas",
+    description: "Mission and curation rules of OpenAtlas, a curated directory of free APIs and open datasets.",
   },
-  {
-    "@type": "Question",
-    name: "Are the APIs and datasets on OpenAtlas really free?",
-    acceptedAnswer: { "@type": "Answer", text: "Every listed resource is free to start: entries are either completely free or offer a genuine free tier. Badges show the pricing model and whether an API key is required, and the original source always remains the authority for current licenses and limits." },
+  de: {
+    name: "Über OpenAtlas",
+    description: "Mission und Kuratierungsregeln von OpenAtlas, einem kuratierten Verzeichnis kostenloser APIs und offener Datensätze.",
   },
-  {
-    "@type": "Question",
-    name: "How does OpenAtlas decide what gets listed?",
-    acceptedAnswer: { "@type": "Answer", text: "A resource is added only if it is free to use, links to its original source rather than a mirror, is not a duplicate of an existing entry, and fits one of the subject categories. Each entry carries a verification date, and outdated entries are corrected or removed through GitHub issues." },
-  },
-  {
-    "@type": "Question",
-    name: "Can I suggest a resource for OpenAtlas?",
-    acceptedAnswer: { "@type": "Answer", text: "Yes. Use the Suggest a resource form on GitHub. Include the original source URL, what it offers, and whether an API key is needed. The catalog is also published as open data in JSON format at /openatlas.json." },
-  },
-];
+};
 
-export function aboutStructuredData(count: number) {
+const catalogCopy: Record<Lang, { description: string; measurementTechnique: string }> = {
+  en: {
+    description: "Machine-readable catalog of free APIs and open datasets, published as open data.",
+    measurementTechnique: "manual curation with verification dates",
+  },
+  de: {
+    description: "Maschinenlesbares Verzeichnis kostenloser APIs und offener Datensätze, veröffentlicht als Open Data.",
+    measurementTechnique: "manuelle Kuratierung mit Verifikationsdatum",
+  },
+};
+
+export function aboutStructuredData(count: number, lang: Lang = "en") {
+  const aboutId = lang === "en" ? `${siteUrl}/about/` : `${siteUrl}/de/about/`;
   return {
     "@context": "https://schema.org",
     "@graph": [
-      webSite,
+      webSite(lang),
       {
-        "@type": "AboutPage", "@id": `${siteUrl}/about/`, url: `${siteUrl}/about/`,
-        name: "About OpenAtlas", language: "en",
-        description: "Mission and curation rules of OpenAtlas, a curated directory of free APIs and open datasets.",
-        isPartOf: { "@id": `${siteUrl}/#website` },
+        "@type": "AboutPage", "@id": aboutId, url: aboutId,
+        name: aboutPageCopy[lang].name, language: lang,
+        description: aboutPageCopy[lang].description,
+        isPartOf: { "@id": lang === "en" ? `${siteUrl}/#website` : `${siteUrl}/de/#website` },
         about: person,
       },
       {
         "@type": "DataCatalog", name: "OpenAtlas catalog",
-        description: "Machine-readable catalog of free APIs and open datasets, published as open data.",
+        description: catalogCopy[lang].description,
         url: catalogJsonUrl,
-        inLanguage: "en",
+        inLanguage: lang === "en" ? "en" : "de",
         license: "https://opensource.org/licenses/MIT",
-        measurementTechnique: "manual curation with verification dates",
+        measurementTechnique: catalogCopy[lang].measurementTechnique,
         numberOfItems: count,
         publisher: person,
         distribution: { "@type": "DataDownload", encodingFormat: "application/json", contentUrl: catalogJsonUrl },
       },
-      { "@type": "FAQPage", mainEntity: faq },
+      {
+        "@type": "FAQPage",
+        mainEntity: ui[lang].faqs.map(([name, text]) => ({
+          "@type": "Question", name,
+          acceptedAnswer: { "@type": "Answer", text },
+        })),
+      },
     ],
   };
 }
