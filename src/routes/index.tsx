@@ -1,6 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useEffect, useRef, useState, type ReactNode } from "react";
-import { Atom, ArrowDownToLine, ArrowRight, ArrowUpRight, Bookmark, Briefcase, Brain, Bus, Check, CheckCircle2, CloudSun, Code2, Compass, Cpu, Database, Dna, Droplets, Factory, FlaskConical, Globe2, GraduationCap, Grid2X2, Languages, Leaf, Library, List, Map as MapIcon, Orbit, Palette, Scale, Search, Shield, ShieldCheck, SlidersHorizontal, Sprout, Sparkles, Trophy, Users, Utensils, X, Zap } from "lucide-react";
+import { Atom, ArrowDownToLine, ArrowRight, ArrowUpRight, Bookmark, Boxes, Briefcase, Brain, Check, CheckCircle2, CloudSun, Code2, Compass, Cpu, Database, Dna, Factory, FlaskConical, Globe2, GraduationCap, Grid2X2, Landmark, Languages, Leaf, Library, List, Map as MapIcon, Orbit, Palette, Rocket, Scale, Search, ShieldCheck, ShieldHalf, SlidersHorizontal, Sparkles, TrainFront, TrendingUp, Trophy, Users, Utensils, Waves, Wheat, X, Zap } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
@@ -26,10 +26,10 @@ export const Route = createFileRoute("/")({
 });
 
 const icons = {
-  "AI & Machine Learning": Brain, "Software & Developer Tools": Code2, Cybersecurity: Shield, "3D & Graphics": Cpu, Technology: Cpu,
-  Research: FlaskConical, "Science & Space": Orbit, "Biology & Genomics": Dna, "Chemistry & Materials": Atom, "Industry & Materials": Factory,
-  "Weather & Climate": CloudSun, Geography: MapIcon, "Nature & Environment": Leaf, "Oceans & Water": Droplets, Agriculture: Sprout, Energy: Zap, "Transport & Mobility": Bus,
-  Government: ShieldCheck, "Finance & Economics": Globe2, "Business & Trade": Briefcase, "Society & Development": Users, Education: GraduationCap, "Law & Justice": Scale, "Food & Health": Utensils,
+  "AI & Machine Learning": Brain, "Software & Developer Tools": Code2, Cybersecurity: ShieldHalf, "3D & Graphics": Boxes, Technology: Cpu,
+  Research: FlaskConical, "Science & Space": Rocket, "Biology & Genomics": Dna, "Chemistry & Materials": Atom, "Industry & Materials": Factory,
+  "Weather & Climate": CloudSun, Geography: MapIcon, "Nature & Environment": Leaf, "Oceans & Water": Waves, Agriculture: Wheat, Energy: Zap, "Transport & Mobility": TrainFront,
+  Government: Landmark, "Finance & Economics": TrendingUp, "Business & Trade": Briefcase, "Society & Development": Users, Education: GraduationCap, "Law & Justice": Scale, "Food & Health": Utensils,
   "Archives & Libraries": Library, "Arts & Culture": Palette, "Data & Knowledge": Database, "Language & Linguistics": Languages, "Sports & Games": Trophy, Other: Compass,
 };
 const badgeTips: Record<string, string> = {
