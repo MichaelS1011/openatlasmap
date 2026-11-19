@@ -1,6 +1,6 @@
 # OpenAtlas — full catalog
 
-Curated directory of 416 free APIs and open datasets (MIT license).
+Curated directory of 431 free APIs and open datasets (MIT license).
 Fields per entry: category, type, pricing, access, limitation, verified date, canonical page, original source.
 
 ## Open-Meteo
@@ -4994,3 +4994,183 @@ Web tool that turns recent Wikipedia edits into audio.
 - Verified: 2026-11-12
 - OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/listenhatnotecom
 - Original source: https://listen.hatnote.com/
+
+## NIST National Vulnerability Database (NVD) CVE API 2.0
+
+Official US government repository of CVE vulnerability records with CVSS scores, references and CPE configurations, exposed as a REST/JSON API.
+
+- Category: Cybersecurity
+- Type: API | Pricing: Free | Access: No key
+- Limitation: Rate-limited without an API key (5 requests per 30 seconds); a free API key only raises the limit. Content is subject to the NIST data source attribution policy.
+- License stated at source: yes
+- Verified: 2026-11-19
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/nvd-cve-api
+- Original source: https://nvd.nist.gov/
+
+## abuse.ch URLhaus API
+
+Community-maintained database of malicious URLs and malware hosting endpoints, queryable via a REST API with bulk CSV exports.
+
+- Category: Cybersecurity
+- Type: API | Pricing: Free | Access: API key
+- Limitation: Community API is free under a fair-use policy and requires a free Auth-Key from auth.abuse.ch; commercial use requires a paid abuse.ch subscription.
+- License stated at source: yes
+- Verified: 2026-11-19
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/urlhaus-api
+- Original source: https://urlhaus.abuse.ch/
+
+## MLB Stats API
+
+Live and historical Major League Baseball schedules, box scores, roster and stat endpoints operated by MLB Advanced Media, returning JSON.
+
+- Category: Sports & Games
+- Type: API | Pricing: Free | Access: No key
+- Limitation: Unofficial public interface with no documented SLA and subject to change; all content is copyrighted by MLB Advanced Media, restricting redistribution.
+- License stated at source: yes
+- Verified: 2026-11-19
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/mlb-stats-api
+- Original source: https://statsapi.mlb.com/
+
+## iNaturalist API v1
+
+REST API over the community science biodiversity platform: observations, taxa, places and quality-graded species occurrence records worldwide.
+
+- Category: Biology & Genomics
+- Type: API | Pricing: Free | Access: No key
+- Limitation: Anonymous requests are rate-limited and writes require a user token; observation data are shared under Creative Commons non-commercial licenses depending on the observer's choice.
+- License stated at source: yes
+- Verified: 2026-11-19
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/inaturalist-api
+- Original source: https://api.inaturalist.org/v1/docs/
+
+## Energy-Charts API (Fraunhofer ISE)
+
+Open API serving German and European electricity market time series from Fraunhofer ISE and BDEW: generation mix, prices, load and cross-border flows.
+
+- Category: Energy
+- Type: API | Pricing: Free | Access: No key
+- Limitation: Data cover primarily the German market; use is free for non-commercial purposes with attribution to Fraunhofer ISE/BDEW and reasonable-use traffic limits apply.
+- License stated at source: yes
+- Verified: 2026-11-19
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/energy-charts-api
+- Original source: https://energy-charts.info/
+
+## Global Energy Monitor Tracker Databases
+
+Open-access crowdsourced datasets on global energy infrastructure: coal, gas, solar, wind, hydro and nuclear power plants, plus pipelines and heavy industry.
+
+- Category: Energy
+- Type: Dataset | Pricing: Free | Access: No key
+- Limitation: Downloads are open access with attribution under the trackers' Creative Commons terms; snapshots are updated only per tracker release cycle and entries carry varying confidence flags.
+- License stated at source: yes
+- Verified: 2026-11-19
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/global-energy-monitor-trackers
+- Original source: https://globalenergymonitor.org/
+
+## legislation.gov.uk Legislation API
+
+The National Archives' API for consolidated UK legislation (Acts, Orders, measures) with permanent URIs and search, served in multiple machine-readable formats.
+
+- Category: Law & Justice
+- Type: API | Pricing: Free | Access: No key
+- Limitation: Reuse is free under the Open Government Licence v3.0 with Crown copyright attribution; consolidated texts have documented editorial limitations and the API is governed by a fair use policy.
+- License stated at source: yes
+- Verified: 2026-11-19
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/legislation-gov-uk-api
+- Original source: https://www.legislation.gov.uk/
+
+## MBTA Developer API v3
+
+Official API of the Massachusetts Bay Transportation Authority (Boston): real-time vehicle positions, predictions, routes, stops and alerts for subway, bus, rail and ferry.
+
+- Category: Transport & Mobility
+- Type: API | Pricing: Free | Access: API key
+- Limitation: A free API key requires simple email registration; unauthenticated access is experimental and rate-limited, and per-key rate limits apply to heavy use.
+- License stated at source: yes
+- Verified: 2026-11-19
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/mbta-v3-api
+- Original source: https://api-v3.mbta.com/
+
+## Transport for London Unified API
+
+Official TfL API covering routes, stops, arrivals, disruption and bike/scooter availability for London's bus, tube, rail, cycling and river services.
+
+- Category: Transport & Mobility
+- Type: API | Pricing: Free | Access: No key
+- Limitation: Unregistered access is rate-limited and some premium endpoints (e.g. journey/planner data) require a free registered app key; data conditions follow TfL's open data terms.
+- License stated at source: yes
+- Verified: 2026-11-19
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/tfl-unified-api
+- Original source: https://api.tfl.gov.uk/
+
+## Universal Dependencies
+
+Community project of cross-linguistically consistent treebank annotations: around 200 treebanks covering more than 150 languages in CoNLL-U format.
+
+- Category: Language & Linguistics
+- Type: Dataset | Pricing: Free | Access: No key
+- Limitation: Each treebank is released under its own Creative Commons license (mostly CC BY-SA) and must be cited per its own publication; annotation quality varies by language.
+- License stated at source: yes
+- Verified: 2026-11-19
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/universal-dependencies
+- Original source: https://universaldependencies.org/
+
+## swisstopo BGDI WMS (Federal Geoinformation)
+
+Swiss federal geospatial infrastructure operated by swisstopo: official maps, terrain, cadastral and land-cover layers served as OGC web services with GeoJSON feature output.
+
+- Category: Geography
+- Type: API | Pricing: Free | Access: No key
+- Limitation: Free to use with the mandatory source label '© swisstopo'; individual datasets can carry additional usage restrictions and reasonable-use traffic limits apply.
+- License stated at source: yes
+- Verified: 2026-11-19
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/swisstopo-bgdi
+- Original source: https://api.geo.admin.ch/
+
+## NIST Chemistry WebBook (SRD 69)
+
+Reference data for chemical species: thermochemistry, phase change, reaction kinetics and IR/MS spectra for tens of thousands of compounds.
+
+- Category: Chemistry & Materials
+- Type: Dataset | Pricing: Free | Access: No key
+- Limitation: Open access under the NIST Standard Reference Data policy, but some entries carry original-literature copyright; NIST reserves the right to charge for some SRD products and citation of SRD 69 is requested.
+- License stated at source: yes
+- Verified: 2026-11-19
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/nist-chemistry-webbook
+- Original source: https://webbook.nist.gov/chemistry/
+
+## Meteostat Weather & Climate Data
+
+Open platform with historical weather and climate time series for thousands of weather stations, available via JSON API, Python library and bulk CSV datasets.
+
+- Category: Weather & Climate
+- Type: Dataset | Pricing: Free | Access: No key
+- Limitation: Free access requires crediting Meteostat and the originating national weather services; some station data remains subject to the providers' own license conditions.
+- License stated at source: yes
+- Verified: 2026-11-19
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/meteostat
+- Original source: https://meteostat.net/
+
+## OpenWeather Weather API
+
+Current weather, forecasts and historical data for any location worldwide via JSON APIs from the London-based OpenWeather (since 2012).
+
+- Category: Weather & Climate
+- Type: API | Pricing: Free tier | Access: API key
+- Limitation: The free subscription requires a free API key and caps calls (around 60 per minute / 1,000 per day) on a limited product set; granular historical and advanced products need paid plans.
+- License stated at source: yes
+- Verified: 2026-11-19
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/openweather-api
+- Original source: https://openweathermap.org/
+
+## Pew Research Center Datasets
+
+Microdata from Pew Research Center's public opinion and social trends surveys, downloadable as questionnaires and data files for secondary analysis.
+
+- Category: Society & Development
+- Type: Dataset | Pricing: Free | Access: No key
+- Limitation: Downloads are free without registration but licensed for non-commercial research use with attribution to Pew Research Center; some series are country- or wave-specific.
+- License stated at source: yes
+- Verified: 2026-11-19
+- OpenAtlas page: https://michaels1011.github.io/openatlasmap/resources/pew-research-datasets
+- Original source: https://www.pewresearch.org/datasets/
