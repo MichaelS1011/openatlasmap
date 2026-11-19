@@ -16,6 +16,41 @@ type Stats = { today: number; total: number; countries: number };
 const json = (url: string) =>
   fetch(url, { headers: goatAuthHeaders(GOAT_API_KEY) }).then((r) => (r.ok ? r.json() : Promise.reject(r)));
 
+// GoatCounter rate-limits its API (verified live: bursts answer 429), so all
+// mounts share one in-flight request and results are cached in sessionStorage
+// for a minute. Reloads and SPA navigations therefore never hammer the API.
+const CACHE_KEY = "openatlas-status-cache";
+const CACHE_TTL_MS = 60_000;
+let inflight: Promise<Stats | null> | null = null;
+
+function loadStats(): Promise<Stats | null> {
+  if (inflight) return inflight;
+  const now = new Date();
+  const range = { start: berlinMidnightIso(now), end: now.toISOString() };
+  // Verified live: countries arrive via stats/locations (the API rejects
+  // "countries"); kept as fallback. Partial success is fine — a failed
+  // dimension just drops its chip, only "no totals at all" hides the block.
+  inflight = Promise.allSettled([
+    json(goatTotalUrl(range)),
+    json(goatTotalUrl()),
+    json(goatLocationUrl({ limit: 100 })).catch(() => json(goatCountryUrl({ limit: 100 }))),
+  ])
+    .then(([today, total, geo]) => {
+      const t = today.status === "fulfilled" ? Number(today.value?.total) : NaN;
+      const a = total.status === "fulfilled" ? Number(total.value?.total) : NaN;
+      if (Number.isNaN(t) && Number.isNaN(a)) return null;
+      return {
+        today: Number.isNaN(t) ? 0 : t,
+        total: Number.isNaN(a) ? 0 : a,
+        countries: geo.status === "fulfilled" ? countCountryStats(geo.value?.stats) : 0,
+      };
+    })
+    .finally(() => {
+      inflight = null;
+    });
+  return inflight;
+}
+
 // Live visitor stats read from GoatCounter's JSON API in the browser. The
 // block hides itself entirely until a site key is configured and the API
 // answers — an empty shell never shows.
@@ -26,27 +61,30 @@ export function SiteStatus({ lang }: { lang: Lang }) {
   useEffect(() => {
     if (!GOAT_API_KEY) return;
     let live = true;
-    const now = new Date();
-    const range = { start: berlinMidnightIso(now), end: now.toISOString() };
-    // Verified live: countries arrive via stats/locations (the API rejects
-    // "countries"); kept as fallback. Omit the chip if neither answers.
-    Promise.all([
-      json(goatTotalUrl(range)),
-      json(goatTotalUrl()),
-      json(goatLocationUrl({ limit: 100 }))
-        .catch(() => json(goatCountryUrl({ limit: 100 })))
-        .catch(() => ({ stats: [] })),
-    ])
-      .then(([today, total, geo]) => {
-        if (!live) return;
-        setStats({
-          today: Number(today?.total) || 0,
-          total: Number(total?.total) || 0,
-          countries: countCountryStats(geo?.stats),
-        });
-      })
-      .catch(() => { if (live) setStats(null); });
-    return () => { live = false; };
+    try {
+      const raw = sessionStorage.getItem(CACHE_KEY);
+      if (raw) {
+        const cached = JSON.parse(raw) as { t?: number; data?: Stats };
+        if (cached?.data && Date.now() - (cached.t ?? 0) < CACHE_TTL_MS) {
+          setStats(cached.data);
+          return;
+        }
+      }
+    } catch {
+      /* private mode / corrupt entry: fetch fresh */
+    }
+    loadStats().then((data) => {
+      if (!live || !data) return;
+      setStats(data);
+      try {
+        sessionStorage.setItem(CACHE_KEY, JSON.stringify({ t: Date.now(), data }));
+      } catch {
+        /* cache is best-effort */
+      }
+    });
+    return () => {
+      live = false;
+    };
   }, []);
 
   if (!GOAT_API_KEY || !stats) return null;
