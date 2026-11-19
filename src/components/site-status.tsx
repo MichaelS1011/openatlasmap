@@ -28,13 +28,13 @@ export function SiteStatus({ lang }: { lang: Lang }) {
     let live = true;
     const now = new Date();
     const range = { start: berlinMidnightIso(now), end: now.toISOString() };
-    // Countries live in stats/countries; older builds expose them as
-    // "locations" — try both, and simply omit the number if neither works.
+    // Verified live: countries arrive via stats/locations (the API rejects
+    // "countries"); kept as fallback. Omit the chip if neither answers.
     Promise.all([
       json(goatTotalUrl(range)),
       json(goatTotalUrl()),
-      json(goatCountryUrl({ limit: 100 }))
-        .catch(() => json(goatLocationUrl({ limit: 100 })))
+      json(goatLocationUrl({ limit: 100 }))
+        .catch(() => json(goatCountryUrl({ limit: 100 })))
         .catch(() => ({ stats: [] })),
     ])
       .then(([today, total, geo]) => {

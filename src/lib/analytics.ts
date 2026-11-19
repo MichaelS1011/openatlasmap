@@ -4,7 +4,10 @@
 // Create a read-only *site key* in GoatCounter → [top menu] → API → Site key.
 // API reference: https://[site].goatcounter.com/api.json (endpoints /api/v0/stats/*).
 export const GOAT_SITE = "openatlas";
-export const GOAT_API_KEY = ""; // set to the GoatCounter site key to enable the live status
+// Read-only stats token from GoatCounter (user → API). Public by design:
+// GoatCounter documents embedding it in client-side JS (CORS allows any origin)
+// and it cannot modify counters or expose personal data — no secret.
+export const GOAT_API_KEY = "16m2nngxu7cs6wohf5ceajfst1q0fsfk8asr2xjutsu9to1zim";
 
 export const goatCountScriptUrl = `https://${GOAT_SITE}.goatcounter.com/count`;
 
