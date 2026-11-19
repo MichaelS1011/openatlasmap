@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Activity } from "lucide-react";
 import {
-  berlinMidnightIso,
+  berlinDateIso,
   countCountryStats,
   goatAuthHeaders,
   goatCountryUrl,
@@ -25,31 +25,31 @@ let inflight: Promise<Stats | null> | null = null;
 
 function loadStats(): Promise<Stats | null> {
   if (inflight) return inflight;
-  const now = new Date();
-  const range = { start: berlinMidnightIso(now), end: now.toISOString() };
-  // Verified live: countries arrive via stats/locations (the API rejects
-  // "countries"); kept as fallback. Partial success is fine — a failed
-  // dimension just drops its chip, only "no totals at all" hides the block.
-  inflight = Promise.allSettled([
-    json(goatTotalUrl(range)),
-    json(goatTotalUrl()),
-    json(goatLocationUrl({ limit: 100 })).catch(() => json(goatCountryUrl({ limit: 100 }))),
-  ])
-    .then(([today, total, geo]) => {
-      const t = today.status === "fulfilled" ? Number(today.value?.total) : NaN;
-      const a = total.status === "fulfilled" ? Number(total.value?.total) : NaN;
-      if (Number.isNaN(t) && Number.isNaN(a)) return null;
-      // A dimension that failed (e.g. 429) stays null and its chip is omitted
-      // rather than showing a misleading 0.
-      return {
-        today: Number.isNaN(t) ? null : t,
-        total: Number.isNaN(a) ? null : a,
-        countries: geo.status === "fulfilled" ? countCountryStats(geo.value?.stats) : null,
-      };
-    })
-    .finally(() => {
-      inflight = null;
-    });
+  inflight = (async () => {
+    const grab = async (url: string): Promise<any> => {
+      try {
+        return await json(url);
+      } catch {
+        return null; // e.g. 429 — this dimension simply stays out
+      }
+    };
+    // One unbounded stats/total carries all-time total AND per-day buckets
+    // (verified live), so "today" comes from the current Berlin day's bucket —
+    // two sequential requests in total keep us clear of the rate limiter.
+    const totals = await grab(goatTotalUrl());
+    const days = Array.isArray(totals?.stats) ? totals.stats : [];
+    const berlinToday = berlinDateIso();
+    const todayBucket = days.find((d: any) => d?.day === berlinToday);
+    const today = totals ? (todayBucket ? Number(todayBucket.daily) || 0 : 0) : null;
+    const total = totals ? Number(totals.total) || 0 : null;
+    if (today === null && total === null) return null;
+    // Verified live: countries arrive via stats/locations (the API rejects
+    // "countries"); kept as fallback.
+    const geo = (await grab(goatLocationUrl({ limit: 100 }))) ?? (await grab(goatCountryUrl({ limit: 100 })));
+    return { today, total, countries: geo ? countCountryStats(geo.stats) : null };
+  })().finally(() => {
+    inflight = null;
+  });
   return inflight;
 }
 

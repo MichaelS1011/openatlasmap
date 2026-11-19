@@ -41,19 +41,12 @@ export function goatLocationUrl(opts: GoatRange = {}): string {
   return goatApiUrl("stats/locations", opts);
 }
 
-// UTC ISO string for "midnight in Berlin" — "today" means the visitor's day,
-// and the catalog is aimed at Europe/Berlin.
-export function berlinMidnightIso(now: Date = new Date()): string {
-  const parts = Object.fromEntries(
-    new Intl.DateTimeFormat("en-CA", {
-      timeZone: "Europe/Berlin", year: "numeric", month: "2-digit", day: "2-digit",
-      hour: "2-digit", minute: "2-digit", second: "2-digit", hourCycle: "h23",
-    }).formatToParts(now).map((p) => [p.type, p.value]),
-  );
-  // Local wall time read as UTC minus the current offset = the real UTC instant.
-  const wallAsUtc = Date.UTC(+parts.year, +parts.month - 1, +parts.day, +parts.hour, +parts.minute, +parts.second);
-  const offsetMs = wallAsUtc - now.getTime();
-  return new Date(Date.UTC(+parts.year, +parts.month - 1, +parts.day) - offsetMs).toISOString();
+// "YYYY-MM-DD" for the current calendar day in Berlin — used to pick today's
+// bucket out of the day-by-day stats the total endpoint returns.
+export function berlinDateIso(now: Date = new Date()): string {
+  return new Intl.DateTimeFormat("en-CA", {
+    timeZone: "Europe/Berlin", year: "numeric", month: "2-digit", day: "2-digit",
+  }).format(now);
 }
 
 type GoatStat = { name?: string; count?: number };

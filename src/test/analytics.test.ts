@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 import {
-  berlinMidnightIso,
+  berlinDateIso,
   countCountryStats,
   goatAuthHeaders,
   goatCountryUrl,
@@ -34,12 +34,12 @@ describe("goatAuthHeaders", () => {
   });
 });
 
-describe("berlinMidnightIso", () => {
-  it("returns midnight UTC+2 (summer) for a noon UTC instant", () => {
-    expect(berlinMidnightIso(new Date("2026-07-15T12:00:00Z"))).toBe("2026-07-14T22:00:00.000Z");
+describe("berlinDateIso", () => {
+  it("returns the Berlin calendar date for a noon UTC instant", () => {
+    expect(berlinDateIso(new Date("2026-07-15T12:00:00Z"))).toBe("2026-07-15");
   });
-  it("returns midnight UTC+1 (winter) for a noon UTC instant", () => {
-    expect(berlinMidnightIso(new Date("2026-01-15T12:00:00Z"))).toBe("2026-01-14T23:00:00.000Z");
+  it("rolls to the next day once Berlin passes midnight", () => {
+    expect(berlinDateIso(new Date("2026-01-15T23:30:00Z"))).toBe("2026-01-16");
   });
 });
 
