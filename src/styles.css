@@ -69,6 +69,8 @@
 .nav-item { color:var(--muted-foreground); text-decoration:none; font-weight:500; font-size:13.5px; min-height:40px; border-radius:999px; padding-inline:14px; }
 .nav-item.active { color:var(--primary); background: var(--secondary); }
 .header-note { display:flex; align-items:center; gap:7px; font-size:12px; color:var(--muted-foreground); }
+.status-stat { display:inline-flex; align-items:center; gap:7px; padding:7px 12px; border:1px solid var(--border); border-radius:999px; font-size:12.5px; color:var(--muted-foreground,var(--foreground)); }
+.status-stat strong { color:var(--foreground); font-weight:600; }
 .status-dot { width:6px; height:6px; background:var(--primary); border-radius:50%; box-shadow: 0 0 0 3px oklch(.5 .09 165 / .18); }
 .theme-toggle { width:38px; height:38px; flex:none; display:grid; place-items:center; border-radius:999px; border:0; background:transparent; color:var(--muted-foreground); transition: background .25s var(--ease-out), color .25s var(--ease-out); }
 .theme-toggle:hover { background: var(--accent); color: var(--foreground); }

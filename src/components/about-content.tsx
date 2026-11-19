@@ -2,6 +2,7 @@ import { ArrowUpRight, FileJson, Github, Globe, Sparkles } from "lucide-react";
 import { BrandMark } from "@/components/brand-mark";
 import { Button } from "@/components/ui/button";
 import { ThemeToggle, useScrolled } from "@/components/site-chrome";
+import { SiteStatus } from "@/components/site-status";
 import { resources } from "@/lib/resources";
 import { catalogJsonUrl, llmsTxtUrl, siteUrl } from "@/lib/seo";
 import { ui, type Lang } from "@/lib/i18n";
@@ -77,6 +78,8 @@ export function AboutContent({ lang }: { lang: Lang }) {
             <Button asChild variant="outline" size="sm"><a href={`${siteUrl}/sitemap.xml`} rel="noopener">Sitemap</a></Button>
           </div>
         </section>
+
+        <SiteStatus lang={lang} />
 
         <section style={{ marginTop: 40 }}>
           <h2 className="font-display" style={{ fontSize: 22, marginBottom: 12 }}>{t.involvedH2}</h2>

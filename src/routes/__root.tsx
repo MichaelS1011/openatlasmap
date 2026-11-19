@@ -15,6 +15,7 @@ import "@fontsource-variable/manrope";
 import "@fontsource-variable/space-grotesk";
 import { reportLovableError } from "../lib/lovable-error-reporting";
 import { siteUrl, socialCardUrl } from "../lib/seo";
+import { goatCountScriptUrl } from "../lib/analytics";
 
 function NotFoundComponent() {
   return (
@@ -123,6 +124,8 @@ function RootShell({ children }: { children: ReactNode }) {
             __html: "try{var m=localStorage.getItem('openatlas-theme')||'auto';var d=m==='dark'||(m==='auto'&&window.matchMedia('(prefers-color-scheme: dark)').matches);if(d)document.documentElement.classList.add('dark');}catch(e){}",
           }}
         />
+        {/* Cookieless visitor counter (GoatCounter): no cookies, no personal data, no consent banner needed. */}
+        <script data-goatcounter={goatCountScriptUrl} async src="//gc.zgo.at/count.js" />
         <HeadContent />
       </head>
       <body>
