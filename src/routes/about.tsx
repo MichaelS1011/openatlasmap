@@ -1,6 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowUpRight, FileJson, Github, Globe, Orbit, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { ThemeToggle, useScrolled } from "@/components/site-chrome";
 import { resources } from "@/lib/resources";
 import { aboutStructuredData, catalogJsonUrl, llmsTxtUrl, siteUrl } from "@/lib/seo";
 
@@ -39,12 +40,14 @@ export const Route = createFileRoute("/about")({
 });
 
 function AboutPage() {
+  const scrolled = useScrolled();
   return (
     <>
-      <header className="site-header shell">
+      <header className={`site-header shell${scrolled ? " is-scrolled" : ""}`}>
         <Link className="brand" to="/" aria-label="OpenAtlas home"><span className="brand-symbol"><Orbit size={22} strokeWidth={1.7} /></span>openatlas<span className="text-primary">.</span></Link>
         <nav className="main-nav" aria-label="Main navigation">
           <Button asChild variant="ghost" className="nav-item"><Link to="/">Explore</Link></Button>
+          <ThemeToggle />
         </nav>
         <span className="header-note"><span className="status-dot" />Open data. Endless possibilities.</span>
       </header>

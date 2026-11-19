@@ -6,6 +6,7 @@ import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } f
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
 import { filterResources, licenseSpecified, resources, searchResources, type Resource } from "@/lib/resources";
 import { catalogStructuredData, siteUrl } from "@/lib/seo";
+import { ThemeToggle, useScrolled } from "@/components/site-chrome";
 import { categoryGroups } from "@/lib/resource-categories";
 import glassImage from "@/assets/discovery-glass.jpg";
 
@@ -53,7 +54,7 @@ function ResourceCard({ resource, saved, onSave, onDetails }: { resource: Resour
       <div className={`resource-icon ${dataset ? "dataset" : ""}`}><Icon size={22} strokeWidth={1.6} /></div>
       <div className="flex items-center gap-2">
         <Tip label={badgeTips[resource.type] ?? resource.type}><span className={`type-badge ${dataset ? "dataset" : ""}`}>{dataset ? <Database size={11} /> : <Code2 size={11} />}{resource.type}</span></Tip>
-        <Button variant="ghost" size="icon" className="h-7 w-7 text-muted-foreground" onClick={onSave} aria-label={saved ? `Remove ${resource.name} from collection` : `Save ${resource.name}`} title={saved ? "Remove from collection" : "Save to collection"} aria-pressed={saved}><Bookmark size={15} fill={saved ? "currentColor" : "none"} /></Button>
+        <Button variant="ghost" size="icon" className="h-9 w-9 text-muted-foreground" onClick={onSave} aria-label={saved ? `Remove ${resource.name} from collection` : `Save ${resource.name}`} title={saved ? "Remove from collection" : "Save to collection"} aria-pressed={saved}><Bookmark size={15} fill={saved ? "currentColor" : "none"} /></Button>
       </div>
     </div>
     <h3>{resources.some((item) => item.id === resource.id && item.url === resource.url) ? <Link to="/resources/$id" params={{ id: resource.id }}>{resource.name}</Link> : resource.name}</h3><p>{resource.description}</p>
@@ -88,6 +89,7 @@ function Index() {
     if (typeof window !== "undefined") window.localStorage.setItem(COLLECTION_KEY, JSON.stringify(saved));
   }, [saved]);
   const [collection, setCollection] = useState(false);
+  const scrolled = useScrolled();
   const [selected, setSelected] = useState<Resource | null>(null);
   const [searchedAt, setSearchedAt] = useState("");
   const inputRef = useRef<HTMLInputElement>(null);
@@ -108,12 +110,13 @@ function Index() {
   }
 
   return <TooltipProvider delayDuration={300}>
-    <header className="site-header shell">
+    <header className={`site-header shell${scrolled ? " is-scrolled" : ""}`}>
       <a className="brand" href={`${siteUrl}/`} aria-label="OpenAtlas home"><span className="brand-symbol"><Orbit size={22} strokeWidth={1.7} /></span>openatlas<span className="text-primary">.</span></a>
       <nav className="main-nav" aria-label="Main navigation">
         <Button variant="ghost" onClick={showExplore} className={`nav-item ${!collection ? "active" : ""}`}>Explore</Button>
         <Button variant="ghost" onClick={() => { setCollection(true); resetFilters(); }} className={`nav-item ${collection ? "active" : ""}`}><Bookmark size={14} /><span className="collection-label">My collection</span>{saved.length > 0 && <span>{saved.length}</span>}</Button>
         <Button asChild variant="ghost" className="nav-item"><Link to="/about">About</Link></Button>
+        <ThemeToggle />
       </nav>
       <span className="header-note"><span className="status-dot" />Open data. Endless possibilities.</span>
     </header>

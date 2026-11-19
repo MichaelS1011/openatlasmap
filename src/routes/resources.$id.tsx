@@ -1,6 +1,7 @@
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { ArrowLeft, ArrowUpRight, Orbit } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { ThemeToggle, useScrolled } from "@/components/site-chrome";
 import { licenseSpecified, resources } from "@/lib/resources";
 import { resourcePageUrl, resourceStructuredData } from "@/lib/seo";
 
@@ -31,10 +32,14 @@ export const Route = createFileRoute("/resources/$id")({
 
 function ResourcePage() {
   const resource = Route.useLoaderData();
+  const scrolled = useScrolled();
   return <>
-    <header className="site-header shell">
+    <header className={`site-header shell${scrolled ? " is-scrolled" : ""}`}>
       <Link className="brand" to="/"><span className="brand-symbol"><Orbit size={22} /></span>openatlas<span className="text-primary">.</span></Link>
-      <Button asChild variant="ghost"><Link to="/"><ArrowLeft size={15} />Explore</Link></Button>
+      <div className="flex items-center gap-2">
+        <Button asChild variant="ghost"><Link to="/"><ArrowLeft size={15} />Explore</Link></Button>
+        <ThemeToggle />
+      </div>
     </header>
     <main className="shell source-page">
       <p className="text-sm text-primary mb-4">{resource.category}</p>
