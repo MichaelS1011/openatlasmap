@@ -124,7 +124,10 @@ function RootShell({ children }: { children: ReactNode }) {
             __html: "try{var m=localStorage.getItem('openatlas-theme')||'auto';var d=m==='dark'||(m==='auto'&&window.matchMedia('(prefers-color-scheme: dark)').matches);if(d)document.documentElement.classList.add('dark');}catch(e){}",
           }}
         />
-        {/* Cookieless visitor counter (GoatCounter): no cookies, no personal data, no consent banner needed. */}
+        {/* Cookieless visitor counter (GoatCounter): no cookies, no personal data, no consent banner needed.
+            path is pinned to pathname+search so SPA navigations (counted manually below) and the initial
+            load report identical paths despite our absolute canonical links. */}
+        <script dangerouslySetInnerHTML={{ __html: "window.goatcounter={path:location.pathname+location.search};" }} />
         <script data-goatcounter={goatCountScriptUrl} async src="//gc.zgo.at/count.js" />
         <HeadContent />
       </head>
@@ -136,8 +139,27 @@ function RootShell({ children }: { children: ReactNode }) {
   );
 }
 
+declare global {
+  interface Window {
+    goatcounter?: { count?: (pv: { path: string; title?: string }) => void };
+  }
+}
+
 function RootComponent() {
   const { queryClient } = Route.useRouteContext();
+  const router = useRouter();
+
+  // SPA navigations never reload the page, so count.js misses them — report
+  // each client-side route change manually (https://openatlas.goatcounter.com/help/spa).
+  useEffect(() => {
+    let last = window.location.pathname + window.location.search;
+    return router.subscribe("onResolved", () => {
+      const next = window.location.pathname + window.location.search;
+      if (next === last) return;
+      last = next;
+      try { window.goatcounter?.count?.({ path: next, title: document.title }); } catch { /* counter offline */ }
+    });
+  }, [router]);
 
   return (
     <QueryClientProvider client={queryClient}>

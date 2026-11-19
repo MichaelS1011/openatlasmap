@@ -1,20 +1,41 @@
 // Cookieless visitor stats via GoatCounter. The count script (see __root.tsx)
 // sets no cookies and stores no personal data; the JSON API below only serves
 // aggregate counts, which is why the site key is safe to ship in the client.
-// Create a read-only *site key* in GoatCounter → Settings → API keys → Site key.
+// Create a read-only *site key* in GoatCounter → [top menu] → API → Site key.
+// API reference: https://[site].goatcounter.com/api.json (endpoints /api/v0/stats/*).
 export const GOAT_SITE = "openatlas";
 export const GOAT_API_KEY = ""; // set to the GoatCounter site key to enable the live status
 
 export const goatCountScriptUrl = `https://${GOAT_SITE}.goatcounter.com/count`;
 
-// GET /api/v1/total — https://www.goatcounter.com/help/api
-export function goatTotalUrl(opts: { key: string; from?: string; to?: string; group?: string; limit?: number }): string {
-  const p = new URLSearchParams({ access_key: opts.key });
-  if (opts.from) p.set("from", opts.from);
-  if (opts.to) p.set("to", opts.to ?? new Date().toISOString());
-  if (opts.group) p.set("group", opts.group);
+// GoatCounter authenticates with `Authorization: Bearer <key>` (site keys are
+// read-only stats keys, meant to be embedded in client-side JS).
+export function goatAuthHeaders(key: string): Record<string, string> {
+  return { Authorization: `Bearer ${key}`, "Content-Type": "application/json" };
+}
+
+export type GoatRange = { start?: string; end?: string; limit?: number };
+
+function goatApiUrl(path: string, opts: GoatRange): string {
+  const p = new URLSearchParams();
+  if (opts.start) p.set("start", opts.start);
+  if (opts.end) p.set("end", opts.end);
   if (opts.limit) p.set("limit", String(opts.limit));
-  return `https://${GOAT_SITE}.goatcounter.com/api/v1/total?${p.toString()}`;
+  const q = p.toString();
+  return `https://${GOAT_SITE}.goatcounter.com/api/v0/${path}${q ? `?${q}` : ""}`;
+}
+
+// GET /api/v0/stats/total → { total: <visitors in range> }
+export function goatTotalUrl(opts: GoatRange = {}): string {
+  return goatApiUrl("stats/total", opts);
+}
+
+// GET /api/v0/stats/countries (fallback: locations) → { stats: [{ name, count }] }
+export function goatCountryUrl(opts: GoatRange = {}): string {
+  return goatApiUrl("stats/countries", opts);
+}
+export function goatLocationUrl(opts: GoatRange = {}): string {
+  return goatApiUrl("stats/locations", opts);
 }
 
 // UTC ISO string for "midnight in Berlin" — "today" means the visitor's day,
@@ -32,8 +53,12 @@ export function berlinMidnightIso(now: Date = new Date()): string {
   return new Date(Date.UTC(+parts.year, +parts.month - 1, +parts.day) - offsetMs).toISOString();
 }
 
-// The API groups results as `pages: { "country:DE": 12, "unknown": 3, ... }`.
-export function countCountries(pages: Record<string, number> | undefined): number {
-  if (!pages) return 0;
-  return Object.keys(pages).filter((k) => k.startsWith("country:") && pages[k] > 0).length;
+type GoatStat = { name?: string; count?: number };
+
+// Count distinct countries from a stats array; the API reports buckets like
+// { name: "Germany", count: 12 } plus catch-all buckets we must not count.
+export function countCountryStats(stats: GoatStat[] | undefined): number {
+  if (!Array.isArray(stats)) return 0;
+  const blank = new Set(["", "unknown", "(not set)", "none", "n/a"]);
+  return stats.filter((s) => (s?.count ?? 0) > 0 && s?.name && !blank.has(s.name.toLowerCase())).length;
 }

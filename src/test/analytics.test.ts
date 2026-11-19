@@ -1,19 +1,36 @@
 import { describe, expect, it } from "vitest";
-import { berlinMidnightIso, countCountries, goatTotalUrl } from "@/lib/analytics";
+import {
+  berlinMidnightIso,
+  countCountryStats,
+  goatAuthHeaders,
+  goatCountryUrl,
+  goatTotalUrl,
+} from "@/lib/analytics";
 
 describe("goatTotalUrl", () => {
-  it("builds the total endpoint with key, range and grouping", () => {
-    const url = new URL(goatTotalUrl({ key: "k", from: "2026-11-19T00:00:00.000Z", to: "2026-11-19T12:00:00.000Z", group: "country", limit: 250 }));
-    expect(url.origin + url.pathname).toBe("https://openatlas.goatcounter.com/api/v1/total");
-    expect(url.searchParams.get("access_key")).toBe("k");
-    expect(url.searchParams.get("from")).toBe("2026-11-19T00:00:00.000Z");
-    expect(url.searchParams.get("group")).toBe("country");
-    expect(url.searchParams.get("limit")).toBe("250");
+  it("builds the v0 stats/total endpoint with start and end", () => {
+    const url = new URL(goatTotalUrl({ start: "2026-11-19T00:00:00.000Z", end: "2026-11-19T12:00:00.000Z" }));
+    expect(url.origin + url.pathname).toBe("https://openatlas.goatcounter.com/api/v0/stats/total");
+    expect(url.searchParams.get("start")).toBe("2026-11-19T00:00:00.000Z");
+    expect(url.searchParams.get("end")).toBe("2026-11-19T12:00:00.000Z");
   });
   it("omits optional parameters when not requested", () => {
-    const url = new URL(goatTotalUrl({ key: "k" }));
-    expect(url.searchParams.has("from")).toBe(false);
-    expect(url.searchParams.has("group")).toBe(false);
+    const url = new URL(goatTotalUrl());
+    expect(url.search).toBe("");
+  });
+});
+
+describe("goatCountryUrl", () => {
+  it("targets the countries stats endpoint with a limit", () => {
+    const url = new URL(goatCountryUrl({ limit: 100 }));
+    expect(url.pathname).toBe("/api/v0/stats/countries");
+    expect(url.searchParams.get("limit")).toBe("100");
+  });
+});
+
+describe("goatAuthHeaders", () => {
+  it("sends the key as a bearer token", () => {
+    expect(goatAuthHeaders("k123").Authorization).toBe("Bearer k123");
   });
 });
 
@@ -26,11 +43,18 @@ describe("berlinMidnightIso", () => {
   });
 });
 
-describe("countCountries", () => {
-  it("counts distinct country groups and ignores unknown/zero buckets", () => {
-    expect(countCountries({ "country:DE": 5, "country:US": 2, "country:XX": 0, unknown: 9 })).toBe(2);
+describe("countCountryStats", () => {
+  it("counts buckets with positive counts and skips catch-alls", () => {
+    expect(countCountryStats([
+      { name: "Germany", count: 5 },
+      { name: "United States", count: 2 },
+      { name: "Unknown", count: 9 },
+      { name: "(not set)", count: 3 },
+      { name: "Antarctica", count: 0 },
+    ])).toBe(2);
   });
-  it("returns zero for missing pages", () => {
-    expect(countCountries(undefined)).toBe(0);
+  it("returns zero for missing or malformed stats", () => {
+    expect(countCountryStats(undefined)).toBe(0);
+    expect(countCountryStats([])).toBe(0);
   });
 });

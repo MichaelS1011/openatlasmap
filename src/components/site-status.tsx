@@ -1,9 +1,20 @@
 import { useEffect, useState } from "react";
 import { Activity } from "lucide-react";
-import { berlinMidnightIso, countCountries, goatTotalUrl, GOAT_API_KEY, GOAT_SITE } from "@/lib/analytics";
+import {
+  berlinMidnightIso,
+  countCountryStats,
+  goatAuthHeaders,
+  goatCountryUrl,
+  goatLocationUrl,
+  goatTotalUrl,
+  GOAT_API_KEY,
+} from "@/lib/analytics";
 import { ui, type Lang } from "@/lib/i18n";
 
 type Stats = { today: number; total: number; countries: number };
+
+const json = (url: string) =>
+  fetch(url, { headers: goatAuthHeaders(GOAT_API_KEY) }).then((r) => (r.ok ? r.json() : Promise.reject(r)));
 
 // Live visitor stats read from GoatCounter's JSON API in the browser. The
 // block hides itself entirely until a site key is configured and the API
@@ -16,20 +27,22 @@ export function SiteStatus({ lang }: { lang: Lang }) {
     if (!GOAT_API_KEY) return;
     let live = true;
     const now = new Date();
-    const from = berlinMidnightIso(now);
-    const to = now.toISOString();
-    const req = (url: string) => fetch(url).then((r) => (r.ok ? r.json() : Promise.reject(r)));
+    const range = { start: berlinMidnightIso(now), end: now.toISOString() };
+    // Countries live in stats/countries; older builds expose them as
+    // "locations" — try both, and simply omit the number if neither works.
     Promise.all([
-      req(goatTotalUrl({ key: GOAT_API_KEY, from, to })),
-      req(goatTotalUrl({ key: GOAT_API_KEY })),
-      req(goatTotalUrl({ key: GOAT_API_KEY, group: "country", limit: 250 })),
+      json(goatTotalUrl(range)),
+      json(goatTotalUrl()),
+      json(goatCountryUrl({ limit: 100 }))
+        .catch(() => json(goatLocationUrl({ limit: 100 })))
+        .catch(() => ({ stats: [] })),
     ])
       .then(([today, total, geo]) => {
         if (!live) return;
         setStats({
           today: Number(today?.total) || 0,
           total: Number(total?.total) || 0,
-          countries: countCountries(geo?.pages),
+          countries: countCountryStats(geo?.stats),
         });
       })
       .catch(() => { if (live) setStats(null); });
@@ -41,8 +54,8 @@ export function SiteStatus({ lang }: { lang: Lang }) {
   const items = [
     { n: stats.today, label: t.statusVisitsToday },
     { n: stats.total, label: t.statusVisitsTotal },
-    stats.countries > 0 ? { n: stats.countries, label: t.statusCountries } : null,
-  ].filter(Boolean) as { n: number; label: string }[];
+    ...(stats.countries > 0 ? [{ n: stats.countries, label: t.statusCountries }] : []),
+  ];
 
   return (
     <section style={{ marginTop: 40 }}>
