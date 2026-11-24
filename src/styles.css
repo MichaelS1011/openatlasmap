@@ -337,19 +337,24 @@ a {
   top: var(--card-y);
   left: var(--card-x);
   width: 288px;
-  transform: translate(-50%, -50%) rotate(var(--card-rotation));
-  animation: card-arrive 760ms cubic-bezier(0.2, 0.8, 0.2, 1) both;
+  transform: translate(-50%, -50%);
+  rotate: var(--card-rotation);
+  scale: var(--card-scale);
+  opacity: var(--card-opacity);
+  animation: card-drift var(--drift-duration) ease-in-out var(--drift-delay) infinite alternate;
+  transition: opacity 240ms ease;
+  will-change: transform;
   pointer-events: auto;
 }
 
-.index-card-slot:nth-child(2) {
-  animation-delay: 90ms;
+.index-card-slot:is(:hover, :focus-within) {
+  z-index: 4;
+  opacity: 1;
+  animation-play-state: paused;
 }
-.index-card-slot:nth-child(3) {
-  animation-delay: 180ms;
-}
-.index-card-slot:nth-child(4) {
-  animation-delay: 270ms;
+
+.search-region:focus-within .index-card-slot {
+  animation-play-state: paused;
 }
 
 .index-card {
@@ -359,6 +364,7 @@ a {
   background: var(--card);
   box-shadow: var(--shadow-paper);
   color: var(--foreground);
+  animation: card-arrive 760ms cubic-bezier(0.2, 0.8, 0.2, 1) var(--arrive-delay) both;
   transition:
     transform 220ms ease,
     box-shadow 220ms ease,
@@ -366,9 +372,13 @@ a {
 }
 
 .index-card:hover {
-  transform: translateY(-7px) rotate(calc(var(--card-rotation) * -0.35));
+  transform: translateY(-7px) scale(1.015);
   background: #fffef9;
   box-shadow: 16px 16px 0 rgba(36, 43, 35, 0.14);
+}
+
+.index-card:focus-visible {
+  transform: translateY(-4px) scale(1.01);
 }
 
 .dark .index-card:hover {
@@ -1574,14 +1584,27 @@ kbd {
   color: var(--muted-foreground);
 }
 
+@keyframes card-drift {
+  from {
+    translate: var(--drift-from-x) var(--drift-from-y);
+    rotate: var(--card-rotation);
+    scale: var(--card-scale);
+  }
+  to {
+    translate: var(--drift-to-x) var(--drift-to-y);
+    rotate: var(--card-end-rotation);
+    scale: var(--card-end-scale);
+  }
+}
+
 @keyframes card-arrive {
   from {
     opacity: 0;
-    transform: translate(-50%, -42%) rotate(var(--card-rotation)) scale(0.94);
+    translate: 0 14px;
   }
   to {
     opacity: 1;
-    transform: translate(-50%, -50%) rotate(var(--card-rotation)) scale(1);
+    translate: 0 0;
   }
 }
 
@@ -1605,6 +1628,12 @@ kbd {
   }
   .main-nav {
     justify-content: flex-end;
+  }
+  .index-card-slot:nth-child(3) {
+    left: -2%;
+  }
+  .index-card-slot:nth-child(4) {
+    left: 102%;
   }
   .results-mode .search-dock {
     grid-template-columns: minmax(0, 1fr) 260px;
@@ -1635,6 +1664,10 @@ kbd {
   }
   .index-card-slot {
     width: 244px;
+  }
+  .index-card-slot:nth-child(3),
+  .index-card-slot:nth-child(4) {
+    display: none;
   }
   .index-card {
     padding: 15px;
@@ -2010,6 +2043,10 @@ kbd {
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
+  }
+  .index-card-slot,
+  .index-card {
+    animation: none;
   }
   *,
   *::before,
