@@ -7,22 +7,30 @@ export const socialCardUrl = `${siteUrl}/social-card.png`;
 export const catalogJsonUrl = `${siteUrl}/openatlas.json`;
 export const llmsTxtUrl = `${siteUrl}/llms.txt`;
 
-const person = { "@type": "Person", name: "Michael Soppa", sameAs: "https://www.linkedin.com/in/michael-soppa/" };
+const person = {
+  "@type": "Person",
+  name: "Michael Soppa",
+  sameAs: "https://www.linkedin.com/in/michael-soppa/",
+};
 
 const webSiteCopy: Record<Lang, { alternateName: string; description: string }> = {
   en: {
     alternateName: "OpenAtlas — Discover Free APIs & Open Data",
-    description: "Curated directory of free APIs and open datasets with original source links, access requirements, and usage conditions.",
+    description:
+      "Curated directory of free APIs and open datasets with original source links, access requirements, and usage conditions.",
   },
   de: {
     alternateName: "OpenAtlas — Kostenlose APIs & Open Data entdecken",
-    description: "Kuratiertes Verzeichnis kostenloser APIs und offener Datensätze mit Links zur Originalquelle, Zugangsvoraussetzungen und Nutzungsbedingungen.",
+    description:
+      "Kuratiertes Verzeichnis kostenloser APIs und offener Datensätze mit Links zur Originalquelle, Zugangsvoraussetzungen und Nutzungsbedingungen.",
   },
 };
 
 const webSite = (lang: Lang) => ({
-  "@type": "WebSite", "@id": lang === "en" ? `${siteUrl}/#website` : `${siteUrl}/de/#website`,
-  name: "OpenAtlas", url: lang === "en" ? `${siteUrl}/` : `${siteUrl}/de/`,
+  "@type": "WebSite",
+  "@id": lang === "en" ? `${siteUrl}/#website` : `${siteUrl}/de/#website`,
+  name: "OpenAtlas",
+  url: lang === "en" ? `${siteUrl}/` : `${siteUrl}/de/`,
   alternateName: webSiteCopy[lang].alternateName,
   description: webSiteCopy[lang].description,
   inLanguage: lang === "en" ? "en" : "de",
@@ -67,11 +75,15 @@ export function catalogStructuredData(items: Resource[], lang: Lang = "en") {
     "@graph": [
       webSite(lang),
       {
-        "@type": "ItemList", name: itemListName[lang],
+        "@type": "ItemList",
+        name: itemListName[lang],
         inLanguage: lang === "en" ? "en" : "de",
         numberOfItems: items.length,
         itemListElement: items.map((item, index) => ({
-          "@type": "ListItem", position: index + 1, name: item.name, url: resourcePageUrl(item.id),
+          "@type": "ListItem",
+          position: index + 1,
+          name: item.name,
+          url: resourcePageUrl(item.id),
         })),
       },
     ],
@@ -81,22 +93,25 @@ export function catalogStructuredData(items: Resource[], lang: Lang = "en") {
 const aboutPageCopy: Record<Lang, { name: string; description: string }> = {
   en: {
     name: "About OpenAtlas",
-    description: "Mission and curation rules of OpenAtlas, a curated directory of free APIs and open datasets.",
+    description:
+      "Mission and curation rules of OpenAtlas, a curated directory of free APIs and open datasets.",
   },
   de: {
     name: "Über OpenAtlas",
-    description: "Mission und Kuratierungsregeln von OpenAtlas, einem kuratierten Verzeichnis kostenloser APIs und offener Datensätze.",
+    description:
+      "Mission und Kuratierungsregeln von OpenAtlas, einem kuratierten Verzeichnis kostenloser APIs und offener Datensätze.",
   },
 };
 
 const catalogCopy: Record<Lang, { description: string; measurementTechnique: string }> = {
   en: {
     description: "Machine-readable catalog of free APIs and open datasets, published as open data.",
-    measurementTechnique: "manual curation with verification dates",
+    measurementTechnique: "manual curation; verification date recorded where available",
   },
   de: {
-    description: "Maschinenlesbares Verzeichnis kostenloser APIs und offener Datensätze, veröffentlicht als Open Data.",
-    measurementTechnique: "manuelle Kuratierung mit Verifikationsdatum",
+    description:
+      "Maschinenlesbares Verzeichnis kostenloser APIs und offener Datensätze, veröffentlicht als Open Data.",
+    measurementTechnique: "manuelle Kuratierung; Verifikationsdatum, wo verfügbar",
   },
 };
 
@@ -107,14 +122,18 @@ export function aboutStructuredData(count: number, lang: Lang = "en") {
     "@graph": [
       webSite(lang),
       {
-        "@type": "AboutPage", "@id": aboutId, url: aboutId,
-        name: aboutPageCopy[lang].name, language: lang,
+        "@type": "AboutPage",
+        "@id": aboutId,
+        url: aboutId,
+        name: aboutPageCopy[lang].name,
+        language: lang,
         description: aboutPageCopy[lang].description,
         isPartOf: { "@id": lang === "en" ? `${siteUrl}/#website` : `${siteUrl}/de/#website` },
         about: person,
       },
       {
-        "@type": "DataCatalog", name: "OpenAtlas catalog",
+        "@type": "DataCatalog",
+        name: "OpenAtlas catalog",
         description: catalogCopy[lang].description,
         url: catalogJsonUrl,
         inLanguage: lang === "en" ? "en" : "de",
@@ -122,12 +141,17 @@ export function aboutStructuredData(count: number, lang: Lang = "en") {
         measurementTechnique: catalogCopy[lang].measurementTechnique,
         numberOfItems: count,
         publisher: person,
-        distribution: { "@type": "DataDownload", encodingFormat: "application/json", contentUrl: catalogJsonUrl },
+        distribution: {
+          "@type": "DataDownload",
+          encodingFormat: "application/json",
+          contentUrl: catalogJsonUrl,
+        },
       },
       {
         "@type": "FAQPage",
         mainEntity: ui[lang].faqs.map(([name, text]) => ({
-          "@type": "Question", name,
+          "@type": "Question",
+          name,
           acceptedAnswer: { "@type": "Answer", text },
         })),
       },

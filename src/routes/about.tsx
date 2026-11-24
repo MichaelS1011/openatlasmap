@@ -19,11 +19,16 @@ export const Route = createFileRoute("/about")({
     ],
     links: [
       { rel: "canonical", href: `${siteUrl}/about/` },
-      { rel: "alternate", hreflang: "en", href: `${siteUrl}/about/` },
-      { rel: "alternate", hreflang: "de", href: `${siteUrl}/de/about/` },
-      { rel: "alternate", hreflang: "x-default", href: `${siteUrl}/about/` },
+      { rel: "alternate", hrefLang: "en", href: `${siteUrl}/about/` },
+      { rel: "alternate", hrefLang: "de", href: `${siteUrl}/de/about/` },
+      { rel: "alternate", hrefLang: "x-default", href: `${siteUrl}/about/` },
     ],
-    scripts: [{ type: "application/ld+json", children: JSON.stringify(aboutStructuredData(resources.length, "en")) }],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify(aboutStructuredData(resources.length, "en")),
+      },
+    ],
   }),
   component: () => <AboutContent lang="en" />,
 });

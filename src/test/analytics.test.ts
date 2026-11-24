@@ -9,7 +9,9 @@ import {
 
 describe("goatTotalUrl", () => {
   it("builds the v0 stats/total endpoint with start and end", () => {
-    const url = new URL(goatTotalUrl({ start: "2026-11-19T00:00:00.000Z", end: "2026-11-19T12:00:00.000Z" }));
+    const url = new URL(
+      goatTotalUrl({ start: "2026-11-19T00:00:00.000Z", end: "2026-11-19T12:00:00.000Z" }),
+    );
     expect(url.origin + url.pathname).toBe("https://openatlas.goatcounter.com/api/v0/stats/total");
     expect(url.searchParams.get("start")).toBe("2026-11-19T00:00:00.000Z");
     expect(url.searchParams.get("end")).toBe("2026-11-19T12:00:00.000Z");
@@ -30,7 +32,7 @@ describe("goatCountryUrl", () => {
 
 describe("goatAuthHeaders", () => {
   it("sends the key as a bearer token", () => {
-    expect(goatAuthHeaders("k123").Authorization).toBe("Bearer k123");
+    expect(goatAuthHeaders("k123")["Authorization"]).toBe("Bearer k123");
   });
 });
 
@@ -45,13 +47,15 @@ describe("berlinDateIso", () => {
 
 describe("countCountryStats", () => {
   it("counts buckets with positive counts and skips catch-alls", () => {
-    expect(countCountryStats([
-      { name: "Germany", count: 5 },
-      { name: "United States", count: 2 },
-      { name: "Unknown", count: 9 },
-      { name: "(not set)", count: 3 },
-      { name: "Antarctica", count: 0 },
-    ])).toBe(2);
+    expect(
+      countCountryStats([
+        { name: "Germany", count: 5 },
+        { name: "United States", count: 2 },
+        { name: "Unknown", count: 9 },
+        { name: "(not set)", count: 3 },
+        { name: "Antarctica", count: 0 },
+      ]),
+    ).toBe(2);
   });
   it("returns zero for missing or malformed stats", () => {
     expect(countCountryStats(undefined)).toBe(0);

@@ -1,6 +1,6 @@
 # OpenAtlas
 
-> OpenAtlas is a curated, open directory of free APIs and open datasets. Every entry links to the original source and states the pricing model, access requirements (API key or none), and usage limits, with a verification date per entry. The catalog is free to reuse under the MIT license.
+> OpenAtlas is a curated, open directory of free APIs and open datasets. Every entry links to the original source and states the pricing model, access requirements (API key or none), and known usage limits. Provider references and review dates are included where available. The catalog is free to reuse under the MIT license.
 
 Canonical site: https://michaels1011.github.io/openatlasmap/
 Language: English (interface and catalog); a German interface is available at https://michaels1011.github.io/openatlasmap/de/ (catalog entries stay in English)
@@ -10,8 +10,8 @@ Audience: students, educators, indie developers, and researchers looking for fre
 
 - [Home / catalog](https://michaels1011.github.io/openatlasmap/): browse and search all entries by category, pricing, and access.
 - [Katalog auf Deutsch](https://michaels1011.github.io/openatlasmap/de/): deutschsprachige Oberfläche für dasselbe Verzeichnis; Einträge bleiben englisch.
-- [About](https://michaels1011.github.io/openatlasmap/about/): mission and the four curation rules (free to use, original source only, no duplicates, verified with a date).
-- [openatlas.json](https://michaels1011.github.io/openatlasmap/openatlas.json): the full catalog as machine-readable open data (MIT), including name, url, description, category, type, pricing, access, limitation, and verifiedAt per entry.
+- [About](https://michaels1011.github.io/openatlasmap/about/): mission and the four curation rules (free to start, original source only, clear conditions, evidence where available).
+- [openatlas.json](https://michaels1011.github.io/openatlasmap/openatlas.json): the full catalog as machine-readable open data (MIT), including name, url, description, category, type, pricing, access, limitation, and verifiedAt where recorded.
 - [llms-full.txt](https://michaels1011.github.io/openatlasmap/llms-full.txt): the same catalog as plain text, optimized for LLM context windows.
 - [Suggest a resource](https://github.com/MichaelS1011/openatlasmap/issues/new?title=Suggest%20a%20free%20API%20or%20dataset): community submissions via GitHub issues.
 - [Source code](https://github.com/MichaelS1011/openatlasmap): MIT-licensed.

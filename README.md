@@ -2,77 +2,97 @@
 
 **Free APIs & open data. Find your next possibility.**
 
-[![Live site](https://img.shields.io/badge/Live-GitHub_Pages-2ea44f?style=flat-square)](https://michaels1011.github.io/openatlasmap/)
+[![Live site](https://img.shields.io/badge/Live-OpenAtlas-145b51?style=flat-square)](https://michaels1011.github.io/openatlasmap/)
 [![Deploy](https://img.shields.io/github/actions/workflow/status/MichaelS1011/openatlasmap/deploy-pages.yml?style=flat-square&label=deploy)](https://github.com/MichaelS1011/openatlasmap/actions/workflows/deploy-pages.yml)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow?style=flat-square)](LICENSE)
+[![License: MIT](https://img.shields.io/badge/License-MIT-d7f47b?style=flat-square)](LICENSE)
 
-OpenAtlas is a curated catalog of **free APIs and open datasets** — weather, finance, space, transport, AI, 3D assets, archives, and more. Every entry lists access conditions (key requirements, pricing, formats, limitations) so you know before you build whether a source fits your project.
+OpenAtlas is a curated catalog of free APIs, freemium APIs, and open datasets. Search real sources by name, subject, format, or use case, then check pricing, API-key requirements, and usage conditions before you build.
 
-🔭 **Live:** [michaels1011.github.io/openatlasmap](https://michaels1011.github.io/openatlasmap/)
+<img src="docs/assets/openatlas-landing.png" alt="OpenAtlas landing page with spatial source cards and a dominant search field" width="100%">
 
-## Features
+**[Open the live catalog](https://michaels1011.github.io/openatlasmap/)** · [Try a 3D search](https://michaels1011.github.io/openatlasmap/?q=3-D) · [View search results](docs/assets/openatlas-search.png)
 
-- **Curated sources** across 20+ categories, each with verified access details — the catalog grows continuously
-- **Instant client-side search** — matches name, description, category, and terms, no server needed
-- **Filters** by type (API / dataset), category, no-key access, and fully free pricing
-- **Detail pages** for every resource with canonical URLs and structured data (schema.org `Dataset`)
-- **Collection** — bookmark resources during a session and export them as JSON
-- **Static deployment** — every page is prerendered for fast loads and good SEO on GitHub Pages
+## What it does
 
-## Tech stack
-
-| Layer | Technology |
-| --- | --- |
-| Framework | [TanStack Start](https://tanstack.com/start) + React 19 |
-| Build | Vite 8, prerendered to static HTML for GitHub Pages |
-| Styling | Tailwind CSS 4, shadcn/ui (Radix primitives) |
-| Language | TypeScript (strict) |
-| CI/CD | GitHub Actions → GitHub Pages |
+- Starts with one focused search field and real catalog cards in the background.
+- Finds APIs, datasets, and archives, including normalized queries such as `3-D`, `3–D`, and `3D`.
+- Filters by resource type, subject, API-key access, and fully free pricing.
+- Provides a canonical, server-rendered page for every curated source.
+- Keeps a session collection with JSON export.
+- Offers English and German interfaces, light and dark themes, and reduced-motion support.
+- Publishes the catalog as reusable MIT-licensed open data.
 
 ## Quick start
 
-Requires [Node.js](https://nodejs.org) 22+.
+Requires Node.js 22 or newer.
 
 ```sh
 git clone https://github.com/MichaelS1011/openatlasmap.git
 cd openatlasmap
-npm install
+npm ci --legacy-peer-deps
 npm run dev
 ```
 
-Open http://localhost:5173 — the catalog and search run fully client-side.
+Open the local URL printed by Vite.
 
-## Production build (GitHub Pages)
-
-The Pages deployment is a **fully static, prerendered** build:
+## Verify a change
 
 ```sh
-PAGES_STATIC=1 npm run build        # builds with the /openatlasmap/ base path
-node scripts/prerender-pages.mjs    # renders all routes to .output/public
+npm test
+npx tsc --noEmit
+PAGES_STATIC=1 npm run build
+node scripts/prerender-pages.mjs
 ```
 
-Pushes to `main` run the same pipeline in
-[`.github/workflows/deploy-pages.yml`](.github/workflows/deploy-pages.yml)
-and publish to GitHub Pages automatically.
+The production build refreshes `public/openatlas.json` and `public/llms-full.txt` from the catalog before rendering the site.
+
+## Catalog and open data
+
+`src/lib/resources.ts` is the single catalog source. The homepage, source pages, sitemap, search index, JSON export, and plain-text catalog all derive from it.
+
+```sh
+npm run export:catalog
+```
+
+- [`openatlas.json`](https://michaels1011.github.io/openatlasmap/openatlas.json) — machine-readable catalog.
+- [`llms.txt`](https://michaels1011.github.io/openatlasmap/llms.txt) — citation and discovery guidance for AI assistants.
+- [`llms-full.txt`](https://michaels1011.github.io/openatlasmap/llms-full.txt) — plain-text catalog for language-model context.
+- [`sitemap.xml`](https://michaels1011.github.io/openatlasmap/sitemap.xml) — public static and source-detail routes.
+
+Pricing, availability, and licenses can change. The original provider remains authoritative.
+
+## Search, SEO, and generative discovery
+
+Search state lives in the URL, while homepage canonicals stay clean. Public source pages are prerendered and include canonical links plus schema.org `Dataset` or `WebAPI` data. The site also publishes an `ItemList`, `WebSite`, `AboutPage`, `DataCatalog`, and `FAQPage` graph, bilingual hreflang links, a sitemap, robots rules, and an open plain-text catalog.
+
+These features support conventional search, answer engines, and generative engine optimization without claiming control over third-party rankings or answers.
+
+## Tech stack
+
+- TanStack Start and TanStack Router
+- React 19 and strict TypeScript
+- Vite 8 and Tailwind CSS 4
+- shadcn/ui with Radix primitives
+- Vitest and Testing Library
+- GitHub Pages with SSR followed by static prerendering
 
 ## Project structure
 
-```
+```text
 src/
-  routes/            # file-based routes (index, resource detail, sitemap)
-  lib/resources.ts   # the catalog — single source of truth for all pages
-  components/        # UI components
+  components/       Atlas interface and shared UI
+  lib/              Catalog, search state, i18n, SEO, sitemap
+  routes/           Homepage, About, source details, sitemap
 scripts/
-  prerender-pages.mjs  # static export for GitHub Pages
+  export-catalog.mjs
+  prerender-pages.mjs
+docs/assets/         Repository screenshots
 ```
 
-Adding a resource means editing `src/lib/resources.ts` only — the homepage,
-detail pages, sitemap, and search all pick it up.
+## Contributing
 
-## Credits
-
-Built with [Lovable](https://lovable.dev) and developed further locally. The full Lovable-hosted version runs at [open-data-treasure-map.lovable.app](https://open-data-treasure-map.lovable.app).
+Suggest a source through [GitHub Issues](https://github.com/MichaelS1011/openatlasmap/issues/new?title=Suggest%20a%20free%20API%20or%20dataset). Include the original provider URL, what it offers, pricing, access requirements, and a provider reference when available.
 
 ## License
 
-[MIT](LICENSE) © Michael Soppa
+[MIT](LICENSE) © Michael Soppa.

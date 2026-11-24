@@ -6,13 +6,12 @@ import {
   useRouter,
   HeadContent,
   Scripts,
+  useLocation,
   type ErrorComponentProps,
 } from "@tanstack/react-router";
 import { useEffect, type ReactNode } from "react";
 
 import appCss from "../styles.css?url";
-import "@fontsource-variable/manrope";
-import "@fontsource-variable/space-grotesk";
 import { reportLovableError } from "../lib/lovable-error-reporting";
 import { siteUrl, socialCardUrl } from "../lib/seo";
 import { goatCountScriptUrl } from "../lib/analytics";
@@ -87,10 +86,16 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       { title: "OpenAtlas — Free APIs & Open Data" },
-      { name: "description", content: "Discover free APIs and open datasets from original sources." },
+      {
+        name: "description",
+        content: "Discover free APIs and open datasets from original sources.",
+      },
       { name: "author", content: "Michael Soppa" },
       { property: "og:title", content: "OpenAtlas — Free APIs & Open Data" },
-      { property: "og:description", content: "Discover free APIs and open datasets from original sources." },
+      {
+        property: "og:description",
+        content: "Discover free APIs and open datasets from original sources.",
+      },
       { property: "og:type", content: "website" },
       { property: "og:site_name", content: "OpenAtlas" },
       { property: "og:image", content: socialCardUrl },
@@ -116,18 +121,25 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
 });
 
 function RootShell({ children }: { children: ReactNode }) {
+  const pathname = useLocation({ select: (location) => location.pathname });
   return (
-    <html lang="en">
+    <html lang={pathname.startsWith("/de") ? "de" : "en"} suppressHydrationWarning>
       <head>
         <script
           dangerouslySetInnerHTML={{
-            __html: "try{var m=localStorage.getItem('openatlas-theme')||'auto';var d=m==='dark'||(m==='auto'&&window.matchMedia('(prefers-color-scheme: dark)').matches);if(d)document.documentElement.classList.add('dark');}catch(e){}",
+            __html:
+              "try{var m=localStorage.getItem('openatlas-theme')||'auto';var d=m==='dark'||(m==='auto'&&window.matchMedia('(prefers-color-scheme: dark)').matches);if(d)document.documentElement.classList.add('dark');}catch(e){}",
           }}
         />
         {/* Cookieless visitor counter (GoatCounter): no cookies, no personal data, no consent banner needed.
             path is pinned to pathname+search so SPA navigations (counted manually below) and the initial
             load report identical paths despite our absolute canonical links. */}
-        <script dangerouslySetInnerHTML={{ __html: "window.goatcounter={path:location.pathname+location.search};" }} />
+        <script
+          dangerouslySetInnerHTML={{
+            __html:
+              "window.goatcounter=window.goatcounter||{};window.goatcounter.path=location.pathname+location.search;",
+          }}
+        />
         <script data-goatcounter={goatCountScriptUrl} async src="//gc.zgo.at/count.js" />
         <HeadContent />
       </head>
@@ -157,7 +169,11 @@ function RootComponent() {
       const next = window.location.pathname + window.location.search;
       if (next === last) return;
       last = next;
-      try { window.goatcounter?.count?.({ path: next, title: document.title }); } catch { /* counter offline */ }
+      try {
+        window.goatcounter?.count?.({ path: next, title: document.title });
+      } catch {
+        /* counter offline */
+      }
     });
   }, [router]);
 

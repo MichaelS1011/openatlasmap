@@ -10,7 +10,20 @@ export const paths = (lang: Lang) =>
     : { home: "/de/", about: "/de/about", other: "/", otherLabel: "English" };
 
 const en = {
-  langSwitchLabel: "Sprache wechseln",
+  langSwitchLabel: "Switch language",
+  themeAuto: "Use system theme",
+  themeLight: "Use light theme",
+  themeDark: "Use dark theme",
+  featuredSources: "Featured sources",
+  close: "Close",
+  sources: "sources",
+  discoveryIndex: "Discovery index",
+  browseIndex: "Browse the catalog",
+  searchResult: "Search result",
+  savedIndex: "Saved for later",
+  sourcesFound: "sources found",
+  withoutKey: "without key",
+  searchShortcut: "to search",
   navExplore: "Explore",
   navCollection: "My collection",
   navAbout: "About",
@@ -48,10 +61,12 @@ const en = {
   resultsCollection: "My collection",
   resultsSearch: "Search results",
   resultsExplore: "Explore the possibilities",
-  descCollection: "Your saved resources · stored on this device",
-  descSearchFor: (term: string, n: number) => `Results for “${term}” · curated catalog of ${n} sources`,
+  descCollection: "Your saved resources · kept for this session, ready to export",
+  descSearchFor: (term: string, n: number) =>
+    `Results for “${term}” · curated catalog of ${n} sources`,
   descExplore: "A few great places to start. Hand-picked, open to explore.",
   exportCollection: "Export collection",
+  sessionCollection: "Collection lives only in this session. Export it to keep a copy.",
   sortAria: "Sort resources",
   sortRelevance: "Most relevant",
   sortRecommended: "Recommended",
@@ -62,14 +77,16 @@ const en = {
   loadMore: "Load more",
   showing: (shown: number, total: number) => `Showing ${shown} of ${total}`,
   emptyCollectionTitle: "A place for your next ideas",
-  emptyCollectionText: "Your collection is empty. Save a resource and it stays here on this device.",
+  emptyCollectionText:
+    "Your collection is empty for this session. Save a resource, then export it to keep a copy.",
   exploreResources: "Explore resources",
   emptyNoMatchTitle: "No matching resources",
   emptyNoMatchText: "Try a broader search or remove a filter.",
   resetFilters: "Reset filters",
   searchedAt: (time: string) => `Searched ${time}. `,
   searchTimeLocale: "en",
-  notice: "Free doesn't always mean unlimited. Check source licenses, usage limits, and commercial-use terms. This catalog is curated by hand — it grows over time and can't cover every resource yet.",
+  notice:
+    "Free doesn't always mean unlimited. Check source licenses, usage limits, and commercial-use terms. This catalog is curated by hand — it grows over time and can't cover every resource yet.",
   viewSource: "View source",
   save: "Save",
   saved: "Saved",
@@ -78,7 +95,8 @@ const en = {
   saveTitle: "Save to collection",
   removeTitle: "Remove from collection",
   licenseUnspecified: "License: unspecified",
-  licenseTip: "The original source does not state a clear license on its overview page — check the terms there before commercial use.",
+  licenseTip:
+    "The original source does not state a clear license on its overview page — check the terms there before commercial use.",
   newBadge: "New",
   accessConditions: "Access & usage conditions",
   openOriginalSource: "Open original source",
@@ -87,22 +105,31 @@ const en = {
   // About page
   aboutEyebrow: "About OpenAtlas",
   aboutTitle: "About OpenAtlas — Curated free APIs & open data",
-  aboutDesc: "Why OpenAtlas exists, how its catalog of free APIs and open datasets is curated, and how to suggest a resource or reuse the catalog as open data.",
+  aboutDesc:
+    "Why OpenAtlas exists, how its catalog of free APIs and open datasets is curated, and how to suggest a resource or reuse the catalog as open data.",
   aboutOgTitle: "About OpenAtlas",
-  aboutOgDesc: "Mission and curation rules behind a curated directory of free APIs and open datasets.",
+  aboutOgDesc:
+    "Mission and curation rules behind a curated directory of free APIs and open datasets.",
   aboutH1: "For the next generation of builders.",
-  aboutSub: "Created by Michael Soppa to help the next generation turn curiosity into something real.",
+  aboutSub:
+    "Created by Michael Soppa to help the next generation turn curiosity into something real.",
   missionH2: "The mission",
-  mission1: "I built OpenAtlas because I want to support the next generation. Access to knowledge and data can be the starting point for learning, experimenting, and bringing new ideas to life.",
-  mission2: "My hope is to make that first step easier: to help curious people discover free APIs and open datasets, explore what's possible, and build something of their own.",
-  mission3: "You don't need a big budget to have a big idea. Sometimes, you just need a place to start.",
+  mission1:
+    "I built OpenAtlas because I want to support the next generation. Access to knowledge and data can be the starting point for learning, experimenting, and bringing new ideas to life.",
+  mission2:
+    "My hope is to make that first step easier: to help curious people discover free APIs and open datasets, explore what's possible, and build something of their own.",
+  mission3:
+    "You don't need a big budget to have a big idea. Sometimes, you just need a place to start.",
   curateH2: "How we curate",
-  curateIntro: (n: number) => `OpenAtlas is not a scraped link dump. The ${n} entries follow four strict rules — that is what makes it faster than a web search:`,
+  curateIntro: (n: number) =>
+    `OpenAtlas is not a scraped link dump. The ${n} entries follow four practical rules:`,
   faqH2: "Questions people ask",
   openDataH2: "The catalog itself is open data",
-  openDataText: "Practice what we preach: the full catalog is published under the MIT license as machine-readable JSON, and llms.txt helps AI assistants cite it correctly. Reuse it, cite it, build on it.",
+  openDataText:
+    "Practice what we preach: the full catalog is published under the MIT license as machine-readable JSON, and llms.txt helps AI assistants cite it correctly. Reuse it, cite it, build on it.",
   statusH2: "Live site status",
-  statusNote: "Cookieless counter by GoatCounter — aggregate visitor counts only, no cookies, no profiles, no personal data.",
+  statusNote:
+    "Cookieless counter by GoatCounter — aggregate visitor counts only, no cookies, no profiles, no personal data.",
   statusVisitsToday: "visitors today",
   statusVisitsTotal: "visitors all time",
   statusCountries: "countries reached",
@@ -111,23 +138,61 @@ const en = {
   suggestResource: "Suggest a resource",
   sourceOnGithub: "Source on GitHub",
   connectMichael: "Connect with Michael",
-  availabilityNote: "Resource availability can change. Please check the original source for licenses, pricing, and usage limits.",
+  availabilityNote:
+    "Resource availability can change. Please check the original source for licenses, pricing, and usage limits.",
   curationRules: [
-    ["Free to use", "A resource is only listed if it is free to start: completely free, or with a genuine free tier. Pricing and access requirements are shown on every entry."],
-    ["Original source only", "Every entry links to the official provider, not a mirror or blog post. You always land where the data lives and can verify licenses yourself."],
-    ["No duplicates, one home", "Each resource appears once, under the category where it helps most, so browsing stays trustworthy instead of turning into a link pile."],
-    ["Verified with a date", "Entries carry a verification date. When an API changes or disappears, the community reports it through GitHub issues and the entry is corrected or removed."],
+    [
+      "Free to use",
+      "A resource is only listed if it is free to start: completely free, or with a genuine free tier. Pricing and access requirements are shown on every entry.",
+    ],
+    [
+      "Original source only",
+      "Every entry links to the official provider, not a mirror or blog post. You always land where the data lives and can verify licenses yourself.",
+    ],
+    [
+      "Clear conditions",
+      "Each entry states pricing, API-key access, formats, and known usage limits. Unspecified licenses are labeled instead of guessed.",
+    ],
+    [
+      "Evidence where available",
+      "Entries may include a provider reference and review date. Missing dates are not presented as verified; corrections and reports are welcome through GitHub issues.",
+    ],
   ] as [string, string][],
   faqs: [
-    ["What is OpenAtlas?", "OpenAtlas is a free, curated directory of APIs and open datasets. Every entry links to the original source and states the access requirements, pricing model, and usage limits, so you can judge in seconds whether a resource fits your project."],
-    ["Are the APIs and datasets really free?", "Every listed resource is free to start: entries are either completely free or offer a genuine free tier. Badges show the pricing model and whether an API key is required, and the original source always remains the authority for current licenses and limits."],
-    ["How does OpenAtlas decide what gets listed?", "A resource is added only if it is free to use, links to its original source rather than a mirror, is not a duplicate of an existing entry, and fits one of the subject categories. Each entry carries a verification date, and outdated entries are corrected or removed through GitHub issues."],
-    ["Can I suggest a resource?", "Yes. Use the Suggest a resource form on GitHub. Include the original source URL, what it offers, and whether an API key is needed. The catalog is also published as open data in JSON format."],
+    [
+      "What is OpenAtlas?",
+      "OpenAtlas is a free, curated directory of APIs and open datasets. Every entry links to the original source and states the access requirements, pricing model, and usage limits, so you can judge in seconds whether a resource fits your project.",
+    ],
+    [
+      "Are the APIs and datasets really free?",
+      "Every listed resource is free to start: entries are either completely free or offer a genuine free tier. Badges show the pricing model and whether an API key is required, and the original source always remains the authority for current licenses and limits.",
+    ],
+    [
+      "How does OpenAtlas decide what gets listed?",
+      "A resource is added only if it is free to start, links to its original source, fits one of the subject categories, and has clear access and usage conditions. Provider references and review dates are included where available; corrections are welcome through GitHub issues.",
+    ],
+    [
+      "Can I suggest a resource?",
+      "Yes. Use the Suggest a resource form on GitHub. Include the original source URL, what it offers, and whether an API key is needed. The catalog is also published as open data in JSON format.",
+    ],
   ] as [string, string][],
 };
 
 const de: typeof en = {
   langSwitchLabel: "Sprache wechseln",
+  themeAuto: "Systemdesign verwenden",
+  themeLight: "Helles Design verwenden",
+  themeDark: "Dunkles Design verwenden",
+  featuredSources: "Ausgewählte Quellen",
+  close: "Schließen",
+  sources: "Quellen",
+  discoveryIndex: "Entdeckungsindex",
+  browseIndex: "Katalog durchstöbern",
+  searchResult: "Suchergebnis",
+  savedIndex: "Für später gemerkt",
+  sourcesFound: "Quellen gefunden",
+  withoutKey: "ohne Key",
+  searchShortcut: "zum Suchen",
   navExplore: "Entdecken",
   navCollection: "Meine Sammlung",
   navAbout: "Über uns",
@@ -165,10 +230,13 @@ const de: typeof en = {
   resultsCollection: "Meine Sammlung",
   resultsSearch: "Suchergebnisse",
   resultsExplore: "Entdecke die Möglichkeiten",
-  descCollection: "Deine gemerkten Quellen · auf diesem Gerät gespeichert",
-  descSearchFor: (term: string, n: number) => `Ergebnisse für „${term}“ · kuratiertes Verzeichnis mit ${n} Quellen`,
+  descCollection: "Deine gemerkten Quellen · nur für diese Sitzung, bereit zum Export",
+  descSearchFor: (term: string, n: number) =>
+    `Ergebnisse für „${term}“ · kuratiertes Verzeichnis mit ${n} Quellen`,
   descExplore: "Ein paar starke Startpunkte. Von Hand ausgewählt, offen nutzbar.",
   exportCollection: "Sammlung exportieren",
+  sessionCollection:
+    "Die Sammlung gilt nur für diese Sitzung. Exportiere sie, um eine Kopie zu behalten.",
   sortAria: "Quellen sortieren",
   sortRelevance: "Relevanteste",
   sortRecommended: "Empfohlen",
@@ -179,14 +247,16 @@ const de: typeof en = {
   loadMore: "Mehr laden",
   showing: (shown: number, total: number) => `${shown} von ${total} angezeigt`,
   emptyCollectionTitle: "Ein Ort für deine nächsten Ideen",
-  emptyCollectionText: "Deine Sammlung ist leer. Speichere eine Quelle — sie bleibt hier auf diesem Gerät.",
+  emptyCollectionText:
+    "Deine Sammlung ist für diese Sitzung leer. Merke eine Quelle und exportiere sie, um eine Kopie zu behalten.",
   exploreResources: "Quellen entdecken",
   emptyNoMatchTitle: "Keine passenden Quellen",
   emptyNoMatchText: "Suche breiter oder entferne einen Filter.",
   resetFilters: "Filter zurücksetzen",
   searchedAt: (time: string) => `Suche um ${time} Uhr. `,
   searchTimeLocale: "de",
-  notice: "Kostenlos heißt nicht automatisch uneingeschränkt nutzbar. Prüfe Lizenz, Nutzungsgrenzen und kommerzielle Bedingungen direkt bei der Quelle. Dieses Verzeichnis wird von Hand kuratiert — es wächst stetig und kann noch nicht alles abdecken.",
+  notice:
+    "Kostenlos heißt nicht automatisch uneingeschränkt nutzbar. Prüfe Lizenz, Nutzungsgrenzen und kommerzielle Bedingungen direkt bei der Quelle. Dieses Verzeichnis wird von Hand kuratiert — es wächst stetig und kann noch nicht alles abdecken.",
   viewSource: "Quelle ansehen",
   save: "Merken",
   saved: "Gemerkt",
@@ -195,7 +265,8 @@ const de: typeof en = {
   saveTitle: "Zur Sammlung hinzufügen",
   removeTitle: "Aus der Sammlung entfernen",
   licenseUnspecified: "Lizenz: nicht angegeben",
-  licenseTip: "Die Originalquelle nennt auf ihrer Übersichtsseite keine klare Lizenz — prüfe die Bedingungen dort vor kommerzieller Nutzung.",
+  licenseTip:
+    "Die Originalquelle nennt auf ihrer Übersichtsseite keine klare Lizenz — prüfe die Bedingungen dort vor kommerzieller Nutzung.",
   newBadge: "Neu",
   accessConditions: "Zugangs- und Nutzungsbedingungen",
   openOriginalSource: "Originalquelle öffnen",
@@ -203,22 +274,31 @@ const de: typeof en = {
   footerSuggest: "Quelle vorschlagen",
   aboutEyebrow: "Über OpenAtlas",
   aboutTitle: "Über OpenAtlas — Kuratierte kostenlose APIs & Open Data",
-  aboutDesc: "Warum es OpenAtlas gibt, wie das Verzeichnis kostenloser APIs und offener Datensätze kuratiert wird und wie du eine Quelle vorschlägst oder das Verzeichnis als Open Data nutzt.",
+  aboutDesc:
+    "Warum es OpenAtlas gibt, wie das Verzeichnis kostenloser APIs und offener Datensätze kuratiert wird und wie du eine Quelle vorschlägst oder das Verzeichnis als Open Data nutzt.",
   aboutOgTitle: "Über OpenAtlas",
-  aboutOgDesc: "Mission und Kuratierungsregeln eines kuratierten Verzeichnisses kostenloser APIs und offener Datensätze.",
+  aboutOgDesc:
+    "Mission und Kuratierungsregeln eines kuratierten Verzeichnisses kostenloser APIs und offener Datensätze.",
   aboutH1: "Für die nächste Generation von Macherinnen und Machern.",
-  aboutSub: "Von Michael Soppa gegründet, damit die nächste Generation aus Neugier etwas Wirkliches macht.",
+  aboutSub:
+    "Von Michael Soppa gegründet, damit die nächste Generation aus Neugier etwas Wirkliches macht.",
   missionH2: "Die Mission",
-  mission1: "Ich habe OpenAtlas gebaut, weil ich die nächste Generation unterstützen will. Zugang zu Wissen und Daten kann der Ausgangspunkt sein: zum Lernen, Experimentieren und um neue Ideen wahr werden zu lassen.",
-  mission2: "Meine Hoffnung: den ersten Schritt leichter machen — Neugierigen helfen, kostenlose APIs und offene Datensätze zu entdecken, Möglichkeiten auszuloten und etwas Eigenes zu bauen.",
-  mission3: "Für eine große Idee brauchst du kein großes Budget. Manchmal brauchst du einfach einen Ort, an dem du anfangen kannst.",
+  mission1:
+    "Ich habe OpenAtlas gebaut, weil ich die nächste Generation unterstützen will. Zugang zu Wissen und Daten kann der Ausgangspunkt sein: zum Lernen, Experimentieren und um neue Ideen wahr werden zu lassen.",
+  mission2:
+    "Meine Hoffnung: den ersten Schritt leichter machen — Neugierigen helfen, kostenlose APIs und offene Datensätze zu entdecken, Möglichkeiten auszuloten und etwas Eigenes zu bauen.",
+  mission3:
+    "Für eine große Idee brauchst du kein großes Budget. Manchmal brauchst du einfach einen Ort, an dem du anfangen kannst.",
   curateH2: "So kuratieren wir",
-  curateIntro: (n: number) => `OpenAtlas ist kein gescrapter Link-Haufen. Die ${n} Einträge folgen vier strengen Regeln — deshalb ist das hier schneller als eine Websuche:`,
+  curateIntro: (n: number) =>
+    `OpenAtlas ist kein gescrapter Link-Haufen. Die ${n} Einträge folgen vier praktischen Regeln:`,
   faqH2: "Fragen, die häufig gestellt werden",
   openDataH2: "Das Verzeichnis selbst ist Open Data",
-  openDataText: "Wir leben, was wir fordern: Das komplette Verzeichnis erscheint als maschinenlesbares JSON unter MIT-Lizenz, und llms.txt hilft KI-Assistenten beim korrekten Zitieren. Weiterverwenden, zitieren, darauf aufbauen.",
+  openDataText:
+    "Wir leben, was wir fordern: Das komplette Verzeichnis erscheint als maschinenlesbares JSON unter MIT-Lizenz, und llms.txt hilft KI-Assistenten beim korrekten Zitieren. Weiterverwenden, zitieren, darauf aufbauen.",
   statusH2: "Live-Status der Seite",
-  statusNote: "Cookieloses Zählen mit GoatCounter — nur aggregierte Besucherzahlen, keine Cookies, keine Profile, keine personenbezogenen Daten.",
+  statusNote:
+    "Cookieloses Zählen mit GoatCounter — nur aggregierte Besucherzahlen, keine Cookies, keine Profile, keine personenbezogenen Daten.",
   statusVisitsToday: "Besucher heute",
   statusVisitsTotal: "Besucher insgesamt",
   statusCountries: "Länder erreicht",
@@ -227,35 +307,67 @@ const de: typeof en = {
   suggestResource: "Quelle vorschlagen",
   sourceOnGithub: "Quellcode auf GitHub",
   connectMichael: "Michael kontaktieren",
-  availabilityNote: "Die Verfügbarkeit von Quellen kann sich ändern. Prüfe Lizenz, Preise und Nutzungsgrenzen bitte direkt bei der Originalquelle.",
+  availabilityNote:
+    "Die Verfügbarkeit von Quellen kann sich ändern. Prüfe Lizenz, Preise und Nutzungsgrenzen bitte direkt bei der Originalquelle.",
   curationRules: [
-    ["Kostenlos nutzbar", "Eine Quelle steht nur drin, wenn der Einstieg kostenlos ist: komplett frei oder mit einem echten Free-Tier. Preise und Zugangsanforderungen stehen bei jedem Eintrag."],
-    ["Nur die Originalquelle", "Jeder Eintrag verlinkt zum offiziellen Anbieter — nicht zu Spiegeln oder Blogartikeln. Du landest immer dort, wo die Daten leben, und kannst Lizenzen selbst prüfen."],
-    ["Keine Duplikate, ein Platz", "Jede Quelle erscheint genau einmal — in der Kategorie, wo sie am meisten bringt. So bleibt das Stöbern vertrauenswürdig und wird kein Link-Friedhof."],
-    ["Mit Verifikationsdatum", "Jeder Eintrag trägt ein Prüfdatum. Ändert sich eine API oder verschwindet sie, meldet die Community das per GitHub-Issue, und der Eintrag wird korrigiert oder entfernt."],
+    [
+      "Kostenlos nutzbar",
+      "Eine Quelle steht nur drin, wenn der Einstieg kostenlos ist: komplett frei oder mit einem echten Free-Tier. Preise und Zugangsanforderungen stehen bei jedem Eintrag.",
+    ],
+    [
+      "Nur die Originalquelle",
+      "Jeder Eintrag verlinkt zum offiziellen Anbieter — nicht zu Spiegeln oder Blogartikeln. Du landest immer dort, wo die Daten leben, und kannst Lizenzen selbst prüfen.",
+    ],
+    [
+      "Klare Bedingungen",
+      "Jeder Eintrag nennt Preise, API-Key-Zugang, Formate und bekannte Nutzungsgrenzen. Nicht angegebene Lizenzen werden als ungeprüft markiert, nicht geraten.",
+    ],
+    [
+      "Belege, wo verfügbar",
+      "Einträge können einen Anbieter-Beleg und ein Prüfdatum enthalten. Fehlende Daten werden nicht als verifiziert dargestellt; Korrekturen und Hinweise sind per GitHub-Issue willkommen.",
+    ],
   ],
   faqs: [
-    ["Was ist OpenAtlas?", "OpenAtlas ist ein kostenloses, kuratiertes Verzeichnis von APIs und offenen Datensätzen. Jeder Eintrag verlinkt auf die Originalquelle und nennt Zugangsvoraussetzungen, Preismodell und Nutzungsgrenzen — so erkennst du in Sekunden, ob eine Quelle zu deinem Projekt passt."],
-    ["Sind die APIs und Datensätze auf OpenAtlas wirklich kostenlos?", "Jede gelistete Quelle ist kostenlos starten: Einträge sind komplett frei oder bieten einen echten Free-Tier. Badges zeigen das Preismodell und ob ein API-Key nötig ist. Maßgeblich für aktuelle Lizenzen und Grenzen bleibt immer die Originalquelle."],
-    ["Nach welchen Regeln entscheidet OpenAtlas über Einträge?", "Eine Quelle wird nur aufgenommen, wenn sie kostenlos nutzbar ist, auf die Originalquelle statt einen Spiegel verlinkt, kein Duplikat eines bestehenden Eintrags ist und in eine Themakategorie passt. Jeder Eintrag trägt ein Verifikationsdatum; veraltete Einträge werden über GitHub-Issues korrigiert oder entfernt."],
-    ["Kann ich eine Quelle vorschlagen?", "Ja. Nutze das Formular „Quelle vorschlagen“ auf GitHub. Gib die URL der Originalquelle an, was sie bietet und ob ein API-Key nötig ist. Das Verzeichnis erscheint außerdem als Open Data im JSON-Format."],
+    [
+      "Was ist OpenAtlas?",
+      "OpenAtlas ist ein kostenloses, kuratiertes Verzeichnis von APIs und offenen Datensätzen. Jeder Eintrag verlinkt auf die Originalquelle und nennt Zugangsvoraussetzungen, Preismodell und Nutzungsgrenzen — so erkennst du in Sekunden, ob eine Quelle zu deinem Projekt passt.",
+    ],
+    [
+      "Sind die APIs und Datensätze auf OpenAtlas wirklich kostenlos?",
+      "Jede gelistete Quelle ist kostenlos starten: Einträge sind komplett frei oder bieten einen echten Free-Tier. Badges zeigen das Preismodell und ob ein API-Key nötig ist. Maßgeblich für aktuelle Lizenzen und Grenzen bleibt immer die Originalquelle.",
+    ],
+    [
+      "Nach welchen Regeln entscheidet OpenAtlas über Einträge?",
+      "Eine Quelle wird nur aufgenommen, wenn sie kostenlos startet, auf die Originalquelle verlinkt, in eine Themakategorie passt und klare Zugangs- und Nutzungsbedingungen hat. Anbieter-Belege und Prüfdaten stehen dort, wo sie verfügbar sind; Korrekturen sind per GitHub-Issue willkommen.",
+    ],
+    [
+      "Kann ich eine Quelle vorschlagen?",
+      "Ja. Nutze das Formular „Quelle vorschlagen“ auf GitHub. Gib die URL der Originalquelle an, was sie bietet und ob ein API-Key nötig ist. Das Verzeichnis erscheint außerdem als Open Data im JSON-Format.",
+    ],
   ],
 };
 
 export const ui: Record<Lang, typeof en> = { en, de };
 
-export const catalogMeta: Record<Lang, { title: string; description: string; ogTitle: string; ogDescription: string }> = {
+export const catalogMeta: Record<
+  Lang,
+  { title: string; description: string; ogTitle: string; ogDescription: string }
+> = {
   en: {
     title: "OpenAtlas — Discover Free APIs & Open Data",
-    description: "Browse a curated catalog of free APIs and open datasets. Explore original sources, formats, access requirements, and free-use limits with OpenAtlas.",
+    description:
+      "Browse a curated catalog of free APIs and open datasets. Explore original sources, formats, access requirements, and free-use limits with OpenAtlas.",
     ogTitle: "OpenAtlas — Discover Free APIs & Open Data",
-    ogDescription: "Find the right free API or open dataset for your next idea, with instant filtering and original source links.",
+    ogDescription:
+      "Find the right free API or open dataset for your next idea, with instant filtering and original source links.",
   },
   de: {
     title: "OpenAtlas — Kostenlose APIs & Open Data entdecken",
-    description: "Kuratiertes Verzeichnis kostenloser APIs und offener Datensätze. Originalquellen, Formate, Zugangsvoraussetzungen und kostenlose Nutzung auf einen Blick.",
+    description:
+      "Kuratiertes Verzeichnis kostenloser APIs und offener Datensätze. Originalquellen, Formate, Zugangsvoraussetzungen und kostenlose Nutzung auf einen Blick.",
     ogTitle: "OpenAtlas — Kostenlose APIs & Open Data entdecken",
-    ogDescription: "Finde die passende kostenlose API oder offene Datensammlung für deine nächste Idee — mit Sofort-Filtern und Links zur Originalquelle.",
+    ogDescription:
+      "Finde die passende kostenlose API oder offene Datensammlung für deine nächste Idee — mit Sofort-Filtern und Links zur Originalquelle.",
   },
 };
 
@@ -314,14 +426,15 @@ const badgeTipsDe: Record<string, string> = {
   Free: "Kostenlos in der Nutzung.",
   "Free tier": "Kostenlos starten — erst wenn du mehr Nutzung brauchst, kostet es.",
   "No key": "Sofort nutzbar, ohne Anmeldung.",
-  "API key": "Du brauchst zuerst einen kostenlosen Account beim Anbieter für deinen persönlichen Schlüssel.",
+  "API key":
+    "Du brauchst zuerst einen kostenlosen Account beim Anbieter für deinen persönlichen Schlüssel.",
   Unknown: "Wir haben die Zugangsregeln noch nicht verifiziert — prüfe die Quellseite.",
   API: "Ein Dienst, den dein Code über das Internet aufrufen kann.",
   Dataset: "Eine Datensammlung, die du herunterladen und erkunden kannst.",
 };
 
 export function badgeTip(lang: Lang, value: string) {
-  return lang === "de" ? (badgeTipsDe[value] ?? value) : badgeTipsEn[value] ?? value;
+  return lang === "de" ? (badgeTipsDe[value] ?? value) : (badgeTipsEn[value] ?? value);
 }
 
 const badgeTipsEn: Record<string, string> = {
@@ -334,7 +447,13 @@ const badgeTipsEn: Record<string, string> = {
   Dataset: "A collection of data you can download and explore.",
 };
 
-export const popularTopics = ["Weather & climate", "Finance", "Space", "Public transport", "AI & machine learning"];
+export const popularTopics = [
+  "Weather & climate",
+  "Finance",
+  "Space",
+  "Public transport",
+  "AI & machine learning",
+];
 
 const groupDe: Record<string, string> = {
   "Technology & creative tools": "Technologie & kreative Tools",
