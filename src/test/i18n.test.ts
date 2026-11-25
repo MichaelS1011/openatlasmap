@@ -1,7 +1,16 @@
 import { describe, expect, it } from "vitest";
-import { badgeLabel, badgeTip, catalogMeta, catLabel, groupLabel, popularTopics, ui, type Lang } from "@/lib/i18n";
+import {
+  badgeLabel,
+  badgeTip,
+  catalogMeta,
+  catLabel,
+  groupLabel,
+  popularTopics,
+  ui,
+  type Lang,
+} from "@/lib/i18n";
 import { categoryGroups } from "@/lib/resource-categories";
-import { resources } from "@/lib/resources";
+import { resources, searchResources } from "@/lib/resources";
 
 const langs: Lang[] = ["en", "de"];
 
@@ -16,14 +25,30 @@ function keyTree(obj: Record<string, unknown>, prefix = ""): string[] {
 
 describe("i18n dictionary", () => {
   it("en and de dictionaries have identical key trees", () => {
-    expect(keyTree(ui.de as unknown as Record<string, unknown>)).toEqual(keyTree(ui.en as unknown as Record<string, unknown>));
+    expect(keyTree(ui.de as unknown as Record<string, unknown>)).toEqual(
+      keyTree(ui.en as unknown as Record<string, unknown>),
+    );
   });
 
   it("no empty de strings", () => {
     for (const [lang, dict] of Object.entries(ui)) {
       for (const path of keyTree(dict as unknown as Record<string, unknown>)) {
-        const get = (path.replace(/\[(\d+)\]/g, ".$1")).split(".").reduce((acc: unknown, k) => (acc as Record<string, unknown>)?.[k], dict as unknown);
-        if (typeof get === "string") expect(get.trim().length, `${lang}:${path}`).toBeGreaterThan(0);
+        const get = path
+          .replace(/\[(\d+)\]/g, ".$1")
+          .split(".")
+          .reduce((acc: unknown, k) => (acc as Record<string, unknown>)?.[k], dict as unknown);
+        if (typeof get === "string")
+          expect(get.trim().length, `${lang}:${path}`).toBeGreaterThan(0);
+      }
+    }
+  });
+
+  it("example searches return real catalog results in both languages", () => {
+    for (const lang of langs) {
+      for (const example of ui[lang].searchExamples) {
+        expect(searchResources(example.query).length, `${lang}:${example.query}`).toBeGreaterThan(
+          0,
+        );
       }
     }
   });

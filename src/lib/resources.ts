@@ -6266,11 +6266,11 @@ function normalizeSearchText(value: string) {
     .replace(/[\p{Pd}_]+/gu, "");
 }
 
-export function searchResources(term: string): Resource[] {
+export function searchResources(term: string, items = resources): Resource[] {
   const words = term.split(/\s+/).map(normalizeSearchText).filter(Boolean);
   if (!words.length) return [];
   const scored: { resource: Resource; score: number }[] = [];
-  for (const r of resources) {
+  for (const r of items) {
     const name = normalizeSearchText(r.name);
     const description = normalizeSearchText(r.description);
     const meta = normalizeSearchText(`${r.category} ${r.type} ${r.limitation}`);
@@ -6290,4 +6290,94 @@ export function searchResources(term: string): Resource[] {
   return scored
     .sort((a, b) => b.score - a.score || a.resource.name.localeCompare(b.resource.name))
     .map((entry) => entry.resource);
+}
+
+const SEARCH_STOP_WORDS = new Set([
+  "and",
+  "api",
+  "data",
+  "dataset",
+  "for",
+  "free",
+  "from",
+  "open",
+  "the",
+  "with",
+]);
+
+function editDistance(left: string, right: string, limit: number) {
+  if (Math.abs(left.length - right.length) > limit) return limit + 1;
+  let previous = Array.from({ length: right.length + 1 }, (_, index) => index);
+  for (let row = 1; row <= left.length; row += 1) {
+    const current = [row];
+    let smallest = row;
+    for (let column = 1; column <= right.length; column += 1) {
+      const cost = left[row - 1] === right[column - 1] ? 0 : 1;
+      current[column] = Math.min(
+        current[column - 1]! + 1,
+        previous[column]! + 1,
+        previous[column - 1]! + cost,
+      );
+      smallest = Math.min(smallest, current[column]!);
+    }
+    if (smallest > limit) return limit + 1;
+    previous = current;
+  }
+  return previous[right.length]!;
+}
+
+export function suggestSearchTerms(term: string, items = resources, limit = 3) {
+  const words = term.split(/\s+/).map(normalizeSearchText).filter(Boolean);
+  if (!words.length || limit <= 0) return [];
+
+  const vocabulary = new Map<string, { label: string; priority: number; frequency: number }>();
+  for (const resource of items) {
+    const sources = [
+      { text: `${resource.name} ${resource.category}`, priority: 0 },
+      { text: resource.description, priority: 1 },
+    ];
+    for (const source of sources) {
+      for (const label of source.text.split(/[^\p{L}\p{N}]+/u)) {
+        const normalized = normalizeSearchText(label);
+        if (normalized.length < 3 || SEARCH_STOP_WORDS.has(normalized)) continue;
+        const current = vocabulary.get(normalized);
+        vocabulary.set(normalized, {
+          label,
+          priority: Math.min(current?.priority ?? source.priority, source.priority),
+          frequency: (current?.frequency ?? 0) + 1,
+        });
+      }
+    }
+  }
+
+  const suggestions = new Map<string, { label: string; score: number }>();
+  for (const word of words) {
+    if (word.length < 3 || SEARCH_STOP_WORDS.has(word)) continue;
+    let best: { label: string; score: number } | undefined;
+    for (const candidate of vocabulary.values()) {
+      const normalized = normalizeSearchText(candidate.label);
+      if (normalized === word) continue;
+      const maxDistance = Math.max(word.length, normalized.length) >= 7 ? 2 : 1;
+      const distance = editDistance(word, normalized, maxDistance);
+      const isPrefix = word.length >= 3 && normalized.startsWith(word);
+      if (!isPrefix && distance > maxDistance) continue;
+      if (!isPrefix && word.charAt(0) !== normalized.charAt(0)) continue;
+      const score =
+        (isPrefix ? 0 : distance) * 100 +
+        candidate.priority * 10 -
+        Math.min(candidate.frequency, 9);
+      if (!best || score < best.score) best = { label: candidate.label, score };
+    }
+    if (best && !suggestions.has(normalizeSearchText(best.label))) {
+      suggestions.set(normalizeSearchText(best.label), best);
+    }
+    if (searchResources(word, items).length > 0 && !suggestions.has(word)) {
+      suggestions.set(word, { label: word, score: -1 });
+    }
+  }
+
+  return [...suggestions.values()]
+    .sort((a, b) => a.score - b.score || a.label.localeCompare(b.label))
+    .slice(0, limit)
+    .map((suggestion) => suggestion.label);
 }

@@ -5,6 +5,7 @@ import {
   resources,
   resourceSchema,
   searchResources,
+  suggestSearchTerms,
 } from "@/lib/resources";
 import { curatedCategories } from "@/lib/resource-categories";
 
@@ -173,6 +174,39 @@ describe("searchResources", () => {
     for (const term of ["3-D", "3–D", "3—D", "3_D"]) {
       expect(searchResources(term).map((resource) => resource.id)).toEqual(expected);
     }
+  });
+});
+
+describe("suggestSearchTerms", () => {
+  it("corrects a misspelling with real catalog vocabulary", () => {
+    expect(suggestSearchTerms("wether").map((term) => term.toLowerCase())).toContain("weather");
+  });
+
+  it("broadens an impossible multiword query to a matching component", () => {
+    expect(suggestSearchTerms("weather zzzzqqq").map((term) => term.toLowerCase())).toContain(
+      "weather",
+    );
+  });
+
+  it("does not invent suggestions for blank or unrelated input", () => {
+    expect(suggestSearchTerms("")).toEqual([]);
+    expect(suggestSearchTerms("zzzzqqq")).toEqual([]);
+  });
+
+  it("only suggests terms that return real results", () => {
+    const suggestions = suggestSearchTerms("historical mapz");
+    expect(suggestions.length).toBeGreaterThan(0);
+    for (const suggestion of suggestions) {
+      expect(searchResources(suggestion).length).toBeGreaterThan(0);
+    }
+  });
+
+  it("supports a bounded custom catalog", () => {
+    const custom = { ...resources[0]!, id: "custom", name: "Weather Cube" };
+    expect(searchResources("weather", [custom])).toEqual([custom]);
+    expect(suggestSearchTerms("wether", [custom]).map((term) => term.toLowerCase())).toContain(
+      "weather",
+    );
   });
 });
 

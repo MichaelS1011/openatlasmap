@@ -15,6 +15,10 @@ import { AtlasCards, AtlasContours } from "@/components/atlas-stage";
 import { BrandMark } from "@/components/brand-mark";
 import { CatalogFilters } from "@/components/catalog-filters";
 import { ResourceCard } from "@/components/resource-card";
+import {
+  SearchCardTransition,
+  type SearchCardTransitionHandle,
+} from "@/components/search-card-transition";
 import { SourceDialog } from "@/components/source-dialog";
 import { ThemeToggle, useScrolled } from "@/components/site-chrome";
 import { Button } from "@/components/ui/button";
@@ -26,7 +30,13 @@ import {
   type CatalogSearch,
 } from "@/lib/catalog-search";
 import { catLabel, ui, type Lang } from "@/lib/i18n";
-import { filterResources, resources, searchResources, type Resource } from "@/lib/resources";
+import {
+  filterResources,
+  resources,
+  searchResources,
+  suggestSearchTerms,
+  type Resource,
+} from "@/lib/resources";
 
 const PAGE_SIZE = 60;
 const noKeyTotal = resources.filter((resource) => resource.access === "No key").length;
@@ -39,11 +49,22 @@ export function CatalogPage({ lang, search }: { lang: Lang; search: CatalogSearc
   const navigate = useNavigate();
   const scrolled = useScrolled();
   const inputRef = useRef<HTMLInputElement>(null);
+  const transitionRef = useRef<SearchCardTransitionHandle>(null);
+  const focusResultsRef = useRef(false);
+  const [transitionTargets, setTransitionTargets] = useState<string[]>([]);
   const [saved, setSaved] = useState<Resource[]>(sessionSaved);
   const [selected, setSelected] = useState<Resource | null>(null);
   const [visible, setVisible] = useState(PAGE_SIZE);
   // Static exports serve query-free HTML, so URL state starts after hydration.
   const [hydrated, setHydrated] = useState(false);
+
+  const handleTransitionTargets = useCallback((ids: string[]) => {
+    setTransitionTargets((previous) =>
+      previous.length === ids.length && previous.every((id, index) => id === ids[index])
+        ? previous
+        : ids,
+    );
+  }, []);
 
   useEffect(() => {
     setHydrated(true);
@@ -75,6 +96,7 @@ export function CatalogPage({ lang, search }: { lang: Lang; search: CatalogSearc
 
   const runSearch = useCallback(
     (term: string, replace = true) => {
+      transitionRef.current?.prepare(term);
       updateSearch(
         {
           q: term,
@@ -91,6 +113,7 @@ export function CatalogPage({ lang, search }: { lang: Lang; search: CatalogSearc
   );
 
   const showExplore = useCallback(() => {
+    transitionRef.current?.cancel();
     void navigate({ to: lang === "en" ? "/" : "/de", search: {} });
   }, [lang, navigate]);
 
@@ -101,6 +124,31 @@ export function CatalogPage({ lang, search }: { lang: Lang; search: CatalogSearc
   useEffect(() => {
     setVisible(PAGE_SIZE);
   }, [searchTerm, type, category, noKey, fullyFree, collection, sort, view]);
+
+  const focusResultsHeading = useCallback(() => {
+    const heading = document.getElementById("results-heading");
+    if (!heading) return;
+    heading.focus({ preventScroll: true });
+    heading.scrollIntoView({
+      block: "start",
+      behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth",
+    });
+  }, []);
+
+  const requestResultsFocus = useCallback(() => {
+    if (showResults) {
+      focusResultsHeading();
+      return;
+    }
+    focusResultsRef.current = true;
+  }, [focusResultsHeading, showResults]);
+
+  useEffect(() => {
+    if (!showResults || !focusResultsRef.current) return;
+    focusResultsRef.current = false;
+    const frame = requestAnimationFrame(focusResultsHeading);
+    return () => cancelAnimationFrame(frame);
+  }, [focusResultsHeading, searchTerm, showResults]);
 
   useEffect(() => {
     const onKeyDown = (event: KeyboardEvent) => {
@@ -122,6 +170,8 @@ export function CatalogPage({ lang, search }: { lang: Lang; search: CatalogSearc
 
   const base = collection ? saved : hasQuery ? searchResources(searchTerm) : resources;
   const filtered = [...filterResources(base, { type, category, noKey, fullyFree })];
+  const suggestions =
+    !collection && hasQuery && base.length === 0 ? suggestSearchTerms(searchTerm) : [];
   if (sort === "name") {
     filtered.sort((a, b) => a.name.localeCompare(b.name));
   } else if (sort === "newest") {
@@ -179,6 +229,12 @@ export function CatalogPage({ lang, search }: { lang: Lang; search: CatalogSearc
   return (
     <TooltipProvider delayDuration={300}>
       <div className={`catalog-page ${showResults ? "has-results" : "is-landing"}`}>
+        <SearchCardTransition
+          ref={transitionRef}
+          query={searchTerm}
+          showResults={showResults}
+          onTargetsChange={handleTransitionTargets}
+        />
         <header className={`site-header shell${scrolled ? " is-scrolled" : ""}`}>
           <Link
             className="brand"
@@ -270,7 +326,10 @@ export function CatalogPage({ lang, search }: { lang: Lang; search: CatalogSearc
                 role="search"
                 onSubmit={(event) => {
                   event.preventDefault();
-                  if (hasQuery) inputRef.current?.blur();
+                  if (hasQuery) {
+                    inputRef.current?.blur();
+                    requestResultsFocus();
+                  }
                 }}
               >
                 <Search size={23} strokeWidth={1.7} aria-hidden="true" />
@@ -343,9 +402,28 @@ export function CatalogPage({ lang, search }: { lang: Lang; search: CatalogSearc
                 </div>
               )}
               {!showResults && (
-                <p className="search-shortcut">
-                  <kbd>/</kbd> {t.searchShortcut}
-                </p>
+                <>
+                  <p className="search-shortcut">
+                    <kbd>/</kbd> {t.searchShortcut}
+                  </p>
+                  <div className="search-examples">
+                    <span>{t.searchExamplesLabel}</span>
+                    <nav aria-label={t.searchExamplesAria}>
+                      {t.searchExamples.map((example) => (
+                        <button
+                          key={example.query}
+                          type="button"
+                          onClick={() => {
+                            runSearch(example.query);
+                            requestResultsFocus();
+                          }}
+                        >
+                          {example.label}
+                        </button>
+                      ))}
+                    </nav>
+                  </div>
+                </>
               )}
             </div>
           </section>
@@ -404,7 +482,7 @@ export function CatalogPage({ lang, search }: { lang: Lang; search: CatalogSearc
                     <p className="section-index">
                       OA / {collection ? t.savedIndex : t.discoveryIndex}
                     </p>
-                    <h2 id="results-heading">
+                    <h2 id="results-heading" tabIndex={-1}>
                       {collection
                         ? t.resultsCollection
                         : hasQuery
@@ -472,6 +550,7 @@ export function CatalogPage({ lang, search }: { lang: Lang; search: CatalogSearc
                         resource={resource}
                         index={index}
                         featured={index === 0 && !collection}
+                        transitionTarget={transitionTargets.includes(resource.id)}
                         saved={saved.some((item) => item.url === resource.url)}
                         onSave={() => toggleSave(resource)}
                         onDetails={() => setSelected(resource)}
@@ -482,9 +561,74 @@ export function CatalogPage({ lang, search }: { lang: Lang; search: CatalogSearc
                   <div className="empty-state">
                     <Search size={28} />
                     <h3>{collection ? t.emptyCollectionTitle : t.emptyNoMatchTitle}</h3>
-                    <p>{collection ? t.emptyCollectionText : t.emptyNoMatchText}</p>
-                    <Button variant="outline" onClick={collection ? showExplore : resetFilters}>
-                      {collection ? t.exploreResources : t.resetFilters}
+                    <p>
+                      {collection
+                        ? t.emptyCollectionText
+                        : base.length === 0
+                          ? t.emptyNoMatchText(searchTerm.trim())
+                          : t.emptyFiltersHelp(base.length)}
+                    </p>
+                    {!collection && base.length === 0 && (
+                      <div className="empty-guidance">
+                        {suggestions.length > 0 && (
+                          <div className="suggestion-group">
+                            <span>{t.emptySuggestionsTitle}</span>
+                            <div>
+                              {suggestions.map((suggestion) => (
+                                <button
+                                  key={suggestion}
+                                  type="button"
+                                  onClick={() => {
+                                    runSearch(suggestion);
+                                    requestResultsFocus();
+                                  }}
+                                >
+                                  {suggestion}
+                                </button>
+                              ))}
+                            </div>
+                          </div>
+                        )}
+                        <div className="suggestion-group">
+                          <span>
+                            {suggestions.length ? t.emptyStartingTitle : t.searchExamplesLabel}
+                          </span>
+                          <div>
+                            {t.searchExamples.map((example) => (
+                              <button
+                                key={example.query}
+                                type="button"
+                                onClick={() => {
+                                  runSearch(example.query);
+                                  requestResultsFocus();
+                                }}
+                              >
+                                {example.label}
+                              </button>
+                            ))}
+                          </div>
+                        </div>
+                      </div>
+                    )}
+                    <Button
+                      variant="outline"
+                      onClick={() => {
+                        if (collection) {
+                          showExplore();
+                        } else if (base.length === 0) {
+                          runSearch("");
+                          inputRef.current?.focus();
+                        } else {
+                          resetFilters();
+                          requestResultsFocus();
+                        }
+                      }}
+                    >
+                      {collection
+                        ? t.exploreResources
+                        : base.length === 0
+                          ? t.clearSearchAndFilters
+                          : t.resetFilters}
                       <ArrowRight size={14} />
                     </Button>
                   </div>

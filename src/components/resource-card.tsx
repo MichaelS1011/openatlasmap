@@ -37,6 +37,7 @@ import {
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Tooltip, TooltipContent, TooltipTrigger } from "@/components/ui/tooltip";
+import { ResourceQuickPreview } from "@/components/resource-quick-preview";
 import { badgeLabel, badgeTip, catLabel, ui, type Lang } from "@/lib/i18n";
 import { licenseSpecified, resources, sourceNumber, type Resource } from "@/lib/resources";
 
@@ -97,6 +98,7 @@ type ResourceCardProps = {
   featured?: boolean;
   onSave: () => void;
   onDetails: () => void;
+  transitionTarget?: boolean;
 };
 
 export function ResourceCard({
@@ -107,76 +109,81 @@ export function ResourceCard({
   featured = false,
   onSave,
   onDetails,
+  transitionTarget = false,
 }: ResourceCardProps) {
   const t = ui[lang];
   const dataset = resource.type === "Dataset";
   const hasPage = resources.some((item) => item.id === resource.id && item.url === resource.url);
 
   return (
-    <article
-      className={`resource-card${featured ? " featured" : ""}`}
-      style={{ "--card-order": index } as CSSProperties}
-    >
-      <div className="card-top">
-        <div className={`resource-icon${dataset ? " dataset" : ""}`}>
-          <ResourceIcon resource={resource} />
+    <ResourceQuickPreview lang={lang} resource={resource}>
+      <article
+        className={`resource-card${featured ? " featured" : ""}`}
+        data-resource-id={resource.id}
+        data-transition-target={transitionTarget || undefined}
+        style={{ "--card-order": index } as CSSProperties}
+      >
+        <div className="card-top">
+          <div className={`resource-icon${dataset ? " dataset" : ""}`}>
+            <ResourceIcon resource={resource} />
+          </div>
+          <div className="card-actions">
+            <span className="source-number">OA—{sourceNumber(resource)}</span>
+            <Tip label={badgeTip(lang, resource.type)}>
+              <span className={`type-badge${dataset ? " dataset" : ""}`}>
+                {dataset ? <Database size={11} /> : <Code2 size={11} />}
+                {badgeLabel(lang, resource.type)}
+              </span>
+            </Tip>
+            <Button
+              variant="ghost"
+              size="icon"
+              className="save-button"
+              onClick={onSave}
+              aria-label={saved ? t.removeAria(resource.name) : t.saveAria(resource.name)}
+              title={saved ? t.removeTitle : t.saveTitle}
+              aria-pressed={saved}
+            >
+              <Bookmark size={15} fill={saved ? "currentColor" : "none"} />
+            </Button>
+          </div>
         </div>
-        <div className="card-actions">
-          <span className="source-number">OA—{sourceNumber(resource)}</span>
-          <Tip label={badgeTip(lang, resource.type)}>
-            <span className={`type-badge${dataset ? " dataset" : ""}`}>
-              {dataset ? <Database size={11} /> : <Code2 size={11} />}
-              {badgeLabel(lang, resource.type)}
+        <h3>
+          {hasPage ? (
+            <Link to="/resources/$id" params={{ id: resource.id }}>
+              {resource.name}
+            </Link>
+          ) : (
+            resource.name
+          )}
+        </h3>
+        <p>{resource.description}</p>
+        <div className="card-tags">
+          <Tip label={badgeTip(lang, resource.pricing)}>
+            <span className="free">
+              <CheckCircle2 size={11} />
+              {badgeLabel(lang, resource.pricing)}
             </span>
           </Tip>
-          <Button
-            variant="ghost"
-            size="icon"
-            className="save-button"
-            onClick={onSave}
-            aria-label={saved ? t.removeAria(resource.name) : t.saveAria(resource.name)}
-            title={saved ? t.removeTitle : t.saveTitle}
-            aria-pressed={saved}
-          >
-            <Bookmark size={15} fill={saved ? "currentColor" : "none"} />
+          <span aria-hidden="true">·</span>
+          <Tip label={badgeTip(lang, resource.access)}>
+            <span>{badgeLabel(lang, resource.access)}</span>
+          </Tip>
+          <span className="tag">{resource.format}</span>
+          {!licenseSpecified(resource) && (
+            <Tip label={t.licenseTip}>
+              <span className="tag">{t.licenseUnspecified}</span>
+            </Tip>
+          )}
+        </div>
+        <div className="card-footer">
+          <span>{catLabel(lang, resource.category)}</span>
+          <Button variant="link" className="source-link" onClick={onDetails}>
+            {t.viewSource}
+            <ArrowUpRight size={13} />
           </Button>
         </div>
-      </div>
-      <h3>
-        {hasPage ? (
-          <Link to="/resources/$id" params={{ id: resource.id }}>
-            {resource.name}
-          </Link>
-        ) : (
-          resource.name
-        )}
-      </h3>
-      <p>{resource.description}</p>
-      <div className="card-tags">
-        <Tip label={badgeTip(lang, resource.pricing)}>
-          <span className="free">
-            <CheckCircle2 size={11} />
-            {badgeLabel(lang, resource.pricing)}
-          </span>
-        </Tip>
-        <span aria-hidden="true">·</span>
-        <Tip label={badgeTip(lang, resource.access)}>
-          <span>{badgeLabel(lang, resource.access)}</span>
-        </Tip>
-        <span className="tag">{resource.format}</span>
-        {!licenseSpecified(resource) && (
-          <Tip label={t.licenseTip}>
-            <span className="tag">{t.licenseUnspecified}</span>
-          </Tip>
-        )}
-      </div>
-      <div className="card-footer">
-        <span>{catLabel(lang, resource.category)}</span>
-        <Button variant="link" className="source-link" onClick={onDetails}>
-          {t.viewSource}
-          <ArrowUpRight size={13} />
-        </Button>
-      </div>
-    </article>
+      </article>
+    </ResourceQuickPreview>
   );
 }

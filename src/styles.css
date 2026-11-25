@@ -638,6 +638,176 @@ a {
   font-size: 10px;
 }
 
+.search-examples {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px 10px;
+  margin-top: 13px;
+  color: var(--muted-foreground);
+  font-size: 10px;
+}
+
+.search-examples nav,
+.suggestion-group > div {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 7px;
+}
+
+.search-examples button,
+.suggestion-group button {
+  padding: 6px 9px;
+  border: 1px solid var(--border);
+  border-radius: 2px;
+  background: var(--card);
+  box-shadow: 2px 2px 0 var(--line);
+  color: var(--foreground);
+  font-size: 10px;
+  line-height: 1.2;
+  transition:
+    transform 160ms ease,
+    border-color 160ms ease,
+    box-shadow 160ms ease;
+}
+
+.search-examples button:hover,
+.suggestion-group button:hover {
+  transform: translate(-1px, -1px);
+  border-color: var(--primary);
+  box-shadow: 3px 3px 0 var(--line);
+}
+
+.resource-preview {
+  width: min(348px, calc(100vw - 32px));
+  padding: 0;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  border-radius: 2px;
+  background: var(--card);
+  box-shadow: var(--shadow-paper);
+  color: var(--foreground);
+}
+
+.preview-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 11px 15px;
+  border-bottom: 1px solid var(--line);
+  color: var(--primary);
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 8px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.resource-preview h3 {
+  margin: 0;
+  padding: 17px 15px 8px;
+  font-size: 21px;
+  font-weight: 650;
+  letter-spacing: -0.045em;
+  line-height: 1.05;
+}
+
+.preview-description {
+  margin: 0;
+  padding: 0 15px 15px;
+  color: var(--muted-foreground);
+  font-size: 11px;
+  line-height: 1.55;
+}
+
+.preview-description > span {
+  display: block;
+  margin-bottom: 5px;
+  color: var(--foreground);
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 8px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.preview-facts {
+  margin: 0;
+  border-top: 1px solid var(--line);
+}
+
+.preview-facts > div {
+  display: grid;
+  grid-template-columns: 82px minmax(0, 1fr);
+  gap: 12px;
+  padding: 8px 15px;
+  border-bottom: 1px solid var(--line);
+  font-size: 10px;
+  line-height: 1.4;
+}
+
+.preview-facts dt {
+  color: var(--muted-foreground);
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 8px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.preview-facts dd {
+  margin: 0;
+  overflow-wrap: anywhere;
+  text-align: right;
+}
+
+.preview-facts .preview-unknown {
+  color: var(--muted-foreground);
+}
+
+.preview-usage {
+  padding: 12px 15px 14px;
+  background: var(--card-strong);
+}
+
+.preview-usage > span {
+  color: var(--primary);
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 8px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.preview-usage p {
+  margin: 5px 0 0;
+  color: var(--muted-foreground);
+  font-size: 10px;
+  line-height: 1.5;
+}
+
+.search-card-transition {
+  position: fixed;
+  z-index: 70;
+  inset: 0;
+  pointer-events: none;
+}
+
+.transition-card {
+  position: fixed !important;
+  margin: 0;
+  transform-origin: center;
+  animation: none !important;
+  transition: none !important;
+  pointer-events: none;
+  will-change: left, top, width, height, rotate, scale, opacity;
+}
+
+.resource-card[data-transition-target] {
+  opacity: 0;
+  animation: none;
+  pointer-events: none;
+}
+
 kbd {
   display: inline-grid;
   width: 18px;
@@ -938,7 +1108,8 @@ kbd {
     border-color 200ms ease;
 }
 
-.resource-card:hover {
+.resource-card:hover,
+.resource-card:focus-within {
   z-index: 2;
   transform: translate(-2px, -3px);
   border-color: color-mix(in srgb, var(--primary) 42%, var(--border));
@@ -1153,11 +1324,37 @@ kbd {
 }
 
 .empty-state p {
-  max-width: 380px;
+  max-width: 440px;
   margin: 0 0 23px;
   color: var(--muted-foreground);
   font-size: 12px;
   line-height: 1.6;
+}
+
+.empty-guidance {
+  display: grid;
+  width: min(440px, 100%);
+  gap: 17px;
+  margin: 0 0 25px;
+}
+
+.suggestion-group {
+  display: grid;
+  justify-items: center;
+  gap: 8px;
+}
+
+.suggestion-group > span {
+  color: var(--muted-foreground);
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 8px;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+
+.results-header h2:focus {
+  outline: 2px solid var(--ring);
+  outline-offset: 6px;
 }
 
 .result-notice {

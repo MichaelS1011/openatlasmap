@@ -4,6 +4,7 @@ import { ArrowUpRight } from "lucide-react";
 import { badgeLabel, catLabel, ui, type Lang } from "@/lib/i18n";
 import { resources, sourceNumber, type Resource } from "@/lib/resources";
 import { ResourceIcon } from "@/components/resource-card";
+import { ResourceQuickPreview } from "@/components/resource-quick-preview";
 
 const featuredIds = [
   "nasa-3d",
@@ -174,6 +175,7 @@ function IndexCard({
   return (
     <div
       className="index-card-slot"
+      data-resource-id={resource.id}
       style={
         {
           "--card-x": position.x,
@@ -193,35 +195,37 @@ function IndexCard({
         } as CSSProperties
       }
     >
-      <Link
-        className="index-card"
-        to="/resources/$id"
-        params={{ id: resource.id }}
-        aria-label={`${resource.name} — ${t.viewSource}`}
-      >
-        <div className="index-card-top">
-          <span>OA—{sourceNumber(resource)}</span>
-          <span>{catLabel(lang, resource.category)}</span>
-        </div>
-        <div className="index-card-body">
-          <span className={`resource-icon${resource.type === "Dataset" ? " dataset" : ""}`}>
-            <ResourceIcon resource={resource} size={23} />
-          </span>
-          <div>
-            <h2>{resource.name}</h2>
-            <p>{resource.description}</p>
+      <ResourceQuickPreview lang={lang} resource={resource}>
+        <Link
+          className="index-card"
+          to="/resources/$id"
+          params={{ id: resource.id }}
+          aria-label={`${resource.name} — ${t.viewSource}`}
+        >
+          <div className="index-card-top">
+            <span>OA—{sourceNumber(resource)}</span>
+            <span>{catLabel(lang, resource.category)}</span>
           </div>
-        </div>
-        <div className="index-card-footer">
-          <span className={`type-badge${resource.type === "Dataset" ? " dataset" : ""}`}>
-            {badgeLabel(lang, resource.type)}
-          </span>
-          <span>
-            {badgeLabel(lang, resource.access)} · {badgeLabel(lang, resource.pricing)}
-          </span>
-          <ArrowUpRight size={14} />
-        </div>
-      </Link>
+          <div className="index-card-body">
+            <span className={`resource-icon${resource.type === "Dataset" ? " dataset" : ""}`}>
+              <ResourceIcon resource={resource} size={23} />
+            </span>
+            <div>
+              <h2>{resource.name}</h2>
+              <p>{resource.description}</p>
+            </div>
+          </div>
+          <div className="index-card-footer">
+            <span className={`type-badge${resource.type === "Dataset" ? " dataset" : ""}`}>
+              {badgeLabel(lang, resource.type)}
+            </span>
+            <span>
+              {badgeLabel(lang, resource.access)} · {badgeLabel(lang, resource.pricing)}
+            </span>
+            <ArrowUpRight size={14} />
+          </div>
+        </Link>
+      </ResourceQuickPreview>
     </div>
   );
 }
