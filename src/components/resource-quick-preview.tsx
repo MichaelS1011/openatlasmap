@@ -6,12 +6,20 @@ import { licenseSpecified, sourceNumber, type Resource } from "@/lib/resources";
 type ResourceQuickPreviewProps = {
   lang: Lang;
   resource: Resource;
+  /** Set when the caller focuses a descendant rather than the trigger itself. */
+  previewId?: string;
   children: ReactNode;
 };
 
-export function ResourceQuickPreview({ lang, resource, children }: ResourceQuickPreviewProps) {
+export function ResourceQuickPreview({
+  lang,
+  resource,
+  previewId: providedId,
+  children,
+}: ResourceQuickPreviewProps) {
   const t = ui[lang];
-  const previewId = useId();
+  const autoId = useId();
+  const previewId = providedId ?? autoId;
   const reviewed = resource.verifiedAt
     ? new Intl.DateTimeFormat(lang === "de" ? "de-DE" : "en-GB", {
         day: "numeric",

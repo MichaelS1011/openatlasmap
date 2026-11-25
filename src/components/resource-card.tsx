@@ -1,5 +1,5 @@
 import { Link } from "@tanstack/react-router";
-import type { CSSProperties, ReactNode } from "react";
+import { useId, type CSSProperties, type ReactNode } from "react";
 import {
   ArrowUpRight,
   Atom,
@@ -112,11 +112,12 @@ export function ResourceCard({
   transitionTarget = false,
 }: ResourceCardProps) {
   const t = ui[lang];
+  const previewId = useId();
   const dataset = resource.type === "Dataset";
   const hasPage = resources.some((item) => item.id === resource.id && item.url === resource.url);
 
   return (
-    <ResourceQuickPreview lang={lang} resource={resource}>
+    <ResourceQuickPreview lang={lang} resource={resource} previewId={previewId}>
       <article
         className={`resource-card${featured ? " featured" : ""}`}
         data-resource-id={resource.id}
